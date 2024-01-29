@@ -1,0 +1,74 @@
+/* Navbar.css */
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  transition: max-height 0.3s ease; /* Smooth transition for expanding/collapsing menu */
+}
+
+.nav-item,
+.navbar-logo,
+.facebookIcon {
+  padding: 0 1rem;
+}
+
+/* The logo and the Facebook icon need specific styles to ensure they don't grow disproportionately */
+.navbar-logo,
+.facebookIcon {
+  flex: 0 0 auto;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #0f1ae2;
+  font-weight: 500;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+.emergency a {
+  color: white;
+  background-color: #0f1ae2;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.emergency a:hover {
+  background-color: 
+}
+
+/* Responsive design for phone sizes */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  /* This will make the navbar-nav take up the full height when active (e.g., when a hamburger menu is toggled) */
+  .navbar-nav.active {
+    max-height: 500px; /* Adjust as needed */
+  }
+
+  .navbar-logo {
+    margin-bottom: 1rem; /* Add some space below the logo */
+  }
+
+  .facebookIcon {
+    display: none;
+  }
+}
