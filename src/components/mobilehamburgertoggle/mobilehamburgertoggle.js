@@ -6,10 +6,7 @@ const MobileHamburgerToggle = ({ swapHamburgerState }) => {
   return (
     <main className="container">
       <div onClick={swapHamburgerState}>
-        <MenuSharpIcon
-          className="toggled-hamburger-icon "
-          sx={{ fontSize: 40 }}
-        />
+        <span class="toggled-hamburger-icon ">X</span>
       </div>
       <ul className="toggled-navbar-nav">
         <li className="toggled-nav-item">

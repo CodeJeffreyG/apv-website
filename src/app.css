@@ -1,0 +1,17 @@
+/* Assuming .page-container wraps around your entire page */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full viewport height */
+}
+
+.navbar {
+  /* Navbar styles */
+  flex-shrink: 0; /* Ensure the navbar doesn't shrink */
+}
+
+.main-hero {
+  /* Main content styles */
+  flex-grow: 1; /* Grow to take up remaining space */
+  /* No need for top padding/margin as the navbar is in the flex flow */
+}
