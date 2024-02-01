@@ -1,0 +1,60 @@
+/* CenteredOverlay.css */
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust the width as needed, but not full width to give some margin */
+  z-index: 2;
+  pointer-events: none; /* Allows clicks to pass through to the slides */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.overlay-content {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Slightly darker for better readability */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px; /* Soft rounded corners for the overlay */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  text-align: center;
+  pointer-events: auto; /* Re-enable pointer events for the buttons and links */
+  max-width: 640px; /* Max width for better readability on wide screens */
+}
+
+.overlay h2 {
+  font-size: 2rem; /* Larger font size for the headline */
+  font-weight: bold; /* Bold font for the headline */
+  margin-bottom: 0.5em; /* Space between headline and subtext */
+}
+
+.overlay p {
+  font-size: 1rem; /* Standard font size for the paragraph */
+  margin-bottom: 1.5em; /* Space between paragraph and buttons */
+}
+
+.overlay-button {
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #0f1ae2; /* Bootstrap's btn-danger color for a familiar look */
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold; /* Bold font for better legibility on buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+  text-transform: uppercase; /* Uppercase text for a button */
+  transition: background-color 0.3s ease; /* Transition for a smooth hover effect */
+}
+
+.overlay-button:hover {
+  background-color: #090fbd; /* Slightly darker shade on hover */
+}

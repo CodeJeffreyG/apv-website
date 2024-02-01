@@ -16,7 +16,6 @@ const allNotStaffAnimals = () => {
       dogs: [],
       cats: [],
       exotic: [],
-      employee: [],
     };
   
     return allNotStaffAnimals;
