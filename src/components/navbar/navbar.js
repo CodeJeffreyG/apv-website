@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import logo from "../media/logo.jpg";
-import MobileHamburgerToggle from "../mobilehamburgertoggle/mobilehamburgertoggle";
+import MobileHamburgerToggle from "./mobilehamburgertoggle/mobilehamburgertoggle";
 import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
 

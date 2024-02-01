@@ -1,4 +1,4 @@
-import Dozer from "../media/carousel-images/staffDogs/dozer-belles.jpg"
+import Dozer from "../media/carousel-images/staffDogs/dozer-belles.jpg";
 
 const staffAnimals = () => {
   const staffAndAnimalPhotos = {
@@ -12,13 +12,13 @@ const staffAnimals = () => {
 };
 
 const allNotStaffAnimals = () => {
-    const allNotStaffAnimals = {
-      dogs: [],
-      cats: [],
-      exotic: [],
-    };
-  
-    return allNotStaffAnimals;
+  const allNotStaffAnimals = {
+    dogs: [],
+    cats: [],
+    exotic: [],
   };
+
+  return allNotStaffAnimals;
+};
 
 export { staffAnimals, allNotStaffAnimals };

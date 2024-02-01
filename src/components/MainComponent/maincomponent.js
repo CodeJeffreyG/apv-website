@@ -23,10 +23,19 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 const MainComponent = () => {
+  const randomImageArray = [
+    randomPhoto1,
+    randomPhoto2,
+    randomPhoto3,
+    randomPhoto4,
+    randomPhoto5,
+    randomPhoto6,
+  ];
+
   return (
     <div style={{ position: "relative" }}>
       <Swiper
-        spaceBetween={100}
+        spaceBetween={50}
         slidesPerView={2}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
@@ -34,96 +43,30 @@ const MainComponent = () => {
         autoplay={true}
         duration={50}
         effect="fade"
-        style={{ height: `calc(100vh - ${84}px)`, padding: "5px" }} // Adjust Swiper height
+        style={{
+          height: `calc(100vh - ${76}px)`,
+          paddingTop: "5px",
+        }}
       >
-        <SwiperSlide
-          style={{
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={randomPhoto1}
-            alt=""
-            style={{ height: "100%", width: "auto", padding: "1px" }}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide
-          style={{
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={randomPhoto2}
-            alt=""
-            style={{ height: "100%", width: "auto" }}
-          />
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={randomPhoto3}
-            alt=""
-            style={{ height: "100%", width: "auto" }}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide
-          style={{
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={randomPhoto4}
-            alt=""
-            style={{ height: "100%", width: "auto" }}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide
-          style={{
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={randomPhoto5}
-            alt=""
-            style={{ height: "100%", width: "auto" }}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide
-          style={{
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={randomPhoto6}
-            alt=""
-            style={{ height: "100%", width: "auto" }}
-          />
-        </SwiperSlide>
+        {randomImageArray.map((currentImage, index) => {
+          return (
+            <SwiperSlide
+              index={index}
+              style={{
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src={currentImage}
+                alt=""
+                style={{ height: "100%", width: "auto" }}
+              />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
       <CenteredOverlay />
     </div>
