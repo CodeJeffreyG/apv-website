@@ -1,0 +1,84 @@
+/* HospitalInfo.css */
+
+.hours-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh; /* Ensure at least 100vh total height */
+  max-height: 100vh; /* Ensure it does not exceed 100vh total height */
+}
+
+.hours-leftPanel,
+.hours-rightPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+.hours-leftPanel {
+  background-color: #007bff; /* Or the specific color you want */
+}
+
+.hours-rightPanel {
+  background-color: #0056b3; /* Or the specific color you want */
+}
+
+/* HospitalHours.css */
+
+/* ... other styles ... */
+
+.hours-leftPanel p,
+.hours-rightPanel p {
+  font-size: 2rem; /* Adjust size as needed */
+  color: #ffffff; /* This is a guess, assuming you want white text */
+  margin: 0.5rem 0; /* Adds space between paragraphs */
+  line-height: 1.5; /* Adjusts the space between lines for readability */
+}
+
+.hours-leftPanel h2,
+.hours-rightPanel h2 {
+  color: #ffffff; /* This is a guess, assuming you want white text for headings too */
+  margin-bottom: 1rem; /* Adds some space below the heading */
+}
+
+/* Additional styling for specific text emphasis */
+.hours-rightPanel h2 {
+  font-weight: bold;
+  font-size: 1.5rem; /* Larger font size for emphasis */
+}
+
+/* If there is a specific line that needs to be emphasized */
+.hours-rightPanel .please-call-important {
+  font-weight: bold;
+  color: #ffd700; /* Just an example, use the color that matches your design */
+}
+
+/* Responsive font sizes for smaller screens */
+@media (max-width: 768px) {
+  .hours-leftPanel p,
+  .hours-rightPanel p {
+    font-size: 0.9rem; /* Slightly smaller font size on mobile devices */
+  }
+
+  .hours-rightPanel h2 {
+    font-size: 1.3rem; /* Slightly smaller heading on mobile devices */
+  }
+}
+
+/* Responsive design for screens less than 768px wide */
+@media (max-width: 768px) {
+  .hours-container {
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+
+  .hours-leftPanel,
+  .hours-rightPanel {
+    height: 50%; /* Each panel will take up half the viewport height */
+  }
+}
