@@ -5,6 +5,7 @@ import randomPhoto4 from "../media/carousel-images/notStaffDogs/doggie.jpg";
 import randomPhoto5 from "../media/carousel-images/notStaffDogs/doggie2.jpg";
 import randomPhoto6 from "../media/carousel-images/staffExotic/radnor-treenas-bd.jpg";
 
+import "./maincomponent.css";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -33,7 +34,7 @@ const MainComponent = () => {
   ];
 
   return (
-    <div style={{ position: "relative" }}>
+    <div className="main-container">
       <Swiper
         spaceBetween={50}
         slidesPerView={2}
@@ -43,26 +44,18 @@ const MainComponent = () => {
         autoplay={true}
         duration={50}
         effect="fade"
-        style={{
-          height: `calc(100vh - ${76}px)`,
-          paddingTop: "5px",
-        }}
+        className="main-swiper-container"
       >
         {randomImageArray.map((currentImage, index) => {
           return (
             <SwiperSlide
               index={index}
-              style={{
-                height: "100%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
+              className="main-individual-slide-container"
             >
               <img
                 src={currentImage}
                 alt=""
-                style={{ height: "100%", width: "auto" }}
+                className="main-individual-slide-image"
               />
             </SwiperSlide>
           );

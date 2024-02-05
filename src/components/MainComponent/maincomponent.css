@@ -1,33 +1,32 @@
+.main-container {
+  position: "relative";
+}
+
+.main-swiper-container {
+  height: calc(100vh - 71px); /* Adjust height as needed */
+  padding-top: 5px; /* Your specified padding */
+}
+
 .main-hero {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
+.main-individual-slide-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-individual-slide-image {
+  width: 110%; /* Ensure the image spans the full width of the slide */
+  height: 100%; /* Ensure the image spans the full height of the slide */
+  object-fit: cover; /* Cover the slide without stretching the image */
+}
+
 .hero-carousel .hero-image {
   height: 85vh; /* Large viewport height for hero images */
   object-fit: cover; /* Ensure full coverage of the image */
-}
-
-.hero-carousel .carousel-caption {
-  position: absolute;
-  bottom: 20%; /* Position the caption towards the bottom of the image */
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  color: white; /* Light text for readability */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the text */
-  padding: 1rem;
-  border-radius: 8px; /* Soft edges around the text box */
-}
-
-.hero-title {
-  font-size: 2.5rem; /* Large text for the title */
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.hero-subtitle {
-  font-size: 1.5rem; /* Subtitle text size */
-  margin-bottom: 0;
 }
