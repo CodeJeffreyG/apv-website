@@ -1,7 +1,8 @@
 /* Navbar.css */
 .navbar {
-  display: fixed;
+  position: fixed;
   background-color: white;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +11,7 @@
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 75px;
+  z-index: 100000;
 }
 
 .navbar-nav {
@@ -22,14 +24,17 @@
 }
 
 .nav-item,
-.navbar-logo,
-.facebookIcon {
+.navbar-logo {
   padding: 0 1rem;
+}
+
+.facebook-icon {
+  margin-right: 25px;
 }
 
 /* The logo and the Facebook icon need specific styles to ensure they don't grow disproportionately */
 .navbar-logo,
-.facebookIcon {
+.facebook-icon {
   flex: 0 0 auto;
 }
 

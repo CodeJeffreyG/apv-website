@@ -3,8 +3,8 @@
 .hours-container {
   display: flex;
   flex-direction: row;
-  min-height: 100vh; /* Ensure at least 100vh total height */
-  max-height: 100vh; /* Ensure it does not exceed 100vh total height */
+  min-height: calc(100vh - 75px); /* Adjusted to account for the navbar */
+  max-height: calc(100vh - 75px); /* Adjusted to account for the navbar */
 }
 
 .hours-leftPanel,
@@ -26,10 +26,6 @@
 .hours-rightPanel {
   background-color: #0056b3; /* Or the specific color you want */
 }
-
-/* HospitalHours.css */
-
-/* ... other styles ... */
 
 .hours-leftPanel p,
 .hours-rightPanel p {

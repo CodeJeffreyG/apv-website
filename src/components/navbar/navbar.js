@@ -41,13 +41,13 @@ function Navbar() {
       <a
         onClick={isMobile ? swapHamburgerState : undefined}
         className={isMobile ? "menu-icon" : "facebook-icon"}
-        rel="noopener noreferrer"
-        target="_blank"
+        rel="www.google.com"
+        target="www.google.com"
       >
         {isMobile ? (
-          <MenuSharpIcon sx={{ fontSize: 40 }} />
+          <MenuSharpIcon sx={{ fontSize: 60 }} />
         ) : (
-          <FacebookSharpIcon sx={{ fontSize: 40 }} color="primary" />
+          <FacebookSharpIcon sx={{ fontSize: 60 }} color="primary" />
         )}
       </a>
 
