@@ -3,8 +3,7 @@
 }
 
 .main-swiper-container {
-  height: calc(100vh - 71px); /* Adjust height as needed */
-  padding-top: 5px; /* Your specified padding */
+  height: calc(100vh - 75px); /* Adjust height as needed */
 }
 
 .main-hero {
@@ -27,6 +26,6 @@
 }
 
 .hero-carousel .hero-image {
-  height: 85vh; /* Large viewport height for hero images */
+  /* Large viewport height for hero images */
   object-fit: cover; /* Ensure full coverage of the image */
 }
