@@ -35,16 +35,58 @@ function Navbar() {
         <li className="nav-item">
           <a href="/">Home</a>
         </li>
-        <li className="nav-item">
-          <a href="/about">About</a>
-        </li>
+
         <li className="nav-item">
           <a href="/contact">Contact</a>
         </li>
 
-        <li className="nav-item services">
-          <a href="/services">Services</a>
+        <li className="nav-item dropdown">
+          <a href="/about">About</a>
+          <ul className="dropdown-menu">
+            <li>
+              <a href="/about/history">History</a>
+            </li>
+            <li>
+              <a href="/about/team">Team</a>
+            </li>
+            <li>
+              <a href="/about/mission">Mission</a>
+            </li>
+          </ul>
         </li>
+
+        <li className="nav-item dropdown">
+          <a href="#">Resources</a>{" "}
+          {/* Updated href to "#" for dropdown trigger */}
+          <ul className="dropdown-menu">
+            <li>
+              <a href="/resources/guides">Guides</a>
+            </li>
+            <li>
+              <a href="/resources/tutorials">Tutorials</a>
+            </li>
+            <li>
+              <a href="/resources/tools">Tools</a>
+            </li>
+          </ul>
+        </li>
+
+        <li className="nav-item dropdown">
+          <a href="#">Services</a>{" "}
+          {/* Updated href to "#" for dropdown trigger */}
+          <ul className="dropdown-menu">
+            <li>
+              <a href="/services/consulting">Consulting</a>
+            </li>
+            <li>
+              <a href="/services/implementation">Implementation</a>
+            </li>
+            <li>
+              <a href="/services/support">Support</a>
+            </li>
+          </ul>
+        </li>
+
         <li className="nav-item emergency">
           <a href="/emergency">EMERGENCY</a>
         </li>

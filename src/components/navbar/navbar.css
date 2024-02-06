@@ -96,6 +96,40 @@
   background-color: #090fbd;
 }
 
+/* Hide dropdown menus by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  box-shadow: none; /* Removes any shadow to keep the style simple */
+  border: none; /* Removes borders */
+}
+
+/* Positioning for dropdown menus */
+.nav-item.dropdown {
+  position: relative;
+}
+
+/* Show dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Show the dropdown */
+  padding-left: 0; /* Removes default padding */
+  background: white; /* Matches the navbar background */
+  list-style: none; /* Removes bullet points */
+}
+
+/* Style for dropdown items */
+.dropdown-menu li a {
+  color: #0f1ae2; /* Match the color with your nav item links */
+  padding: 0.5rem 1rem; /* Provides padding for each dropdown item */
+  display: block; /* Ensures the link covers the full list item area for easier clicking */
+  text-decoration: none;
+}
+
+/* Change background color slightly on hover to indicate hover state */
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+}
+
 /* Responsive design for phone sizes */
 @media (max-width: 768px) {
   .menu-icon {
