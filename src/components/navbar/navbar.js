@@ -41,8 +41,7 @@ function Navbar() {
       <a
         onClick={isMobile ? swapHamburgerState : undefined}
         className={isMobile ? "menu-icon" : "facebook-icon"}
-        rel="www.google.com"
-        target="www.google.com"
+        href={!isMobile ? "https://www.facebook.com/dr.bowers/" : undefined}
       >
         {isMobile ? (
           <MenuSharpIcon sx={{ fontSize: 60 }} />
@@ -59,3 +58,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+//all kinds vet

@@ -28,8 +28,16 @@
   padding: 0 1rem;
 }
 
+.navbar-logo {
+  height: 5rem;
+}
+
 .facebook-icon {
   margin-right: 25px;
+}
+
+.facebook-icon:hover {
+  transform: scale(1.05);
 }
 
 /* The logo and the Facebook icon need specific styles to ensure they don't grow disproportionately */
@@ -71,10 +79,6 @@
   /* This will make the navbar-nav take up the full height when active (e.g., when a hamburger menu is toggled) */
   .navbar-nav.active {
     max-height: 500px; /* Adjust as needed */
-  }
-
-  .navbar-logo {
-    margin-bottom: 1rem; /* Add some space below the logo */
   }
 
   .facebookIcon {
