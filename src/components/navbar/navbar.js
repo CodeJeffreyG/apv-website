@@ -4,6 +4,7 @@ import logo from "../media/logo.jpg";
 import MobileHamburgerToggle from "./mobilehamburgertoggle/mobilehamburgertoggle";
 import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
+import CallIcon from "@mui/icons-material/Call";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -23,6 +24,13 @@ function Navbar() {
   return (
     <nav className="navbar">
       <img src={logo} className="navbar-logo" alt="Company Logo" />
+
+      <div className="navbar-phone">
+        <a href="tel:+1234567890" className="phone-link">
+          <CallIcon sx={{ fontSize: 24 }} className="phone-icon" /> (484)
+          461-7520
+        </a>
+      </div>
       <ul className="navbar-nav">
         <li className="nav-item">
           <a href="/">Home</a>

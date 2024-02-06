@@ -23,8 +23,37 @@
   transition: max-height 0.3s ease; /* Smooth transition for expanding/collapsing menu */
 }
 
+.navbar-phone {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment with other nav items */
+  justify-content: center; /* Center the content if it's the only item in a flex container */
+  padding: 0 1rem; /* Consistent padding with other nav items */
+}
+
+.phone-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f1ae2; /* Color to match your nav item theme */
+  font-weight: bold;
+  text-decoration: none;
+  background-color: transparent; /* Or any color that fits your navbar's theme */
+  border: 2px solid #0f1ae2; /* Optional: adds a border to make it stand out */
+  padding: 0.25rem 0.75rem; /* Adjust padding to match the size of other nav items */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  min-width: 180px;
+}
+
+.phone-link:hover {
+  background-color: #0f1ae2; /* Background color on hover */
+  color: white; /* Text color on hover */
+  text-decoration: none; /* Prevents underline on hover */
+}
+
 .nav-item,
 .navbar-logo {
+  font-weight: bold;
   padding: 0 1rem;
 }
 
@@ -69,6 +98,9 @@
 
 /* Responsive design for phone sizes */
 @media (max-width: 768px) {
+  .menu-icon {
+    margin-right: 25px;
+  }
   .navbar-nav {
     flex-direction: column;
     align-items: center;
