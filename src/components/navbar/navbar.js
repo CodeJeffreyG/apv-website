@@ -72,17 +72,35 @@ function Navbar() {
         </li>
 
         <li className="nav-item dropdown">
-          <a href="#">Services</a>{" "}
+          <a href="">Services</a>{" "}
           {/* Updated href to "#" for dropdown trigger */}
           <ul className="dropdown-menu">
             <li>
-              <a href="/services/consulting">Consulting</a>
+              <a href="/services/Wellness">Wellness</a>
             </li>
+
             <li>
-              <a href="/services/implementation">Implementation</a>
+              <a href="/services/Vaccines">Vaccines</a>
             </li>
+
             <li>
-              <a href="/services/support">Support</a>
+              <a href="/services/Spay-Neuter">Spay/Neuter</a>
+            </li>
+
+            <li>
+              <a href="/services/DentalCare">Dental Care</a>
+            </li>
+
+            <li>
+              <a href="/services/LaserTherapy">Laser Therapy</a>
+            </li>
+
+            <li>
+              <a href="/services/Microchipping">Microchipping</a>
+            </li>
+
+            <li>
+              <a href="/services/Euthanasia">Euthanasia</a>
             </li>
           </ul>
         </li>

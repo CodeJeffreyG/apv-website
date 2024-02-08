@@ -120,8 +120,10 @@
 /* Style for dropdown items */
 .dropdown-menu li a {
   color: #0f1ae2; /* Match the color with your nav item links */
-  padding: 0.5rem 1rem; /* Provides padding for each dropdown item */
+  padding: 0.5rem 0.5rem; /* Provides padding for each dropdown item */
   display: block; /* Ensures the link covers the full list item area for easier clicking */
+  text-align: left;
+  font-size: 1rem;
   text-decoration: none;
 }
 
