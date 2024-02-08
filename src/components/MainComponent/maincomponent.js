@@ -7,6 +7,7 @@ import randomPhoto6 from "../media/carousel-images/staffExotic/radnor-treenas-bd
 
 import "./maincomponent.css";
 import React from "react";
+import HospitalHours from "./HospitalHours/hospitalhours";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -62,6 +63,7 @@ const MainComponent = () => {
         })}
       </Swiper>
       <CenteredOverlay />
+      <HospitalHours />
     </div>
   );
 };
