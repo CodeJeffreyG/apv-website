@@ -89,3 +89,32 @@
   margin: 0;
   line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .section .text-container,
+  .section .image-container {
+    flex: none;
+    width: 100%;
+    padding: 10px 0; /* Adjust padding for smaller screens */
+  }
+
+  .pet-image {
+    display: none;
+    width: auto; /* Adjust image width to fit its container */
+    max-height: 200px; /* Adjust max height for smaller screens */
+  }
+
+  .text-container p {
+    max-width: 100%; /* Allow text to fill the container on smaller screens */
+  }
+
+  .section-two h2 {
+    display: flex;
+    justify-self: center;
+  }
+}

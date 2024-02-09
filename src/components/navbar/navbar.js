@@ -23,10 +23,12 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <img src={logo} className="navbar-logo" alt="Company Logo" />
+      <a href="/">
+        <img src={logo} className="navbar-logo" alt="Company Logo" />
+      </a>
 
       <div className="navbar-phone">
-        <a href="tel:+1234567890" className="phone-link">
+        <a href="tel:+2153473997" className="phone-link">
           <CallIcon sx={{ fontSize: 24 }} className="phone-icon" /> (484)
           461-7520
         </a>
