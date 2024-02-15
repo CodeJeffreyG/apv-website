@@ -86,7 +86,7 @@ function Navbar() {
             </li>
 
             <li>
-              <a href="/services/Spay-Neuter">Spay/Neuter</a>
+              <a href="/services/spay-neuter">Spay/Neuter</a>
             </li>
 
             <li>

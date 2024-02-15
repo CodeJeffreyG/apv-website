@@ -2,8 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { services } from "./components/vet-services/allServicesData.js";
 import Navbar from "./components/navbar/navbar.js";
 import MainComponent from "./components/MainComponent/maincomponent.js";
-import Wellness from "./components/Wellness/wellness.js";
-import vaccines from "./components/Vaccines/vaccines.js";
+import Wellness from "./components/vet-services/Wellness/wellness.js";
+import Vaccines from "./components/vet-services/Vaccines/vaccines.js";
+import SpayNeuter from "./components/vet-services/spayNeuter/spayNeuter.js";
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +17,11 @@ function App() {
         />
         <Route
           path="/services/vaccines"
-          element={<Wellness textInformation={services.vaccines} />}
+          element={<Vaccines vxData={services.vaccines} />}
+        />
+        <Route
+          path="/services/spay-neuter"
+          element={<SpayNeuter spayNeuterData={services.spayNeuter} />}
         />
       </Routes>
     </BrowserRouter>
