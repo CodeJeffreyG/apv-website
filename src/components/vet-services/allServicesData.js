@@ -4,6 +4,8 @@ import vaccineImageOne from "../media/carousel-images/notStaffCats/cat3.jpg";
 import vaccineImageTwo from "../media/carousel-images/notStaffExotic/bunny1.jpg";
 import spayNeuterImageOne from "../media/carousel-images/notStaffDogs/doggie4.jpg";
 import spayNeuterImageTwo from "../media/carousel-images/notStaffDogs/doggie3.jpg";
+import dentalImageOne from "../media/carousel-images/notStaffDogs/doggie6.jpg";
+import dentalImageTwo from "../media/carousel-images/notStaffDogs/doggie5.jpg";
 
 const services = {
   wellness: {
@@ -47,6 +49,21 @@ const services = {
       "Our experienced veterinary team will guide you through the process, providing pre-surgical advice and post-operative care to ensure your pet recovers quickly and comfortably. We use the latest surgical techniques and pain management protocols to minimize discomfort and promote a swift recovery.",
 
     images: [spayNeuterImageOne, spayNeuterImageTwo],
+  },
+
+  dentalCare: {
+    firstSectionTitle: "Dental Care Services at All Pets Vet",
+    firstSectionInformation:
+      "At All Pets Veterinary Hospital, we provide comprehensive dental care services to ensure your pet's oral health is at its best. Regular dental check-ups and cleanings are essential for preventing dental diseases, which can lead to serious health issues if left untreated.",
+
+    secondSectionTitle: "The Importance of Regular Dental Check-Ups",
+    secondSectionInformationOne:
+      "Regular dental check-ups are crucial for early detection and prevention of periodontal disease, which is common in pets. During a dental exam, our skilled veterinarians will thoroughly inspect your pet's mouth for signs of dental disease, such as tartar buildup, gum inflammation, and loose teeth.",
+
+    secondSectionInformationTwo:
+      "Our dental care services include professional teeth cleaning, dental X-rays, tooth extractions, and more, all performed with your pet's comfort and safety in mind. We also provide guidance on home dental care routines that can help maintain your pet's oral hygiene between visits.",
+
+    images: [dentalImageOne, dentalImageTwo],
   },
 };
 

@@ -70,6 +70,7 @@
 }
 
 .section-two h2 {
+  font-size: larger;
   color: #0073e6; /* Nice blue color for the header */
   margin-bottom: 10px;
   border-bottom: 3px solid #0073e6; /* Blue underline */

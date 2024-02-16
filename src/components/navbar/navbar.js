@@ -90,7 +90,7 @@ function Navbar() {
             </li>
 
             <li>
-              <a href="/services/DentalCare">Dental Care</a>
+              <a href="/services/dental-care">Dental Care</a>
             </li>
 
             <li>
