@@ -82,7 +82,7 @@ function Navbar() {
             </li>
 
             <li>
-              <a href="/services/Vaccines">Vaccines</a>
+              <a href="/services/vaccines">Vaccines</a>
             </li>
 
             <li>

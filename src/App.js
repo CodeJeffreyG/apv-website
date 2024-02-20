@@ -13,7 +13,11 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
+        {/* main component */}
         <Route path="/" element={<MainComponent />} />
+        {/* main component */}
+
+        {/* services components */}
         <Route
           path="/services/wellness"
           element={<Wellness wellnessData={services.wellness} />}
@@ -38,6 +42,7 @@ function App() {
           path="/services/microchipping"
           element={<Microchipping microchippingData={services.microchipping} />}
         />
+        {/* services components */}
       </Routes>
     </BrowserRouter>
   );
