@@ -11,6 +11,7 @@ import MainComponent from "./components/MainComponent/maincomponent.js";
 
 //services
 import Wellness from "./components/vet-services/Wellness/wellness.js";
+import Exotic from "./components/vet-services/Exotic/exotic.js";
 import Vaccines from "./components/vet-services/Vaccines/vaccines.js";
 import SpayNeuter from "./components/vet-services/SpayNeuter/spayNeuter.js";
 import Dentalcare from "./components/vet-services/Dental/dentalcare.js";
@@ -32,6 +33,10 @@ function App() {
         <Route
           path="/services/wellness"
           element={<Wellness wellnessData={services.wellness} />}
+        />
+        <Route
+          path="/services/exotic"
+          element={<Exotic exoticData={services.exotic} />}
         />
         <Route
           path="/services/vaccines"

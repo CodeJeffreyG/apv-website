@@ -21,6 +21,18 @@ const services = {
     images: [wellnessImageOne, wellnessImageTwo],
   },
 
+  exotic: {
+    firstSectionTitle: "Exotic Pet Care at All Pets Vet",
+    firstSectionInformation:
+      "At All Pets Veterinary Hospital, we extend our comprehensive care services to exotic pets. Our dedicated staff is experienced in the care and treatment of birds, reptiles, small mammals, and other exotic pets, ensuring they receive the best possible care.",
+    secondSectionTitle: "Specialized Care for Unique Pets",
+    secondSectionInformationOne:
+      "Exotic pets have unique needs and require specialized care and attention. We provide routine wellness exams, nutritional counseling, and behavior advice tailored specifically to your exotic pet's needs.",
+    secondSectionInformationTwo:
+      "We are equipped to handle a variety of medical services for your exotic pets, from routine check-ups and preventive care to more complex medical and surgical procedures. Our clinic is prepared with the special equipment and facilities needed to cater to the care of your exotic pet.",
+    images: ["exoticImageOne", "exoticImageTwo"],
+  },
+
   vaccines: {
     firstSectionTitle: "Vaccination Services at All Pets Vet",
     firstSectionInformation:
