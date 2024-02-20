@@ -6,6 +6,7 @@ import Wellness from "./components/vet-services/Wellness/wellness.js";
 import Vaccines from "./components/vet-services/Vaccines/vaccines.js";
 import SpayNeuter from "./components/vet-services/spayNeuter/spayNeuter.js";
 import Dentalcare from "./components/dental/dentalcare.js";
+import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy.js";
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,10 @@ function App() {
         <Route
           path="/services/dental-care"
           element={<Dentalcare dentalCareData={services.dentalCare} />}
+        />
+        <Route
+          path="/services/laser-therapy"
+          element={<LaserTherapy laserTherapyData={services.laserTherapy} />}
         />
       </Routes>
     </BrowserRouter>

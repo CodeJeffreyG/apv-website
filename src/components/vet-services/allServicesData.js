@@ -65,6 +65,42 @@ const services = {
 
     images: [dentalImageOne, dentalImageTwo],
   },
+
+  laserTherapy: {
+    firstSectionTitle: "Laser Therapy Services at All Pets Vet",
+    firstSectionInformation:
+      "Laser therapy at All Pets Veterinary Hospital provides a non-invasive, pain-free, surgery-free, and drug-free treatment, which is used to treat a variety of conditions and can be performed in conjunction with existing treatment protocols. Relief and/or improvement is often noticed within hours depending on the condition and your pet’s response.",
+    secondSectionTitle: "Benefits and Applications of Laser Therapy",
+    secondSectionInformationOne:
+      "The benefits of laser therapy are relatively immediate. Laser therapy can help with post-surgical pain and many acute conditions. Chronic conditions can also be treated with laser therapy, especially those involving inflammation.",
+    secondSectionInformationTwo:
+      "Applications of laser therapy include alleviating chronic pain, arthritis, inflammation, promoting wound healing, and speeding up recovery from surgery or traumatic injuries. Our team will work with you to tailor a specific laser therapy plan for your pet's health needs.",
+    images: ["laserTherapyImageOne", "laserTherapyImageTwo"],
+  },
+
+  microchipping: {
+    firstSectionTitle: "Microchipping Services at All Pets Vet",
+    firstSectionInformation:
+      "Ensure your pet's safety with our microchipping service at All Pets Veterinary Hospital. A simple, quick, and nearly painless procedure, microchipping is one of the most reliable ways to reunite with your pet should they ever get lost.",
+    secondSectionTitle: "The Importance of Microchipping Your Pet",
+    secondSectionInformationOne:
+      "Microchipping is a permanent form of pet identification that cannot be lost, altered, or intentionally removed - a safe way to significantly increase the chance of a lost pet's return.",
+    secondSectionInformationTwo:
+      "Our staff will register the microchip and provide you with all the information you need to keep your pet's identification up to date. Remember, a microchip is only as good as the information linked to it, so keeping your contact details current is crucial.",
+    images: ["microchipImageOne", "microchipImageTwo"],
+  },
+
+  euthanasia: {
+    firstSectionTitle: "Compassionate Euthanasia Services at All Pets Vet",
+    firstSectionInformation:
+      "At All Pets Veterinary Hospital, we offer compassionate euthanasia services, understanding the difficulty of saying goodbye to a beloved pet. Our approach is gentle, respectful, and aimed at providing peace and dignity in your pet's final moments.",
+    secondSectionTitle: "Supporting You Through the Process",
+    secondSectionInformationOne:
+      "We provide a serene, private space for you and your family to spend final moments with your pet, ensuring a peaceful and painless transition with the utmost respect and care.",
+    secondSectionInformationTwo:
+      "Our team is here to support you before, during, and after the procedure, offering guidance on grief support and memorial options to honor your pet's memory.",
+    images: ["euthanasiaImageOne", "euthanasiaImageTwo"],
+  },
 };
 
 export { services };

@@ -94,15 +94,15 @@ function Navbar() {
             </li>
 
             <li>
-              <a href="/services/LaserTherapy">Laser Therapy</a>
+              <a href="/services/laser-therapy">Laser Therapy</a>
             </li>
 
             <li>
-              <a href="/services/Microchipping">Microchipping</a>
+              <a href="/services/microchipping">Microchipping</a>
             </li>
 
             <li>
-              <a href="/services/Euthanasia">Euthanasia</a>
+              <a href="/services/euthanasia">Euthanasia</a>
             </li>
           </ul>
         </li>
