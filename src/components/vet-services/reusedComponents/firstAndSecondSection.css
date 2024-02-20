@@ -1,24 +1,11 @@
-.wellness-visit-container {
-  padding-top: 75px;
-}
-
-.image-container {
-  flex: 1;
-  display: flex;
-  align-items: center; /* Centers the image vertically */
-  justify-content: center; /* Centers the image horizontally */
-  padding: 10px; /* Adds padding around the image */
-  overflow: hidden; /* Prevents the image from overflowing its border-radius */
-}
-
 .section {
   display: flex;
-  height: calc(50vh - 75px);
   align-items: center;
 }
 
 /* Section One - Text on left, image on right */
 .section-one {
+  height: calc(50vh - 75px);
   display: flex;
   background-color: #f0f0f0; /* Grey background */
 }
@@ -40,6 +27,7 @@
 
 .section-one h1 {
   color: #333;
+  font-size: 24px; /* Set a specific font size */
   border-bottom: 3px solid #0073e6; /* Blue underline */
   display: inline-block;
   margin-bottom: 10px;
@@ -70,11 +58,11 @@
 }
 
 .section-two h2 {
-  font-size: larger;
   color: #0073e6; /* Nice blue color for the header */
-  margin-bottom: 10px;
+  font-size: 24px; /* Set the same font size as .section-one h1 */
   border-bottom: 3px solid #0073e6; /* Blue underline */
   display: inline-block;
+  margin-bottom: 10px;
   padding-bottom: 5px;
 }
 
