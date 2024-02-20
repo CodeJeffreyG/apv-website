@@ -1,5 +1,5 @@
-import ServicesFirstSection from "../servicesFirstSection/servicesFirstSection";
-import ServicesSecondSection from "../servicesSecondSection/servicesSecondSection";
+import ServicesFirstSection from "../reusedComponents/servicesFirstSection/servicesFirstSection";
+import ServicesSecondSection from "../reusedComponents/servicesSecondSection/servicesSecondSection";
 import "./spayNeuter.css";
 
 const spayNeuter = ({ spayNeuterData }) => {

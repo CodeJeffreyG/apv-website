@@ -1,5 +1,5 @@
-import ServicesFirstSection from "../vet-services/servicesFirstSection/servicesFirstSection";
-import ServicesSecondSection from "../vet-services/servicesSecondSection/servicesSecondSection";
+import ServicesFirstSection from "../vet-services/reusedComponents/servicesFirstSection/servicesFirstSection";
+import ServicesSecondSection from "../vet-services/reusedComponents/servicesSecondSection/servicesSecondSection";
 import "./dentalcare.css";
 
 const dentalcare = ({ dentalCareData }) => {

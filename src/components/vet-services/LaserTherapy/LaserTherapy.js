@@ -1,6 +1,6 @@
 import React from "react";
-import ServicesFirstSection from "../servicesFirstSection/servicesFirstSection";
-import ServicesSecondSection from "../servicesSecondSection/servicesSecondSection";
+import ServicesFirstSection from "../reusedComponents/servicesFirstSection/servicesFirstSection";
+import ServicesSecondSection from "../reusedComponents/servicesSecondSection/servicesSecondSection";
 import "./laserTherapy.css";
 
 const LaserTherapy = ({ laserTherapyData }) => {
