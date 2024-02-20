@@ -5,8 +5,9 @@ import MainComponent from "./components/MainComponent/maincomponent.js";
 import Wellness from "./components/vet-services/Wellness/wellness.js";
 import Vaccines from "./components/vet-services/Vaccines/vaccines.js";
 import SpayNeuter from "./components/vet-services/SpayNeuter/spayNeuter.js";
-import Dentalcare from "./components/dental/dentalcare.js";
-import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy.js";
+import Dentalcare from "./components/vet-services/Dental/dentalcare.js";
+import LaserTherapy from "./components/vet-services/LaserTherapy/laserTherapy.js";
+import Microchipping from "./components/vet-services/Microchipping/microchipping.js";
 function App() {
   return (
     <BrowserRouter>
@@ -32,6 +33,10 @@ function App() {
         <Route
           path="/services/laser-therapy"
           element={<LaserTherapy laserTherapyData={services.laserTherapy} />}
+        />
+        <Route
+          path="/services/microchipping"
+          element={<Microchipping microchippingData={services.microchipping} />}
         />
       </Routes>
     </BrowserRouter>
