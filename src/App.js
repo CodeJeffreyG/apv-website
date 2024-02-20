@@ -4,7 +4,7 @@ import Navbar from "./components/navbar/navbar.js";
 import MainComponent from "./components/MainComponent/maincomponent.js";
 import Wellness from "./components/vet-services/Wellness/wellness.js";
 import Vaccines from "./components/vet-services/Vaccines/vaccines.js";
-import SpayNeuter from "./components/vet-services/spayNeuter/spayNeuter.js";
+import SpayNeuter from "./components/vet-services/SpayNeuter/spayNeuter.js";
 import Dentalcare from "./components/dental/dentalcare.js";
 import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy.js";
 function App() {
