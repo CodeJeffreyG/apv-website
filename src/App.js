@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { services } from "./components/vet-services/allServicesData.js";
-
+import { useState } from "react";
 //nav
 import Navbar from "./components/navbar/navbar.js";
 //nav
@@ -21,6 +21,18 @@ import Euthanasia from "./components/vet-services/Euthanasia/euthanasia.js";
 //services
 
 function App() {
+  // all data for each component
+  const {
+    wellness,
+    exotic,
+    vaccines,
+    spayNeuter,
+    dentalCare,
+    laserTherapy,
+    microchipping,
+    euthanasia,
+  } = services;
+
   return (
     <BrowserRouter>
       <Navbar />
@@ -32,35 +44,35 @@ function App() {
         {/* services components */}
         <Route
           path="/services/wellness"
-          element={<Wellness wellnessData={services.wellness} />}
+          element={<Wellness wellnessData={wellness} />}
         />
         <Route
           path="/services/exotic"
-          element={<Exotic exoticData={services.exotic} />}
+          element={<Exotic exoticData={exotic} />}
         />
         <Route
           path="/services/vaccines"
-          element={<Vaccines vxData={services.vaccines} />}
+          element={<Vaccines vxData={vaccines} />}
         />
         <Route
           path="/services/spay-neuter"
-          element={<SpayNeuter spayNeuterData={services.spayNeuter} />}
+          element={<SpayNeuter spayNeuterData={spayNeuter} />}
         />
         <Route
           path="/services/dental-care"
-          element={<Dentalcare dentalCareData={services.dentalCare} />}
+          element={<Dentalcare dentalCareData={dentalCare} />}
         />
         <Route
           path="/services/laser-therapy"
-          element={<LaserTherapy laserTherapyData={services.laserTherapy} />}
+          element={<LaserTherapy laserTherapyData={laserTherapy} />}
         />
         <Route
           path="/services/microchipping"
-          element={<Microchipping microchippingData={services.microchipping} />}
+          element={<Microchipping microchippingData={microchipping} />}
         />
         <Route
           path="/services/euthanasia"
-          element={<Euthanasia euthanasiaData={services.euthanasia} />}
+          element={<Euthanasia euthanasiaData={euthanasia} />}
         />
         {/* services components */}
       </Routes>
