@@ -1,9 +1,10 @@
-import randomPhoto1 from "../media/carousel-images/staffExotic/ferret-emily.jpg";
-import randomPhoto2 from "../media/carousel-images/notStaffCats/cat4.jpg";
-import randomPhoto3 from "../media/carousel-images/notStaffDogs/doggie8.jpg";
+import randomPhoto1 from "../media/carousel-images/notStaffCats/cat4.jpg";
+import randomPhoto2 from "../media/carousel-images/staffExotic/phillipEmilysHamster.jpg";
+import randomPhoto3 from "../media/carousel-images/staffDogs/dozer-belles.jpg";
 import randomPhoto4 from "../media/carousel-images/notStaffDogs/doggie.jpg";
-import randomPhoto5 from "../media/carousel-images/notStaffDogs/
+import randomPhoto5 from "../media/carousel-images/notStaffDogs/doggie2.jpg";
 import randomPhoto6 from "../media/carousel-images/staffExotic/radnor-treenas-bd.jpg";
+import { combinedPhotos } from "./arrayOfPhotos";
 
 import "./maincomponent.css";
 import React from "react";
@@ -47,7 +48,7 @@ const MainComponent = () => {
         effect="fade"
         className="main-swiper-container"
       >
-        {randomImageArray.map((currentImage, index) => {
+        {combinedPhotos.map((currentImage, index) => {
           return (
             <SwiperSlide
               index={index}
