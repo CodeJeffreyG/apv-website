@@ -18,24 +18,24 @@
 }
 
 .hours-leftPanel {
-  background-color: #007bff; /* Or the specific color you want */
+  background-color: #e6f0fa; /* Lighter shade of blue for the left panel */
 }
 
 .hours-rightPanel {
-  background-color: #0056b3; /* Or the specific color you want */
+  background-color: #f2f2f2; /* Warm gray for the right panel */
 }
 
 .hours-leftPanel p,
 .hours-rightPanel p {
-  font-size: 2rem; /* Adjust size as needed */
-  color: #ffffff; /* This is a guess, assuming you want white text */
+  font-size: 2rem;
+  color: #333; /* Darker text for better contrast on light backgrounds */
   margin: 0.5rem 0; /* Adds space between paragraphs */
   line-height: 1.5; /* Adjusts the space between lines for readability */
 }
 
 .hours-leftPanel h2,
 .hours-rightPanel h2 {
-  color: #ffffff; /* This is a guess, assuming you want white text for headings too */
+  color: #0f1ae2; /* Blue color from the navbar to maintain consistency */
   margin-bottom: 1rem; /* Adds some space below the heading */
 }
 
@@ -48,8 +48,17 @@
 /* If there is a specific line that needs to be emphasized */
 .hours-rightPanel .please-call-important {
   font-weight: bold;
-  color: #ffd700; /* Just an example, use the color that matches your design */
+  color: #0f1ae2; /* Blue color for important text to tie in with the navbar color */
+  background-color: transparent; /* No background color for emphasis */
+  padding: 0.5rem 1rem; /* Padding to match the navbar emergency link */
+  border-radius: 5px; /* Rounded corners to match the navbar style */
 }
+
+.hours-leftPanel p,
+.hours-leftPanel h2 {
+  color: #0f1ae2; /* Navy blue for good contrast on light blue background */
+}
+
 
 /* Responsive font sizes for smaller screens */
 @media (max-width: 768px) {
