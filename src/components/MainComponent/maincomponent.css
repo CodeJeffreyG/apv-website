@@ -2,11 +2,11 @@
   position: "relative";
   height: calc(100vh -75px);
   width: 100%;
-  padding-top: 75px;
+  padding-top: 91px;
 }
 
 .main-swiper-container {
-  height: calc(100vh - 75px); /* Adjust height as needed */
+  height: calc(100vh - 90px); /* Adjust height as needed */
 }
 
 .main-hero {
@@ -16,7 +16,6 @@
 }
 
 .main-individual-slide-container {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

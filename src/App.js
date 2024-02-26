@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+//all services data 
 import { services } from "./components/vet-services/allServicesData.js";
-import { useState } from "react";
+
 //nav
 import Navbar from "./components/navbar/navbar.js";
 //nav
