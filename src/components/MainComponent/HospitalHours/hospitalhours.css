@@ -35,7 +35,6 @@
 
 .hours-leftPanel h2,
 .hours-rightPanel h2 {
-  color: #0f1ae2; /* Blue color from the navbar to maintain consistency */
   margin-bottom: 1rem; /* Adds some space below the heading */
 }
 
@@ -43,12 +42,13 @@
 .hours-rightPanel h2 {
   font-weight: bold;
   font-size: 1.5rem; /* Larger font size for emphasis */
+  color: black;
 }
 
 /* If there is a specific line that needs to be emphasized */
 .hours-rightPanel .please-call-important {
   font-weight: bold;
-  color: #0f1ae2; /* Blue color for important text to tie in with the navbar color */
+  color: black; /* Blue color for important text to tie in with the navbar color */
   background-color: transparent; /* No background color for emphasis */
   padding: 0.5rem 1rem; /* Padding to match the navbar emergency link */
   border-radius: 5px; /* Rounded corners to match the navbar style */
