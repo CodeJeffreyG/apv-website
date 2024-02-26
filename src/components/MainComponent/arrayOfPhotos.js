@@ -48,7 +48,7 @@ function flattenPhotos(photosByCategory) {
     []
   );
 }
-
+// chooses random photos, takes in an array of photos as argument
 function getRandomPhotos(photos, count = 3) {
   let selectedPhotos = [];
   let usedIndices = new Set();
@@ -66,17 +66,17 @@ function getRandomPhotos(photos, count = 3) {
 
   return selectedPhotos;
 }
-
+//returns array of staff photos
 function getRandomStaffPhotos() {
   const staffPhotos = flattenPhotos(staffAnimals());
   return getRandomPhotos(staffPhotos);
 }
-
+//returns array of not staff photos
 function getRandomNonStaffPhotos() {
   const nonStaffPhotos = flattenPhotos(allNotStaffAnimals());
   return getRandomPhotos(nonStaffPhotos);
 }
-
+//spreads staff photos and shuffles them
 function combinePhotos(staffPhotos, nonStaffPhotos) {
   const combinedPhotos = [...staffPhotos, ...nonStaffPhotos];
 
@@ -86,14 +86,16 @@ function combinePhotos(staffPhotos, nonStaffPhotos) {
     [combinedPhotos[i], combinedPhotos[j]] = [
       combinedPhotos[j],
       combinedPhotos[i],
-    ]; // Swap elements
+    ];
   }
 
   return combinedPhotos;
 }
 
+//instantiates arrays of random staff and non staff photos
 const staffPhotos = getRandomStaffPhotos();
 const nonStaffPhotos = getRandomNonStaffPhotos();
+//passes them to combine photos to create array of shuffled random photos of staff and non staff
 const combinedPhotos = combinePhotos(staffPhotos, nonStaffPhotos);
 
 export { combinedPhotos };
