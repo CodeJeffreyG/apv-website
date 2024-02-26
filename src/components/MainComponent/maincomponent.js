@@ -1,8 +1,8 @@
-import randomPhoto1 from "../media/carousel-images/staffExotic/bunny-emily.jpg";
+import randomPhoto1 from "../media/carousel-images/staffExotic/ferret-emily.jpg";
 import randomPhoto2 from "../media/carousel-images/notStaffCats/cat4.jpg";
-import randomPhoto3 from "../media/carousel-images/notStaffDogs/doggie7.jpg;";
+import randomPhoto3 from "../media/carousel-images/notStaffDogs/doggie8.jpg";
 import randomPhoto4 from "../media/carousel-images/notStaffDogs/doggie.jpg";
-import randomPhoto5 from "../media/carousel-images/notStaffDogs/doggie2.jpg";
+import randomPhoto5 from "../media/carousel-images/notStaffDogs/
 import randomPhoto6 from "../media/carousel-images/staffExotic/radnor-treenas-bd.jpg";
 
 import "./maincomponent.css";
