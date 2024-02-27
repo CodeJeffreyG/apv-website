@@ -1,11 +1,4 @@
-import randomPhoto1 from "../media/carousel-images/notStaffCats/cat4.jpg";
-import randomPhoto2 from "../media/carousel-images/staffExotic/phillipEmilysHamster.jpg";
-import randomPhoto3 from "../media/carousel-images/staffDogs/dozer-belles.jpg";
-import randomPhoto4 from "../media/carousel-images/notStaffDogs/doggie.jpg";
-import randomPhoto5 from "../media/carousel-images/notStaffDogs/doggie2.jpg";
-import randomPhoto6 from "../media/carousel-images/staffExotic/radnor-treenas-bd.jpg";
 import { combinedPhotos } from "./arrayOfPhotos";
-
 import "./maincomponent.css";
 import React from "react";
 import HospitalHours from "./HospitalHours/hospitalhours";
@@ -26,15 +19,6 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 const MainComponent = () => {
-  const randomImageArray = [
-    randomPhoto1,
-    randomPhoto2,
-    randomPhoto3,
-    randomPhoto4,
-    randomPhoto5,
-    randomPhoto6,
-  ];
-
   return (
     <div className="main-container">
       <Swiper
