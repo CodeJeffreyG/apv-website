@@ -1,7 +1,7 @@
 import React from "react";
 import "../firstAndSecondSection.css";
 
-const servicesSecondSection = ({ textInformation, image }) => {
+const ServicesSecondSection = ({ textInformation, image }) => {
   return (
     <div className="section section-two">
       <div className="image-container">
@@ -20,4 +20,4 @@ const servicesSecondSection = ({ textInformation, image }) => {
   );
 };
 
-export default servicesSecondSection;
+export default ServicesSecondSection;

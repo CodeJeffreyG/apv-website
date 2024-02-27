@@ -1,7 +1,7 @@
 import React from "react";
 import "./euthanasia.css";
-import ServicesFirstSection from "../reusedComponents/servicesFirstSection/servicesFirstSection";
-import ServicesSecondSection from "../reusedComponents/servicesSecondSection/servicesSecondSection";
+import ServicesFirstSection from "../reusedComponents/servicesFirstSection/ServicesFirstSection";
+import ServicesSecondSection from "../reusedComponents/servicesSecondSection/ServicesSecondSection";
 
 const Euthanasia = ({ euthanasiaData }) => {
   return (
