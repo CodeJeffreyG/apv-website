@@ -12,13 +12,13 @@ import MainComponent from "./components/MainComponent/maincomponent.js";
 
 //services
 import Wellness from "./components/vet-services/Wellness/wellness.js";
-import Exotic from "./components/vet-services/Exotic/exotic.js";
-import Vaccines from "./components/vet-services/Vaccines/vaccines.js";
-// import SpayNeuter from "./components/vet-services/SpayNeuter/spayNeuter";
-import Dentalcare from "./components/vet-services/Dental/dentalcare.js";
-import LaserTherapy from "./components/vet-services/LaserTherapy/laserTherapy.js";
-import Microchipping from "./components/vet-services/Microchipping/microchipping.js";
-import Euthanasia from "./components/vet-services/Euthanasia/euthanasia.js";
+import Exotic from "./components/vet-services/Exotic/Exotic.js";
+import Vaccines from "./components/vet-services/Vaccines/Vaccines.js";
+import SpayNeuter from "./components/vet-services/SpayNeuter/SpayNeuter.js";
+import DentalCare from "./components/vet-services/Dental/DentalCare.js";
+import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy.js";
+import Microchipping from "./components/vet-services/Microchipping/Microchipping.js";
+import Euthanasia from "./components/vet-services/Euthanasia/Euthanasia.js";
 //services
 
 function App() {
@@ -55,13 +55,13 @@ function App() {
           path="/services/vaccines"
           element={<Vaccines vxData={vaccines} />}
         />
-        {/* <Route
+        <Route
           path="/services/spay-neuter"
           element={<SpayNeuter spayNeuterData={spayNeuter} />}
-        /> */}
+        />
         <Route
           path="/services/dental-care"
-          element={<Dentalcare dentalCareData={dentalCare} />}
+          element={<DentalCare dentalCareData={dentalCare} />}
         />
         <Route
           path="/services/laser-therapy"

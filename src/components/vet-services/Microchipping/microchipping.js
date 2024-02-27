@@ -2,8 +2,7 @@ import React from "react";
 import "./microchipping.css";
 import ServicesFirstSection from "../reusedComponents/servicesFirstSection/servicesFirstSection";
 import ServicesSecondSection from "../reusedComponents/servicesSecondSection/servicesSecondSection";
-const microchipping = ({ microchippingData }) => {
-    
+const Microchipping = ({ microchippingData }) => {
   return (
     <div className="microchipping-container">
       <ServicesFirstSection
@@ -18,4 +17,4 @@ const microchipping = ({ microchippingData }) => {
   );
 };
 
-export default microchipping;
+export default Microchipping;

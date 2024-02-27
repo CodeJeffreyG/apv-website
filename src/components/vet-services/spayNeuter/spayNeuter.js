@@ -2,7 +2,7 @@ import ServicesFirstSection from "../reusedComponents/servicesFirstSection/servi
 import ServicesSecondSection from "../reusedComponents/servicesSecondSection/servicesSecondSection";
 import "./spayNeuter.css";
 
-const spayNeuter = ({ spayNeuterData }) => {
+const SpayNeuter = ({ spayNeuterData }) => {
   return (
     <div className="spayNeuter-container">
       <ServicesFirstSection
@@ -17,4 +17,4 @@ const spayNeuter = ({ spayNeuterData }) => {
   );
 };
 
-export default spayNeuter;
+export default SpayNeuter;

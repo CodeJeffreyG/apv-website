@@ -3,7 +3,7 @@ import "./euthanasia.css";
 import ServicesFirstSection from "../reusedComponents/servicesFirstSection/servicesFirstSection";
 import ServicesSecondSection from "../reusedComponents/servicesSecondSection/servicesSecondSection";
 
-const euthanasia = ({ euthanasiaData }) => {
+const Euthanasia = ({ euthanasiaData }) => {
   return (
     <div className="euthanasia-container">
       <ServicesFirstSection
@@ -18,4 +18,4 @@ const euthanasia = ({ euthanasiaData }) => {
   );
 };
 
-export default euthanasia;
+export default Euthanasia;

@@ -3,7 +3,7 @@ import ServicesFirstSection from "../reusedComponents/servicesFirstSection/servi
 import ServicesSecondSection from "../reusedComponents/servicesSecondSection/servicesSecondSection";
 import "./vaccines.css";
 
-const vaccines = ({ vxData }) => {
+const Vaccines = ({ vxData }) => {
   return (
     <div className="vaccines-visit-container">
       <ServicesFirstSection textInformation={vxData} image={vxData.images[0]} />
@@ -15,4 +15,4 @@ const vaccines = ({ vxData }) => {
   );
 };
 
-export default vaccines;
+export default Vaccines;

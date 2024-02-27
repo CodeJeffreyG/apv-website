@@ -2,7 +2,7 @@ import ServicesFirstSection from "../reusedComponents/servicesFirstSection/servi
 import ServicesSecondSection from "../reusedComponents/servicesSecondSection/servicesSecondSection";
 import "./dentalcare.css";
 
-const dentalcare = ({ dentalCareData }) => {
+const DentalCare = ({ dentalCareData }) => {
   return (
     <div className="spayNeuter-container">
       <ServicesFirstSection
@@ -17,4 +17,4 @@ const dentalcare = ({ dentalCareData }) => {
   );
 };
 
-export default dentalcare;
+export default DentalCare;
