@@ -3,7 +3,7 @@ import "./exotic.css";
 import ServicesFirstSection from "../reusedComponents/servicesFirstSection/ServicesFirstSection";
 import ServicesSecondSection from "../reusedComponents/servicesSecondSection/ServicesSecondSection";
 
-const Exotic = ({ exoticData }) => {
+export default function Exotic({ exoticData }) {
   return (
     <div className="exotic-container">
       <ServicesFirstSection
@@ -16,6 +16,4 @@ const Exotic = ({ exoticData }) => {
       />
     </div>
   );
-};
-
-export default Exotic;
+}
