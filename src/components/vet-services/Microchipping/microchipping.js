@@ -1,7 +1,7 @@
 import React from "react";
 import "./microchipping.css";
-import ServicesFirstSection from "../reusedComponents/servicesFirstSection/ServicesFirstSection";
-import ServicesSecondSection from "../reusedComponents/servicesSecondSection/ServicesSecondSection";
+import ServicesFirstSection from "../ServicesFirstSection";
+import ServicesSecondSection from "../ServicesSecondSection";
 const Microchipping = ({ microchippingData }) => {
   return (
     <div className="microchipping-container">

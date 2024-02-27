@@ -1,5 +1,5 @@
 import React from "react";
-import "../firstAndSecondSection.css";
+import "./firstAndSecondSection.css";
 
 const ServicesSecondSection = ({ textInformation, image }) => {
   return (
