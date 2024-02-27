@@ -19,7 +19,7 @@ import DentalCare from "./components/vet-services/Dental/DentalCare.js";
 import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy.js";
 import Microchipping from "./components/vet-services/Microchipping/Microchipping.js";
 import Euthanasia from "./components/vet-services/Euthanasia/Euthanasia.js";
-//services
+//services //
 
 function App() {
   // all data for each component
