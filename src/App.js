@@ -12,13 +12,13 @@ import MainComponent from "./components/MainComponent/maincomponent.js";
 
 //services
 import Wellness from "./components/vet-services/Wellness/wellness.js";
-import Exotic from "./components/vet-services/Exotic/Exotic.js";
-import Vaccines from "./components/vet-services/Vaccines/Vaccines.js";
-import SpayNeuter from "./components/vet-services/SpayNeuter/SpayNeuter.js";
-import DentalCare from "./components/vet-services/Dental/DentalCare.js";
-import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy.js";
-import Microchipping from "./components/vet-services/Microchipping/Microchipping.js";
-import Euthanasia from "./components/vet-services/Euthanasia/Euthanasia.js";
+import Exotic from "./components/vet-services/Exotic/Exotic";
+import Vaccines from "./components/vet-services/Vaccines/Vaccines";
+import SpayNeuter from "./components/vet-services/SpayNeuter/SpayNeuter";
+import DentalCare from "./components/vet-services/Dental/DentalCare";
+import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy";
+import Microchipping from "./components/vet-services/Microchipping/Microchipping";
+import Euthanasia from "./components/vet-services/Euthanasia/Euthanasia";
 //services //
 
 function App() {
