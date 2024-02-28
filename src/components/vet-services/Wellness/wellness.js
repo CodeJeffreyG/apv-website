@@ -3,7 +3,7 @@ import ServicesFirstSection from "../ServicesFirstSection";
 import ServicesSecondSection from "../ServicesSecondSection";
 import "./wellness.css";
 
-const wellness = ({ wellnessData }) => {
+const Wellness = ({ wellnessData }) => {
   return (
     <div className="wellness-visit-container">
       <ServicesFirstSection
@@ -18,4 +18,4 @@ const wellness = ({ wellnessData }) => {
   );
 };
 
-export default wellness;
+export default Wellness;
