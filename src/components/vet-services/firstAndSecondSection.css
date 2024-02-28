@@ -74,36 +74,63 @@
 }
 
 .text-container p {
-  max-width: 600px; /* Adjust this value as needed */
+  max-width: 50rem; /* Adjust this value as needed */
   margin: 0;
   line-height: 1.6;
 }
 
+@media (min-width: 1024px) {
+  .section-one h1,
+  .section-two h2 {
+    font-size: 36px; /* Increase the font size for larger screens */
+    margin-bottom: 15px; /* Optionally adjust the margin */
+    padding-bottom: 10px; /* Optionally adjust the padding */
+  }
+
+  .text-container p {
+    max-width: 50rem;
+    font-size: 19px; /* Increase the paragraph font size for readability */
+  }
+
+  .pet-image {
+    width: 25rem; /* Increase the width of the image */
+    height: auto; /* Adjust height automatically based on the width to maintain aspect ratio */
+  }
+}
+
 @media (max-width: 768px) {
   .section {
-    flex-direction: column;
-    height: auto;
+    flex-direction: row; /* Arrange items in a row instead of a column */
+    height: 50vh; /* Set each section to full viewport height */
   }
 
   .section .text-container,
   .section .image-container {
-    flex: none;
-    width: 100%;
-    padding: 10px 0; /* Adjust padding for smaller screens */
+    flex: 1; /* Allocate equal space to both containers */
+    height: 100%; /* Ensure each container takes the full height of the section */
+    display: flex; /* Enable flex display for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .section .text-container {
+    padding: 0 20px; /* Add some padding for text readability */
+  }
+
+  .section .image-container {
+    display: flex; /* Ensure the image container is displayed as flex */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
   }
 
   .pet-image {
-    display: none;
-    width: auto; /* Adjust image width to fit its container */
-    max-height: 200px; /* Adjust max height for smaller screens */
+    width: 10rem; /* Ensure the image does not exceed its container's width */
+    /* Ensure the image does not exceed its container's height */
+    height: auto; /* Cover the container while preserving the aspect ratio */
   }
 
   .text-container p {
-    max-width: 100%; /* Allow text to fill the container on smaller screens */
-  }
-
-  .section-two h2 {
-    display: flex;
-    justify-self: center;
+    text-align: left; /* Align the text to the left */
+    max-width: none; /* Remove the max-width restriction */
   }
 }
