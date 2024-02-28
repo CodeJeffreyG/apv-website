@@ -5,6 +5,7 @@ import MobileHamburgerToggle from "./mobilehamburgertoggle/mobilehamburgertoggle
 import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
 import CallIcon from "@mui/icons-material/Call";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -23,9 +24,9 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <a href="/">
+      <Link to="/">
         <img src={logo} className="navbar-logo" alt="Company Logo" />
-      </a>
+      </Link>
 
       <div className="navbar-phone">
         <a href="tel:+2153473997" className="phone-link">
@@ -35,84 +36,84 @@ function Navbar() {
       </div>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
 
         <li className="nav-item">
-          <a href="/contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
 
         <li className="nav-item dropdown">
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
           <ul className="dropdown-menu">
             <li>
-              <a href="/about/history">History</a>
+              <Link to="/about/history">History</Link>
             </li>
             <li>
-              <a href="/about/team">Team</a>
+              <Link to="/about/team">Team</Link>
             </li>
             <li>
-              <a href="/about/mission">Mission</a>
+              <Link to="/about/mission">Mission</Link>
             </li>
           </ul>
         </li>
 
         <li className="nav-item dropdown">
-          <a href="#">Resources</a>{" "}
+          <Link to="#">Resources</Link>{" "}
           {/* Updated href to "#" for dropdown trigger */}
           <ul className="dropdown-menu">
             <li>
-              <a href="/resources/guides">Guides</a>
+              <Link to="/resources/guides">Guides</Link>
             </li>
             <li>
-              <a href="/resources/tutorials">Tutorials</a>
+              <Link to="/resources/tutorials">Tutorials</Link>
             </li>
             <li>
-              <a href="/resources/tools">Tools</a>
+              <Link to="/resources/tools">Tools</Link>
             </li>
           </ul>
         </li>
 
         <li className="nav-item dropdown">
-          <a href="">Services</a>{" "}
+          <Link to="/services/Wellness">Services</Link>{" "}
           {/* Updated href to "#" for dropdown trigger */}
           <ul className="dropdown-menu">
             <li>
-              <a href="/services/Wellness">Wellness</a>
+              <Link to="/services/Wellness">Wellness</Link>
             </li>
 
             <li>
-              <a href="/services/exotic">Exotic</a>
+              <Link to="/services/exotic">Exotic</Link>
             </li>
 
             <li>
-              <a href="/services/vaccines">Vaccines</a>
+              <Link href="/services/vaccines">Vaccines</Link>
             </li>
 
             <li>
-              <a href="/services/spay-neuter">Spay/Neuter</a>
+              <Link to="/services/spay-neuter">Spay/Neuter</Link>
             </li>
 
             <li>
-              <a href="/services/dental-care">Dental Care</a>
+              <Link to="/services/dental-care">Dental Care</Link>
             </li>
 
             <li>
-              <a href="/services/laser-therapy">Laser Therapy</a>
+              <Link to="/services/laser-therapy">Laser Therapy</Link>
             </li>
 
             <li>
-              <a href="/services/microchipping">Microchipping</a>
+              <Link to="/services/microchipping">Microchipping</Link>
             </li>
 
             <li>
-              <a href="/services/euthanasia">Euthanasia</a>
+              <Link to="/services/euthanasia">Euthanasia</Link>
             </li>
           </ul>
         </li>
 
         <li className="nav-item emergency">
-          <a href="/emergency">EMERGENCY</a>
+          <Link to="/emergency">EMERGENCY</Link>
         </li>
       </ul>
 
