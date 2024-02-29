@@ -1,5 +1,7 @@
 import wellnessImageOne from "../media/carousel-images/staffDogs/hazel-zeke-danielle.jpg";
 import wellnessImageTwo from "../media/carousel-images/staff/Kim-With-Dog.jpg";
+import exoticImageOne from "../media/carousel-images/notStaffExotic/bird2.jpg";
+import exoticImageTwo from "../media/carousel-images/notStaffExotic/snake1.jpg";
 import vaccineImageOne from "../media/carousel-images/notStaffCats/cat3.jpg";
 import vaccineImageTwo from "../media/carousel-images/notStaffExotic/bunny1.jpg";
 import spayNeuterImageOne from "../media/carousel-images/notStaffDogs/doggie4.jpg";
@@ -30,7 +32,7 @@ const services = {
       "Exotic pets have unique needs and require specialized care and attention. We provide routine wellness exams, nutritional counseling, and behavior advice tailored specifically to your exotic pet's needs.",
     secondSectionInformationTwo:
       "We are equipped to handle a variety of medical services for your exotic pets, from routine check-ups and preventive care to more complex medical and surgical procedures. Our clinic is prepared with the special equipment and facilities needed to cater to the care of your exotic pet.",
-    images: ["exoticImageOne", "exoticImageTwo"],
+    images: [exoticImageOne, exoticImageTwo],
   },
 
   vaccines: {

@@ -67,6 +67,7 @@
 }
 
 .pet-image {
+  min-height: (50vh - 85px);
   max-height: (50vh - 85px); /* Make the image fill the container height */
   width: 16rem; /* Make the image fill the container width */
   object-fit: cover; /* Cover the area, may crop the image */
