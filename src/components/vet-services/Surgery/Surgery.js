@@ -4,7 +4,7 @@ import "./surgery.css";
 
 const Surgery = ({ surgeryData }) => {
   return (
-    <div className="spayNeuter-container">
+    <div className="surgery-container">
       <ServicesFirstSection
         textInformation={surgeryData}
         image={surgeryData.images[0]}

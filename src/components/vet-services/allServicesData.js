@@ -104,7 +104,7 @@ const services = {
     images: ["microchipImageOne", "microchipImageTwo"],
   },
 
-  euthanasia: {
+  hospice: {
     firstSectionTitle: "Compassionate Euthanasia Services at All Pets Vet",
     firstSectionInformation:
       "At All Pets Veterinary Hospital, we offer compassionate euthanasia services, understanding the difficulty of saying goodbye to a beloved pet. Our approach is gentle, respectful, and aimed at providing peace and dignity in your pet's final moments.",

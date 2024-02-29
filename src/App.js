@@ -18,7 +18,7 @@ import Surgery from "./components/vet-services/Surgery/Surgery.js";
 import DentalCare from "./components/vet-services/Dental/Dentalcare.js";
 import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy";
 import Microchipping from "./components/vet-services/Microchipping/Microchipping.js";
-import Euthanasia from "./components/vet-services/Euthanasia/Euthanasia.js";
+import Hospice from "./components/vet-services/Hospice/Hospice.js";
 //services //
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
     dentalCare,
     laserTherapy,
     microchipping,
-    euthanasia,
+    hospice,
   } = services;
 
   return (
@@ -72,8 +72,8 @@ function App() {
           element={<Microchipping microchippingData={microchipping} />}
         />
         <Route
-          path="/services/euthanasia"
-          element={<Euthanasia euthanasiaData={euthanasia} />}
+          path="/services/hospice"
+          element={<Hospice hospiceData={hospice} />}
         />
         {/* services components */}
       </Routes>
