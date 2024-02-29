@@ -67,8 +67,8 @@
 }
 
 .pet-image {
-  height: 100%; /* Make the image fill the container height */
-  width: 15rem; /* Make the image fill the container width */
+  max-height: (50vh - 85px); /* Make the image fill the container height */
+  width: 16rem; /* Make the image fill the container width */
   object-fit: cover; /* Cover the area, may crop the image */
   border-radius: 20px; /* Rounded corners for the image */
 }
@@ -79,21 +79,40 @@
   line-height: 1.6;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1400px) {
   .section-one h1,
   .section-two h2 {
-    font-size: 36px; /* Increase the font size for larger screens */
-    margin-bottom: 15px; /* Optionally adjust the margin */
+    font-size: 30px; /* Increase the font size for larger screens */
+    margin-bottom: 12px; /* Optionally adjust the margin */
     padding-bottom: 10px; /* Optionally adjust the padding */
   }
 
   .text-container p {
-    max-width: 50rem;
-    font-size: 19px; /* Increase the paragraph font size for readability */
+    max-width: 40rem;
+    font-size: 16px; /* Increase the paragraph font size for readability */
   }
 
   .pet-image {
-    width: 25rem; /* Increase the width of the image */
+    width: 14rem; /* Increase the width of the image */
+    height: auto; /* Adjust height automatically based on the width to maintain aspect ratio */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section-one h1,
+  .section-two h2 {
+    font-size: 24px; /* Increase the font size for larger screens */
+    margin-bottom: 12px; /* Optionally adjust the margin */
+    padding-bottom: 10px; /* Optionally adjust the padding */
+  }
+
+  .text-container p {
+    max-width: 30rem;
+    font-size: 14px; /* Increase the paragraph font size for readability */
+  }
+
+  .pet-image {
+    width: 15rem; /* Increase the width of the image */
     height: auto; /* Adjust height automatically based on the width to maintain aspect ratio */
   }
 }
@@ -118,14 +137,14 @@
   }
 
   .section .image-container {
+    flex: 0;
     display: flex; /* Ensure the image container is displayed as flex */
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
   }
 
   .pet-image {
-    width: 10rem; /* Ensure the image does not exceed its container's width */
-    /* Ensure the image does not exceed its container's height */
+    display: none;
     height: auto; /* Cover the container while preserving the aspect ratio */
   }
 
