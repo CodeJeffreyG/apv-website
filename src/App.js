@@ -13,7 +13,7 @@ import MainComponent from "./components/MainComponent/maincomponent.js";
 //services
 import Wellness from "./components/vet-services/Wellness/Wellness.js";
 import Exotic from "./components/vet-services/Exotic/Exotic.js";
-import Vaccines from "./components/vet-services/Vaccines/Vaccines.js";
+import Preventative from "./components/vet-services/Preventative/Preventative.js";
 import Surgery from "./components/vet-services/Surgery/Surgery.js";
 import DentalCare from "./components/vet-services/Dental/Dentalcare.js";
 import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy";
@@ -26,7 +26,7 @@ function App() {
   const {
     wellness,
     exotic,
-    vaccines,
+    preventative,
     surgery,
     dentalCare,
     laserTherapy,
@@ -52,8 +52,8 @@ function App() {
           element={<Exotic exoticData={exotic} />}
         />
         <Route
-          path="/services/vaccines"
-          element={<Vaccines vxData={vaccines} />}
+          path="/services/preventative"
+          element={<Preventative preventativeData={preventative} />}
         />
         <Route
           path="/services/surgery"

@@ -35,7 +35,7 @@ const services = {
     images: [exoticImageOne, exoticImageTwo],
   },
 
-  vaccines: {
+  preventative: {
     firstSectionTitle: "Vaccination Services at All Pets Vet",
     firstSectionInformation:
       "Our comprehensive vaccination services at All Pets Veterinary Hospital are designed to protect your pets from common and serious infectious diseases. We understand the importance of personalized vaccine protocols that cater to your pet's lifestyle, age, and health status.",

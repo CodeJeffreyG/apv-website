@@ -84,7 +84,7 @@ function Navbar() {
             </li>
 
             <li>
-              <Link to="/services/preventative-care">Preventative</Link>
+              <Link to="/services/preventative">Preventative</Link>
             </li>
 
             <li>
