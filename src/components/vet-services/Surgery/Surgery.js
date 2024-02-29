@@ -1,6 +1,6 @@
 import ServicesFirstSection from "../ServicesFirstSection";
 import ServicesSecondSection from "../ServicesSecondSection";
-import "./surgeryData.css";
+import "./surgery.css";
 
 const Surgery = ({ surgeryData }) => {
   return (

@@ -4,8 +4,8 @@ import exoticImageOne from "../media/carousel-images/notStaffExotic/bird2.jpg";
 import exoticImageTwo from "../media/carousel-images/notStaffExotic/snake1.jpg";
 import vaccineImageOne from "../media/carousel-images/notStaffCats/cat3.jpg";
 import vaccineImageTwo from "../media/carousel-images/notStaffExotic/bunny1.jpg";
-import spayNeuterImageOne from "../media/carousel-images/notStaffDogs/doggie4.jpg";
-import spayNeuterImageTwo from "../media/carousel-images/notStaffDogs/doggie3.jpg";
+import surgeryImageOne from "../media/carousel-images/notStaffDogs/doggie4.jpg";
+import surgeryImageTwo from "../media/carousel-images/notStaffDogs/doggie3.jpg";
 import dentalImageOne from "../media/carousel-images/notStaffDogs/doggie6.jpg";
 import dentalImageTwo from "../media/carousel-images/notStaffDogs/doggie5.jpg";
 
@@ -51,18 +51,18 @@ const services = {
   },
 
   surgery: {
-    firstSectionTitle: "Spay and Neuter Services at All Pets Vet",
+    firstSectionTitle: "Comprehensive Surgical Services at All Pets Vet",
     firstSectionInformation:
-      "At All Pets Veterinary Hospital, our spay and neuter services are designed to provide safe and compassionate care for your pets. These procedures are crucial not only for controlling the pet population but also for preventing various health issues and behavioral problems in pets.",
+      "At All Pets Veterinary Hospital, we offer a wide range of surgical services beyond spaying and neutering, aimed at providing your pets with the highest level of care. Our surgical procedures address a variety of health issues, ensuring your pet's well-being and longevity.",
 
-    secondSectionTitle: "The Benefits of Spaying and Neutering Your Pet",
+    secondSectionTitle: "Advantages of Professional Veterinary Surgery",
     secondSectionInformationOne:
-      "Spaying or neutering your pet can lead to a healthier, longer life by preventing serious health issues such as uterine infections, breast tumors, testicular cancer, and prostate problems. These procedures can also help reduce behaviors such as roaming, aggression, and marking territory.",
+      "Undergoing surgery at our hospital can significantly improve your pet's quality of life, addressing conditions such as internal disorders, skin masses, and emergency injuries. Our surgeries are performed with the utmost care, reducing the risk of complications and enhancing recovery.",
 
     secondSectionInformationTwo:
-      "Our experienced veterinary team will guide you through the process, providing pre-surgical advice and post-operative care to ensure your pet recovers quickly and comfortably. We use the latest surgical techniques and pain management protocols to minimize discomfort and promote a swift recovery.",
+      "Our skilled veterinary surgeons utilize state-of-the-art technology and techniques to ensure the safety and comfort of your pet during and after surgery. We provide comprehensive pre-surgical evaluations and tailored post-operative care, focusing on pain management and quick recovery.",
 
-    images: [spayNeuterImageOne, spayNeuterImageTwo],
+    images: [surgeryImageOne, surgeryImageTwo],
   },
 
   dentalCare: {

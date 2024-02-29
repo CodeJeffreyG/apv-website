@@ -57,7 +57,7 @@ function App() {
         />
         <Route
           path="/services/surgery"
-          element={<Surgery surgeryNeuterData={surgery} />}
+          element={<Surgery surgeryData={surgery} />}
         />
         <Route
           path="/services/dental-care"
