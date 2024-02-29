@@ -84,11 +84,11 @@ function Navbar() {
             </li>
 
             <li>
-              <Link to="/services/vaccines">Vaccines</Link>
+              <Link to="/services/preventative-care">Preventative</Link>
             </li>
 
             <li>
-              <Link to="/services/spay-neuter">Spay/Neuter</Link>
+              <Link to="/services/surgery">Surgery</Link>
             </li>
 
             <li>
@@ -104,7 +104,7 @@ function Navbar() {
             </li>
 
             <li>
-              <Link to="/services/euthanasia">Euthanasia</Link>
+              <Link to="/services/Hospice">Hospice</Link>
             </li>
           </ul>
         </li>

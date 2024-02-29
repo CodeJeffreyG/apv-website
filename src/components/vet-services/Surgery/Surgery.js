@@ -1,20 +1,20 @@
 import ServicesFirstSection from "../ServicesFirstSection";
 import ServicesSecondSection from "../ServicesSecondSection";
-import "./spayNeuter.css";
+import "./surgeryData.css";
 
-const SpayNeuter = ({ spayNeuterData }) => {
+const Surgery = ({ surgeryData }) => {
   return (
     <div className="spayNeuter-container">
       <ServicesFirstSection
-        textInformation={spayNeuterData}
-        image={spayNeuterData.images[0]}
+        textInformation={surgeryData}
+        image={surgeryData.images[0]}
       />
       <ServicesSecondSection
-        textInformation={spayNeuterData}
-        image={spayNeuterData.images[1]}
+        textInformation={surgeryData}
+        image={surgeryData.images[1]}
       />
     </div>
   );
 };
 
-export default SpayNeuter;
+export default Surgery;

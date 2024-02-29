@@ -50,7 +50,7 @@ const services = {
     images: [vaccineImageOne, vaccineImageTwo],
   },
 
-  spayNeuter: {
+  surgery: {
     firstSectionTitle: "Spay and Neuter Services at All Pets Vet",
     firstSectionInformation:
       "At All Pets Veterinary Hospital, our spay and neuter services are designed to provide safe and compassionate care for your pets. These procedures are crucial not only for controlling the pet population but also for preventing various health issues and behavioral problems in pets.",

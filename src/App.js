@@ -14,7 +14,7 @@ import MainComponent from "./components/MainComponent/maincomponent.js";
 import Wellness from "./components/vet-services/Wellness/Wellness.js";
 import Exotic from "./components/vet-services/Exotic/Exotic.js";
 import Vaccines from "./components/vet-services/Vaccines/Vaccines.js";
-import SpayNeuter from "./components/vet-services/spayNeuter/SpayNeuter.js";
+import Surgery from "./components/vet-services/Surgery/Surgery.js";
 import DentalCare from "./components/vet-services/Dental/Dentalcare.js";
 import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy";
 import Microchipping from "./components/vet-services/Microchipping/Microchipping.js";
@@ -27,7 +27,7 @@ function App() {
     wellness,
     exotic,
     vaccines,
-    spayNeuter,
+    surgery,
     dentalCare,
     laserTherapy,
     microchipping,
@@ -56,8 +56,8 @@ function App() {
           element={<Vaccines vxData={vaccines} />}
         />
         <Route
-          path="/services/spay-neuter"
-          element={<SpayNeuter spayNeuterData={spayNeuter} />}
+          path="/services/surgery"
+          element={<Surgery surgeryNeuterData={surgery} />}
         />
         <Route
           path="/services/dental-care"
