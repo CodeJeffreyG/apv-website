@@ -84,7 +84,7 @@ function Navbar() {
             </li>
 
             <li>
-              <Link href="/services/vaccines">Vaccines</Link>
+              <Link to="/services/vaccines">Vaccines</Link>
             </li>
 
             <li>
