@@ -21,6 +21,8 @@ import Microchipping from "./components/vet-services/Microchipping/Microchipping
 import Hospice from "./components/vet-services/Hospice/Hospice.js";
 //services //
 
+import Emergency from "./components/Emergency/Emergency.js";
+
 function App() {
   // all data for each component
   const {
@@ -76,6 +78,8 @@ function App() {
           element={<Hospice hospiceData={hospice} />}
         />
         {/* services components */}
+
+        <Route path="/emergency" element={<Emergency />} />
       </Routes>
     </BrowserRouter>
   );

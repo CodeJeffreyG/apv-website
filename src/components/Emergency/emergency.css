@@ -1,3 +1,6 @@
 .emergency-container {
   padding-top: 75px;
+  height: calc(100vh - px);
+  width: 100%;
+  background-color: red;
 }

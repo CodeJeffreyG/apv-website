@@ -4,7 +4,7 @@ import "./dentalcare.css";
 
 const DentalCare = ({ dentalCareData }) => {
   return (
-    <div className="spayNeuter-container">
+    <div className="dentalcare-container">
       <ServicesFirstSection
         textInformation={dentalCareData}
         image={dentalCareData.images[0]}
