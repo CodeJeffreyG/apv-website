@@ -1,6 +1,51 @@
 .emergency-container {
-  padding-top: 75px;
-  height: calc(100vh - px);
+  padding-top: 95px;
+  height: calc(100vh - 95px);
   width: 100%;
-  background-color: red;
+  background-color: #fff; /* Assuming a white background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Arial", sans-serif; /* Use the font that matches your design */
+}
+
+.emergency-header {
+  font-size: 24px; /* Adjust the size to match your design */
+  font-weight: bold;
+  margin-bottom: 20px; /* Adjust the margin to match your design */
+}
+
+.emergency-instructions {
+  font-size: 18px; /* Adjust the size to match your design */
+  margin-bottom: 30px; /* Adjust the margin to match your design */
+  text-align: center;
+  max-width: 600px; /* Adjust the width to match your design */
+}
+
+.emergency-lists {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.emergency-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.emergency-type {
+  font-size: 20px; /* Adjust the size to match your design */
+  font-weight: bold;
+  margin-bottom: 15px; /* Adjust the margin to match your design */
+}
+
+.emergency-link {
+  font-size: 18px; /* Adjust the size to match your design */
+  color: #0000ee; /* Standard link color, adjust if needed */
+  text-decoration: none; /* No underline, adjust if needed */
+  margin-bottom: 10px; /* Adjust the margin to match your design */
+}
+
+.emergency-link:hover {
+  text-decoration: underline; /* Underline on hover, adjust if needed */
 }
