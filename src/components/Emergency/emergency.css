@@ -6,19 +6,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-family: "Arial", sans-serif; /* Use the font that matches your design */
 }
 
+.emergency-header-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .emergency-header {
+  justify-self: center;
   font-size: 36px; /* Adjust the size to match your design */
   font-weight: bold;
-  margin-bottom: 20px; /* Adjust the margin to match your design */
+  margin-bottom: 12px;
 }
 
 .emergency-instructions {
-  font-size: 24px; /* Adjust the size to match your design */
-  margin-bottom: 30px; /* Adjust the margin to match your design */
+  font-size: 24px; /* Adjust the size to match your design */ /* Adjust the margin to match your design */
   text-align: left;
   max-width: 600px; /* Adjust the width to match your design */
 }
@@ -45,7 +51,6 @@
   justify-content: center;
   font-size: 28px; /* Adjust the size to match your design */
   font-weight: bold;
-  margin-bottom: 15px; /* Adjust the margin to match your design */
 }
 
 .emergency-link {
