@@ -11,6 +11,7 @@
 }
 
 .emergency-header-container {
+  padding-top: 2.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -72,4 +73,51 @@
   display: block; /* Ensure the additional information is displayed on a new line */
   font-size: 18px; /* Smaller font size for the additional information */
   color: #555; /* Subdued color for the additional information */
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .emergency-header {
+    font-size: 28px; /* Slightly larger for tablet devices */
+  }
+
+  .emergency-instructions {
+    font-size: 20px; /* Adjusted for readability on tablets */
+  }
+
+  .emergency-type {
+    font-size: 24px; /* Larger type for clarity */
+  }
+
+  .emergency-link {
+    font-size: 20px; /* Links are larger for easier interaction */
+  }
+
+  .emergency-link-info {
+    font-size: 16px; /* Info text size increased for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .emergency-header {
+    font-size: 24px;
+  }
+
+  .emergency-instructions {
+    font-size: 16px;
+  }
+
+  .emergency-type {
+    font-size: 20px;
+  }
+
+  .emergency-link {
+    font-size: 16px; /* Adjust the size to match your design */
+  }
+
+  .emergency-link-info {
+    font-size: 12px;
+  }
 }
