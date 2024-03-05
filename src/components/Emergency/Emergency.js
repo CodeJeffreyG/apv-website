@@ -12,7 +12,7 @@ const Emergency = () => {
       </div>
       <div className="emergency-lists">
         <div className="emergency-column">
-          <div className="emergency-type">Handles all pets</div>
+          <div className="emergency-type">Handles all pets:</div>
           <a href="#" className="emergency-link">
             Keystone Veterinary Emergency
           </a>
@@ -24,7 +24,7 @@ const Emergency = () => {
           </a>
         </div>
         <div className="emergency-column">
-          <div className="emergency-type">Only Exotic</div>
+          <div className="emergency-type">Only Exotic:</div>
           <a href="#" className="emergency-link">
             VRC - Veterinary Referral Center
           </a>
