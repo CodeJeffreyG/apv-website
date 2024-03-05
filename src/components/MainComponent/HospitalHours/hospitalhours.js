@@ -15,9 +15,10 @@ const hospitalhours = () => {
       </div>
       <div className="hours-rightPanel">
         <h2>Our priority is to minimize stress.</h2>
-        <h2>Call: </h2>
+
         <p className="please-call-important">
-          Please call when you arrive so we can prepare for your visit.
+          Please Call: <a href="tel:+2153473997">(484)-461-7520</a>
+          <br /> when you arrive so we can prepare for your visit.
         </p>
       </div>
     </div>
