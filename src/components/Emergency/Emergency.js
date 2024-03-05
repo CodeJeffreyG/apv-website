@@ -12,7 +12,7 @@ const Emergency = () => {
       </div>
       <div className="emergency-lists">
         <div className="emergency-column">
-          <div className="emergency-type">Handles all pets:</div>
+          <div className="emergency-type">Only Cats & Dogs:</div>
           <a href="#" className="emergency-link">
             Keystone Veterinary Emergency
           </a>
@@ -26,13 +26,16 @@ const Emergency = () => {
         <div className="emergency-column">
           <div className="emergency-type">Only Exotic:</div>
           <a href="#" className="emergency-link">
-            VRC - Veterinary Referral Center
+            VEG - Veterinary Emergency Group {/*philadelphia PA  24hr*/}
           </a>
           <a href="#" className="emergency-link">
-            Veterinary Emergency Group
+            Mount Laurel Animal Hospital {/* Mount Larurel Township NJ 24 hr*/}
           </a>
           <a href="#" className="emergency-link">
-            Metropolitan Veterinary Associates
+            Radnor Veterinary Hospital {/* Wayne PA */ }
+          </a>
+          <a href="#" className="emergency-link">
+            Radnor Veterinary Hospital {/* Wayne PA */ }
           </a>
         </div>
       </div>
