@@ -61,18 +61,6 @@
 
 /* Responsive font sizes for smaller screens */
 @media (max-width: 768px) {
-  .hours-leftPanel p,
-  .hours-rightPanel p {
-    font-size: 0.9rem; /* Slightly smaller font size on mobile devices */
-  }
-
-  .hours-rightPanel h2 {
-    font-size: 1.3rem; /* Slightly smaller heading on mobile devices */
-  }
-}
-
-/* Responsive design for screens less than 768px wide */
-@media (max-width: 768px) {
   .hours-container {
     flex-direction: column;
   }
@@ -80,5 +68,14 @@
   .hours-leftPanel,
   .hours-rightPanel {
     height: 100vh;
+  }
+
+  .hours-leftPanel p,
+  .hours-rightPanel p {
+    font-size: 0.9rem; /* Slightly smaller font size on mobile devices */
+  }
+
+  .hours-rightPanel h2 {
+    font-size: 1.3rem; /* Slightly smaller heading on mobile devices */
   }
 }
