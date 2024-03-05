@@ -59,7 +59,6 @@
   color: #0f1ae2; /* Navy blue for good contrast on light blue background */
 }
 
-
 /* Responsive font sizes for smaller screens */
 @media (max-width: 768px) {
   .hours-leftPanel p,
@@ -76,12 +75,10 @@
 @media (max-width: 768px) {
   .hours-container {
     flex-direction: column;
-    min-height: 100vh;
-    max-height: 100vh;
   }
 
   .hours-leftPanel,
   .hours-rightPanel {
-    height: 50%; /* Each panel will take up half the viewport height */
+    height: 100vh;
   }
 }
