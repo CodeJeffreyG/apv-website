@@ -27,15 +27,22 @@ const Emergency = () => {
           <div className="emergency-type">Only Exotic:</div>
           <a href="#" className="emergency-link">
             VEG - Veterinary Emergency Group {/*philadelphia PA  24hr*/}
+            <span className="emergency-link-info">
+              (Philadelphia, PA - 24hr)
+            </span>
           </a>
           <a href="#" className="emergency-link">
             Mount Laurel Animal Hospital {/* Mount Larurel Township NJ 24 hr*/}
+            <span className="emergency-link-info">
+              (Mount Larurel Township, NJ - 24hr)
+            </span>
           </a>
           <a href="#" className="emergency-link">
-            Radnor Veterinary Hospital {/* Wayne PA */ }
+            Radnor Veterinary Hospital {/* Wayne PA */}
+            <span className="emergency-link-info">(Wayne, PA)</span>
           </a>
           <a href="#" className="emergency-link">
-            Radnor Veterinary Hospital {/* Wayne PA */ }
+            Avian & Exotic Medical Center {/* Aston, PA */}
           </a>
         </div>
       </div>
