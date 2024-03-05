@@ -60,7 +60,7 @@
 }
 
 /* Responsive font sizes for smaller screens */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .hours-container {
     flex-direction: column;
   }
