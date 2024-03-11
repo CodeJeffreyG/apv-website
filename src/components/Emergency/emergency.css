@@ -107,7 +107,6 @@
 
   .emergency-header {
     font-size: 24px;
-    background-color: red;
   }
 
   .emergency-instructions {
@@ -135,7 +134,6 @@
   .emergency-header-container {
     display: flex;
     justify-content: center;
-    background-color: yellow;
     height: calc(100vh + 91px);
     margin: 0;
     padding: 0;

@@ -56,22 +56,6 @@ function Navbar() {
         </li>
 
         <li className="nav-item dropdown">
-          <Link to="#">Resources</Link>{" "}
-          {/* Updated href to "#" for dropdown trigger */}
-          <ul className="dropdown-menu">
-            <li>
-              <Link to="/resources/guides">Guides</Link>
-            </li>
-            <li>
-              <Link to="/resources/tutorials">Tutorials</Link>
-            </li>
-            <li>
-              <Link to="/resources/tools">Tools</Link>
-            </li>
-          </ul>
-        </li>
-
-        <li className="nav-item dropdown">
           <Link to="/services/Wellness">Services</Link>{" "}
           {/* Updated href to "#" for dropdown trigger */}
           <ul className="dropdown-menu">
