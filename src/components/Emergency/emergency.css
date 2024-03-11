@@ -100,9 +100,14 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 615px) and (max-width: 768px) {
+  .emergency-container {
+    justify-content: space-evenly;
+  }
+
   .emergency-header {
     font-size: 24px;
+    background-color: red;
   }
 
   .emergency-instructions {
@@ -115,6 +120,57 @@
 
   .emergency-link {
     font-size: 16px; /* Adjust the size to match your design */
+  }
+
+  .emergency-link-info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 614px) {
+  .emergency-container {
+    height: calc(200vh -91px);
+  }
+
+  .emergency-header-container {
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    height: calc(100vh + 91px);
+    margin: 0;
+    padding: 0;
+  }
+
+  .emergency-lists {
+    height: calc(100vh + 91px);
+    margin: 0;
+    padding: 0;
+  }
+
+  .emergency-header {
+    font-size: 24px;
+    background-color: red;
+  }
+
+  .emergency-instructions {
+    font-size: 14px;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .emergency-type {
+    font-size: 20px;
+  }
+
+  .emergency-link {
+    justify-self: center;
+    grid-column: 1 / -1; /* link stretches across the full grid width */
+    grid-row: span 2;
+    padding-top: 0.5rem;
+    font-size: 16px; /* Adjust the size to match your design */
+    color: #0000ee; /* Standard link color, adjust if needed */
+    text-decoration: none; /* No underline, adjust if needed */
+    margin-bottom: 2px; /* Adjust the margin to a smaller value */
   }
 
   .emergency-link-info {
