@@ -3,79 +3,76 @@
   flex-direction: row;
   min-height: calc(100vh - 75px); /* Adjusted to account for the navbar */
   max-height: calc(100vh - 75px); /* Adjusted to account for the navbar */
+  background-color: #f9f9f9; /* Updated container background color */
 }
 
-.hours-leftPanel,
-.hours-rightPanel {
-  flex: 1;
+.hours-leftPanel {
+  background-color: #ffffff; /* Keeping it classic white for a clean look */
+  width: 100%;
+  height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   text-align: center;
-  box-sizing: border-box; /* Include padding in the height calculation */
-}
-
-.hours-leftPanel {
-  background-color: #e6f0fa; /* Lighter shade of blue for the left panel */
+  box-sizing: border-box;
+  border-right: 4px dashed #4a90e2; /* Stylish dashed border for separation */
 }
 
 .hours-rightPanel {
-  background-color: #f2f2f2; /* Warm gray for the right panel */
-}
-
-.hours-leftPanel p,
-.hours-rightPanel p {
-  font-size: 2rem;
-  color: #333; /* Darker text for better contrast on light backgrounds */
-  margin: 0.5rem 0; /* Adds space between paragraphs */
-  line-height: 1.5; /* Adjusts the space between lines for readability */
+  padding-top: 45px;
+  height: calc(30vh - 75px);
+  /* Additional right panel styles if needed */
 }
 
 .hours-leftPanel h2,
 .hours-rightPanel h2 {
-  margin-bottom: 1rem; /* Adds some space below the heading */
-}
-
-/* Additional styling for specific text emphasis */
-.hours-rightPanel h2 {
-  font-weight: bold;
-  font-size: 1.5rem; /* Larger font size for emphasis */
-  color: black;
-}
-
-/* If there is a specific line that needs to be emphasized */
-.hours-rightPanel .please-call-important {
-  font-weight: bold;
-  color: black; /* Blue color for important text to tie in with the navbar color */
-  background-color: transparent; /* No background color for emphasis */
-  padding: 0.5rem 1rem; /* Padding to match the navbar emergency link */
-  border-radius: 5px; /* Rounded corners to match the navbar style */
+  font-size: 2.5rem; /* Updated size for headings */
+  color: #4a90e2; /* A soothing blue for headings */
+  margin-bottom: 1rem;
+  font-weight: 600; /* Slightly bolder for emphasis */
 }
 
 .hours-leftPanel p,
-.hours-leftPanel h2 {
-  color: #0f1ae2; /* Navy blue for good contrast on light blue background */
+.hours-rightPanel p {
+  font-size: 1.4rem; /* Good size for readability */
+  color: #5a5a5a; /* A darker grey for text to provide better readability */
+  margin: 0.5rem 0;
+  line-height: 1.6;
 }
 
-/* Responsive font sizes for smaller screens */
+/* Emphasized text style */
+.hours-rightPanel .please-call-important,
+.hours-leftPanel .please-call-important {
+  /* If you have emphasized text on the left panel too */
+  font-weight: bold;
+  color: #ffffff; /* White text for contrast */
+  background-color: #e74c3c; /* A bold red color to catch attention */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem; /* Additional spacing from the text above */
+}
+
 @media (max-width: 768px) {
   .hours-container {
     flex-direction: column;
   }
-/* hello */
+
   .hours-leftPanel,
   .hours-rightPanel {
-    height: 100vh;
+    width: 100%;
+    height: auto; /* Adjust height to content */
+    border-right: none; /* Remove border for mobile view */
+  }
+
+  .hours-leftPanel h2,
+  .hours-rightPanel h2 {
+    font-size: 2rem; /* Slightly smaller headings for mobile */
   }
 
   .hours-leftPanel p,
   .hours-rightPanel p {
-    font-size: 0.9rem; /* Slightly smaller font size on mobile devices */
-  }
-
-  .hours-rightPanel h2 {
-    font-size: 1.3rem; /* Slightly smaller heading on mobile devices */
+    font-size: 1rem; /* Smaller text for mobile devices */
   }
 }
