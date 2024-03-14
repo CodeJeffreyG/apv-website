@@ -1,62 +1,42 @@
-import { combinedPhotos } from "./arrayOfPhotos";
 import "./maincomponent.css";
 import React from "react";
-import HospitalHours from "./HospitalHours/hospitalhours";
+import HospitalHours from "./HospitalHours/hospitalhours"; // Ensure correct path
+import { combinedPhotos } from "./arrayOfPhotos"; // Ensure correct path
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-import CenteredOverlay from "./centeredOverlay/centeredOverlay";
+import { Autoplay } from "swiper/modules";
 
-//swiper stuff
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/autoplay";
-import "swiper/css/navigation";
-import "swiper/css/effect-fade";
 
 const MainComponent = () => {
   return (
-    <div className="main-container">
+    <div className="mainContainer">
       <HospitalHours />
-
-      <div className="right-side">
-        <div className="hours-rightPanel">
-          {/* Content of hours-rightPanel from HospitalHours component */}
-          {/* This will be displayed above the Swiper component */}
+      <div className="contentSide">
+        <div className="arrivalInstructions">
           <h2>To Minimize Stress for You & Your Pet</h2>
           <h2>Please Call 484-461-7520 upon arrival</h2>
         </div>
-        <Swiper
+
+        {/* <Swiper
           spaceBetween={10}
-          slidesPerView={2}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-          modules={[Autoplay]}
+          slidesPerView={1}
+          loop={true}
           autoplay={{
-            delay: 7000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
-          loop={true}
-          effect="fade"
-          className="main-swiper-container"
+          speed={500} // Adds a 500ms transition between slides
+          modules={[Autoplay]} // Add other modules like Navigation, Pagination if you use them
+          className="swiperContainer"
         >
           {combinedPhotos.map((currentImage, index) => (
-            <SwiperSlide
-              key={index}
-              className="main-individual-slide-container"
-            >
-              <img
-                src={currentImage}
-                alt={`Slide ${index}`}
-                className="main-individual-slide-image"
-              />
+            <SwiperSlide key={index} className="slide">
+              <img src={currentImage} alt={`Slide ${index}`} />
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
       </div>
     </div>
   );

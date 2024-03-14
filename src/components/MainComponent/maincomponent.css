@@ -1,74 +1,34 @@
-.main-container {
-  padding-top: 75px;
+.mainContainer {
   display: flex;
   flex-direction: row;
-  height: calc(100vh - 75px); /* Adjusted for a navbar if you have one */
+  padding-top: 75px; /* Adjusted for a navbar if present */
+  height: calc(100vh - 75px); /* Full height minus navbar height */
   width: 100%;
 }
 
-.right-side {
+.contentSide {
   width: 50%;
-  padding-right: 0.35rem;
-  height: calc(100vh - 75px);
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.main-swiper-container {
-  width: 100%;
-  height: 70vh;
-  overflow: hidden;
-}
-
-/* Swiper styles */
-
-.main-individual-slide-image {
-  width: 100%; /* Set width to 100% of the container */
-  height: 100%; /* Set height to 100% of the container */
-}
-
-.swiper-slide {
-  display: flex; /* Establishes a flex container */
-  justify-content: center; /* Centers children on the main axis */
-  align-items: center; /* Centers children on the cross axis */
-  height: 100%; /* Ensures the slide is the full height of the swiper-container */
-  width: 100%; /* Ensures the slide is the full width of the swiper-container */
-  overflow: hidden; /* Hides any overflow */
-}
-
-.swiper-slide img {
-  border-radius: 10px;
-  max-width: 100%; /* Ensures the image is not wider than the slide */
-  max-height: 100%; /* Ensures the image is not taller than the slide */
-  object-fit: cover; /* Ensures the image covers the slide area */
-  object-position: center; /* Centers the image within the slide */
-}
-
-.hours-rightPanel h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.arrivalInstructions {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1976d2; /* Blue background */
+  color: white; /* White text */
+  margin-bottom: 20px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .main-container {
+  .mainContainer {
     flex-direction: column;
   }
 
-  .left-side,
-  .right-side {
-    width: 100%; /* Full width */
-    height: 50vh; /* Split height equally */
+  .contentSide {
+    width: 100%;
+    padding: 0; /* Remove padding on mobile for full-width */
   }
-
-  .hours-rightPanel {
-    height: 25vh; /* Adjusted for the mobile view */
-  }
-
-  .main-swiper-container {
-    height: 75vh; /* The remaining height for the swiper container */
-  }
-
-  /* Adjust font sizes and other elements as necessary for smaller screens */
 }
