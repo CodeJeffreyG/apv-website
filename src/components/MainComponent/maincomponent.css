@@ -6,23 +6,13 @@
   width: 100%;
 }
 
-.left-side {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  height: calc(100vh - 75px); /* Full height */
-  /* Rest of your left side styles (from .hours-leftPanel) */
-}
-
 .right-side {
-  width: 60%;
+  width: 50%;
+  padding-right: 0.35rem;
   height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
 }
-
-
 
 .main-swiper-container {
   width: 100%;
@@ -47,10 +37,17 @@
 }
 
 .swiper-slide img {
+  border-radius: 10px;
   max-width: 100%; /* Ensures the image is not wider than the slide */
   max-height: 100%; /* Ensures the image is not taller than the slide */
   object-fit: cover; /* Ensures the image covers the slide area */
   object-position: center; /* Centers the image within the slide */
+}
+
+.hours-rightPanel h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Responsive adjustments */

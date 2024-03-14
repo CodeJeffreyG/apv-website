@@ -1,15 +1,20 @@
 import "./emergency.css";
 import React from "react";
-
+import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 const Emergency = () => {
   return (
     <div className="emergency-container">
       <div className="emergency-header-container">
-        <div className="emergency-header">WE WILL HELP YOUR PET</div>
+        <div className="emergency-header">
+          <LocalHospitalIcon sx={{ fontSize: 34, color: "red" }} />
+          {"   "}EMERGENCY{"   "}
+          <LocalHospitalIcon sx={{ fontSize: 34, color: "red" }} />
+        </div>
         <div className="emergency-instructions">
-          If you're an existing client and the emergency is during our office
-          hours, call and we will help your pet. If this is off our hours or an
-          overnight emergency, we recommend the following facilities:
+          For our clients, if your pet has an urgent issue during our office
+          hours, please call us (484-461-7520) so that we can help you and your
+          pet. <br /> <br />
+          Otherwise, contact the following recommended hospitals:
         </div>
       </div>
 

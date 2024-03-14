@@ -21,27 +21,23 @@ import "swiper/css/effect-fade";
 const MainComponent = () => {
   return (
     <div className="main-container">
-      <div className="left-side">
-        <HospitalHours />
-      </div>
+      <HospitalHours />
+
       <div className="right-side">
         <div className="hours-rightPanel">
           {/* Content of hours-rightPanel from HospitalHours component */}
           {/* This will be displayed above the Swiper component */}
-          <h2>Our priority is to minimize stress.</h2>
-          <p className="please-call-important">
-            Please Call: (484)-461-7520
-            <br /> when you arrive so we can prepare for your visit.
-          </p>
+          <h2>To Minimize Stress for You & Your Pet</h2>
+          <h2>Please Call 484-461-7520 upon arrival</h2>
         </div>
         <Swiper
-          spaceBetween={0}
+          spaceBetween={10}
           slidesPerView={2}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
           modules={[Autoplay]}
           autoplay={{
-            delay: 2500,
+            delay: 7000,
             disableOnInteraction: false,
           }}
           loop={true}
