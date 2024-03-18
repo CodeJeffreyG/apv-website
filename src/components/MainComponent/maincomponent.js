@@ -18,11 +18,11 @@ const MainComponent = () => {
           <h2>To Minimize Stress for You & Your Pet</h2>
           <h2>Please Call 484-461-7520 upon arrival</h2>
           <Swiper
-            spaceBetween={10}
+            spaceBetween={0}
             slidesPerView={1}
             loop={true}
             autoplay={{
-              delay: 3000,
+              delay: 4500,
               disableOnInteraction: false,
             }}
             speed={500} // Adds a 500ms transition between slides

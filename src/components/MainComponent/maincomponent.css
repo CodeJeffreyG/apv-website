@@ -27,7 +27,7 @@
 }
 
 .swiperContainer {
-  padding-top: 2rem;
+  padding-top: 3rem;
   width: 100%;
   height: 75vh;
   display: flex;
@@ -36,11 +36,17 @@
   overflow: hidden; /* Ensures images are contained within the corners */
 }
 
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .swiperContainer img {
-  object-fit: contain;
+  border-radius: 20px;
   width: 100%; /* Image width will not exceed container's width */
   height: 100%; /* Image height will not exceed container's height */
-  object-fit: contain; /* Image will maintain its aspect ratio within the container */
+  object-fit: cover; /* Image will maintain its aspect ratio within the container */
 }
 
 /* Responsive adjustments */
