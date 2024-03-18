@@ -1,24 +1,46 @@
 .mainContainer {
   display: flex;
   flex-direction: row;
-  padding-top: 75px; /* Adjusted for a navbar if present */
-  height: calc(100vh - 75px); /* Full height minus navbar height */
+  padding-top: 91px; /* Adjusted for a navbar if present */
+  height: calc(100vh - 91px); /* Full height minus navbar height */
   width: 100%;
+  overflow: hidden; /* Prevents overflow of the swiper */
 }
 
 .contentSide {
   width: 50%;
-  height: 100%;
+  height: calc(100vh - 91px);
   display: flex;
   flex-direction: column;
 }
 
 .arrivalInstructions {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
   text-align: center;
-  padding: 1rem;
-  background-color: #1976d2; /* Blue background */
-  color: white; /* White text */
-  margin-bottom: 20px;
+  background-color: white; /* Blue background */
+  color: #1976d2; /* White text */
+  margin-right: 2rem; /* Adds margin to the right of the instructions */
+}
+
+.swiperContainer {
+  padding-top: 2rem;
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures images are contained within the corners */
+}
+
+.swiperContainer img {
+  object-fit: contain;
+  width: 100%; /* Image width will not exceed container's width */
+  height: 100%; /* Image height will not exceed container's height */
+  object-fit: contain; /* Image will maintain its aspect ratio within the container */
 }
 
 /* Responsive adjustments */
@@ -30,5 +52,9 @@
   .contentSide {
     width: 100%;
     padding: 0; /* Remove padding on mobile for full-width */
+  }
+
+  .arrivalInstructions {
+    margin-right: 0; /* Removes the right margin on mobile */
   }
 }
