@@ -10,40 +10,22 @@
 .contentSide {
   width: 50%;
   height: calc(100vh - 91px);
-  display: flex;
-  flex-direction: column;
 }
 
 .arrivalInstructions {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  width: 100%;
   height: 100vh;
   text-align: center;
   background-color: white; /* Blue background */
   color: #1976d2; /* White text */
-  margin-right: 2rem; /* Adds margin to the right of the instructions */
 }
 
 .swiperContainer {
-  padding-top: 3rem;
-  width: 100%;
-  height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  height: 100vh;
   overflow: hidden; /* Ensures images are contained within the corners */
 }
 
-.slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .swiperContainer img {
-  border-radius: 20px;
   width: 100%; /* Image width will not exceed container's width */
   height: 100%; /* Image height will not exceed container's height */
   object-fit: cover; /* Image will maintain its aspect ratio within the container */

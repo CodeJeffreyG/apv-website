@@ -6,16 +6,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%; /* Adjust the width as needed, but not full width to give some margin */
-  z-index: 2;
+  z-index: 1000000;
   pointer-events: none; /* Allows clicks to pass through to the slides */
   display: flex;
+  pointer-events: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .overlay-content {
+  pointer-events: auto; /* Allow interactions with overlay content */
   background-color: rgba(
     0,
     0,
@@ -28,7 +29,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   text-align: center;
   pointer-events: auto; /* Re-enable pointer events for the buttons and links */
-  max-width: 640px; /* Max width for better readability on wide screens */
+  width: auto;
+  max-width: none;
 }
 
 .overlay h2 {
