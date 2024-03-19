@@ -1,0 +1,53 @@
+.careers-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Aligns items in a column */
+  align-items: center; /* Centers items horizontally */
+  justify-content: space-around;
+  padding: 91px 20px 20px; /* Top, horizontal, bottom padding */
+  background: #f9f9f9; /* Light grey background */
+}
+
+.careers-container h1 {
+  color: #333; /* Dark grey color for the title */
+  font-size: 3rem; /* Large font size for the title */
+  text-align: center; /* Centers the title text */
+}
+
+.careers-container p {
+  color: #666; /* Medium grey color for paragraphs */
+  line-height: 1.6; /* Line height for readability */
+  text-align: justify; /* Justifies paragraph text */
+  margin-bottom: 1rem; /* Spacing after paragraphs */
+  width: 60%; /* Full width for paragraphs */
+}
+
+.careers-container a {
+  color: #1a0dab; /* Blue color for links */
+  text-decoration: underline; /* Underlines links */
+}
+
+.careers-container .job-position {
+  background: #ffffff; /* White background for job positions */
+  padding: 1rem; /* Padding inside job position containers */
+  margin-bottom: 1rem; /* Space between job positions */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width: 100%; /* Full width for job position containers */
+}
+
+.careers-container h2 {
+  color: #1a0dab; /* Blue color for secondary titles */
+  margin: 0.5rem 0; /* Spacing around secondary titles */
+}
+
+@media screen and (max-width: 768px) {
+  .careers-container {
+    padding: 10px; /* Reduced padding on smaller screens */
+  }
+  .careers-container h1 {
+    font-size: 1.5rem; /* Smaller font size for the title on smaller screens */
+  }
+  /* You can add additional styling changes for smaller screens here */
+}
+
+/* Further media queries for larger screens can be added if needed */

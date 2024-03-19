@@ -23,6 +23,7 @@ import Hospice from "./components/vet-services/Hospice/Hospice.js";
 
 import Emergency from "./components/Emergency/Emergency.js";
 
+import Careers from "./components/Careers/Careers.js";
 function App() {
   // all data for each component
   const {
@@ -80,6 +81,8 @@ function App() {
         {/* services components */}
 
         <Route path="/emergency" element={<Emergency />} />
+
+        <Route path="/about/careers" element={<Careers />} />
       </Routes>
     </BrowserRouter>
   );
