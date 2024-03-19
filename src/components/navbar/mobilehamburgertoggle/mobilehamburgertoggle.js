@@ -28,21 +28,4 @@ const MobileHamburgerToggle = ({ swapHamburgerState }) => {
   );
 };
 
-{
-  /* <li className="toggled-nav-item">
-          <a href="/">Home</a>
-        </li>
-        <li className="toggled-nav-item">
-          <a href="/about">About</a>
-        </li>
-        <li className="toggled-nav-item">
-          <a href="/contact">Contact</a>
-        </li>
-        <li className="toggled-nav-item">
-          <a href="/emergency" className="emergency">
-            EMERGENCY
-          </a>
-        </li> */
-}
-
 export default MobileHamburgerToggle;

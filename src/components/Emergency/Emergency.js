@@ -6,9 +6,13 @@ const Emergency = () => {
     <div className="emergency-container">
       <div className="emergency-header-container">
         <div className="emergency-header">
-          <LocalHospitalIcon sx={{ fontSize: 34, color: "red" }} />
+          <LocalHospitalIcon
+            sx={{ fontSize: 34, color: "red", verticalAlign: "middle" }}
+          />
           {"   "}EMERGENCY{"   "}
-          <LocalHospitalIcon sx={{ fontSize: 34, color: "red" }} />
+          <LocalHospitalIcon
+            sx={{ fontSize: 34, color: "red", verticalAlign: "middle" }}
+          />
         </div>
         <div className="emergency-instructions">
           For our clients, if your pet has an urgent issue during our office
