@@ -47,10 +47,10 @@ function Navbar() {
           <Link to="/about">About</Link>
           <ul className="dropdown-menu">
             <li>
-              <Link to="/about/careers">Careers</Link>
+              <Link to="/about/team">Team</Link>
             </li>
             <li>
-              <Link to="/about/team">Team</Link>
+              <Link to="/about/careers">Careers</Link>
             </li>
           </ul>
         </li>
