@@ -1,29 +1,23 @@
+// Library Imports
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-//all services data
-import { services } from "./components/vet-services/allServicesData.js";
 
-//nav
-import Navbar from "./components/navbar/navbar.js";
-//nav
+// Data Imports
+import { services } from "./data/allServicesData";
+import Navbar from "./components/NavBar";
 
-//main
-import MainComponent from "./components/MainComponent/maincomponent.js";
-//main
+// Component Imports
+import MainComponent from "./pages/MainComponent";
+import Wellness from "./pages/VetServices/Wellness";
+import Exotic from "./pages/VetServices/Exotic";
+import Preventative from "./pages/VetServices/Preventative";
+import Surgery from "./pages/VetServices/Surgery";
+import DentalCare from "./pages/VetServices/Dental";
+import LaserTherapy from "./pages/VetServices/LaserTherapy";
+import MicroChipping from "./pages/VetServices/MicroChipping";
+import Hospice from "./pages/VetServices/Hospice";
+import Emergency from "./pages/Emergency";
+import Careers from "./pages/Careers";
 
-//services
-import Wellness from "./components/vet-services/Wellness/Wellness.js";
-import Exotic from "./components/vet-services/Exotic/Exotic.js";
-import Preventative from "./components/vet-services/Preventative/Preventative.js";
-import Surgery from "./components/vet-services/Surgery/Surgery.js";
-import DentalCare from "./components/vet-services/Dental/Dentalcare.js";
-import LaserTherapy from "./components/vet-services/LaserTherapy/LaserTherapy";
-import Microchipping from "./components/vet-services/Microchipping/Microchipping.js";
-import Hospice from "./components/vet-services/Hospice/Hospice.js";
-//services //
-
-import Emergency from "./components/Emergency/Emergency.js";
-
-import Careers from "./components/Careers/Careers.js";
 function App() {
   // all data for each component
   const {
@@ -72,7 +66,7 @@ function App() {
         />
         <Route
           path="/services/microchipping"
-          element={<Microchipping microchippingData={microchipping} />}
+          element={<MicroChipping microchippingData={microchipping} />}
         />
         <Route
           path="/services/hospice"

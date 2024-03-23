@@ -1,0 +1,29 @@
+/* CenteredOverlay.css */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Adjust the width as needed, but not full width to give some margin */
+  z-index: 1000000;
+  pointer-events: none; /* Allows clicks to pass through to the slides */
+}
+
+.overlay-content {
+  pointer-events: auto; /* Allow interactions with overlay content */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Slightly darker for better readability */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px; /* Soft rounded corners for the overlay */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  text-align: center;
+  pointer-events: auto; /* Re-enable pointer events for the buttons and links */
+  width: auto;
+  max-width: none;
+  height: 100vh;
+}

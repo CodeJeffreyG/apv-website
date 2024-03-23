@@ -1,0 +1,109 @@
+/* ContactPage.css */
+.contact-page {
+  color: #fff;
+  background-color: #1a1a1a;
+
+  font-family: "Arial", sans-serif;
+  padding-bottom: 50px;
+}
+
+.contact-header {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  padding: 40px 0px;
+  font-weight: 700;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust the max-width as per your layout requirement */
+}
+
+.contact-info {
+  flex: 1;
+  margin-right: 20px; /* Spacing between info and map */
+}
+
+.contact-info h1,
+.contact-info h2 {
+  color: #ffa500; /* Orange color for headings */
+}
+
+.contact-info p {
+  margin: 5px 0; /* Spacing for paragraphs */
+}
+
+.sales-hours,
+.service-hours {
+  margin-bottom: 20px;
+}
+
+.directions-button {
+  background-color: #ffa500; /* Orange color */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 4px; /* Optional: for rounded corners */
+  transition: background-color 0.3s ease-in-out;
+}
+.directions-button:hover {
+  background-color: #e69500; /* Slightly darker orange on hover */
+}
+
+.contact-map {
+  flex: 1;
+}
+.contact-map img {
+  width: 100%;
+  height: 100%;
+}
+.contact-footer {
+  margin-top: auto; /* Push footer to the bottom /
+    padding: 20px;
+    background: #333; / Dark footer background */
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background: #555; /* Lighter grey background for social icons /
+    padding: 10px;
+    border-radius: 50%; / Circular icons */
+  display: inline-block;
+}
+
+.social-icon:hover {
+  background: #ffa500; /* Orange color on hover */
+  color: #000;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .contact-main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-info,
+  .contact-map {
+    flex-basis: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .google-map {
+    height: 300px; /* Smaller map on mobile */
+  }
+}
