@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Data Imports
 import { services } from "./data/allServicesData";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/navbar";
 
 // Component Imports
 import MainComponent from "./pages/MainComponent";
