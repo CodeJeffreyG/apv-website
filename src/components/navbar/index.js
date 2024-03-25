@@ -26,96 +26,100 @@ function Navbar() {
   const swapHamburgerState = () => setHamburgerToggle(!hamburgerToggle);
 
   return (
-    <nav className="navbar">
+    <nav className="navvbar">
       <Link to="/">
-        <img src={logo} className="navbar-logo" alt="Company Logo" />
+        <img src={logo} className="navvbar-logo" alt="Company Logo" />
       </Link>
 
-      <div className="navbar-center">
-        <div className="navbar-phone">
-          <a href="tel:+2153473997" className="phone-link">
-            <CallIcon sx={{ fontSize: 24 }} className="phone-icon" /> (484)
-            461-7520
-          </a>
+      {!isMobile && (
+        <div className="navvbar-center">
+          <div className="navvbar-phone">
+            <a href="tel:+2153473997" className="phone-link">
+              <CallIcon sx={{ fontSize: 24 }} className="phone-icon" /> (484)
+              461-7520
+            </a>
+          </div>
+          <ul className="navvbar-navv">
+            <li
+              className={`navv-item ${pathname === "/" ? "active-link" : ""}`}
+            >
+              <Link to="/" className="navv-item-link">
+                Home
+              </Link>
+            </li>
+
+            <li
+              className={`navv-item ${
+                pathname === "/contact" ? "active-link" : ""
+              }`}
+            >
+              <Link to="/contact">Contact</Link>
+            </li>
+
+            <li
+              className={`navv-item dropdown ${
+                pathname.includes("about") ? "active-link" : ""
+              }`}
+            >
+              <Link to="/about">About</Link>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link to="/about/team">Team</Link>
+                </li>
+                <li>
+                  <Link to="/about/careers">Careers</Link>
+                </li>
+              </ul>
+            </li>
+
+            <li
+              className={`navv-item dropdown ${
+                pathname.includes("services") ? "active-link" : ""
+              }`}
+            >
+              <Link to="/services/Wellness">Services</Link>{" "}
+              {/* Updated href to "#" for dropdown trigger */}
+              <ul className="dropdown-menu">
+                <li>
+                  <Link to="/services/Wellness">Wellness</Link>
+                </li>
+
+                <li>
+                  <Link to="/services/exotic">Exotic</Link>
+                </li>
+
+                <li>
+                  <Link to="/services/preventative">Preventative</Link>
+                </li>
+
+                <li>
+                  <Link to="/services/surgery">Surgery</Link>
+                </li>
+
+                <li>
+                  <Link to="/services/dental-care">Dental Care</Link>
+                </li>
+
+                <li>
+                  <Link to="/services/laser-therapy">Laser Therapy</Link>
+                </li>
+
+                <li>
+                  <Link to="/services/microchipping">Microchipping</Link>
+                </li>
+
+                <li>
+                  <Link to="/services/Hospice">Hospice</Link>
+                </li>
+              </ul>
+            </li>
+
+            <li className="navv-item emergency">
+              <Link to="/emergency">EMERGENCY</Link>
+            </li>
+          </ul>
         </div>
-        <ul className="navbar-nav">
-          <li className={`nav-item ${pathname === "/" ? "active-link" : ""}`}>
-            <Link to="/" className="nav-item-link">
-              Home
-            </Link>
-          </li>
-
-          <li
-            className={`nav-item ${
-              pathname === "/contact" ? "active-link" : ""
-            }`}
-          >
-            <Link to="/contact">Contact</Link>
-          </li>
-
-          <li
-            className={`nav-item dropdown ${
-              pathname === "/about" ? "active-link" : ""
-            }`}
-          >
-            <Link to="/about">About</Link>
-            <ul className="dropdown-menu">
-              <li>
-                <Link to="/about/team">Team</Link>
-              </li>
-              <li>
-                <Link to="/about/careers">Careers</Link>
-              </li>
-            </ul>
-          </li>
-
-          <li
-            className={`nav-item dropdown ${
-              pathname.includes("services") ? "active-link" : ""
-            }`}
-          >
-            <Link to="/services/Wellness">Services</Link>{" "}
-            {/* Updated href to "#" for dropdown trigger */}
-            <ul className="dropdown-menu">
-              <li>
-                <Link to="/services/Wellness">Wellness</Link>
-              </li>
-
-              <li>
-                <Link to="/services/exotic">Exotic</Link>
-              </li>
-
-              <li>
-                <Link to="/services/preventative">Preventative</Link>
-              </li>
-
-              <li>
-                <Link to="/services/surgery">Surgery</Link>
-              </li>
-
-              <li>
-                <Link to="/services/dental-care">Dental Care</Link>
-              </li>
-
-              <li>
-                <Link to="/services/laser-therapy">Laser Therapy</Link>
-              </li>
-
-              <li>
-                <Link to="/services/microchipping">Microchipping</Link>
-              </li>
-
-              <li>
-                <Link to="/services/Hospice">Hospice</Link>
-              </li>
-            </ul>
-          </li>
-
-          <li className="nav-item emergency">
-            <Link to="/emergency">EMERGENCY</Link>
-          </li>
-        </ul>
-      </div>
+      )}
 
       <a
         onClick={isMobile ? swapHamburgerState : undefined}
@@ -123,7 +127,7 @@ function Navbar() {
         href={!isMobile ? "https://www.facebook.com/dr.bowers/" : undefined}
       >
         {isMobile ? (
-          <MenuSharpIcon sx={{ fontSize: 60 }} />
+          <MenuSharpIcon />
         ) : (
           <FacebookSharpIcon sx={{ fontSize: 60 }} color="primary" />
         )}

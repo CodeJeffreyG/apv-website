@@ -73,7 +73,25 @@
   .hero-content {
     padding: 0px;
   }
+  .hero-items {
+    width: 100%;
+    margin-top: -50px;
+  }
+  .hero-items h1 {
+    font-size: 40px;
+    margin-right: 20px;
+    box-shadow: 2px 5px #e9ba23;
+  }
+  .hero-items p {
+    font-size: 20px;
+    font-weight: normal;
+  }
   .hero-container {
     background-position: right center; /* Adjusted background position */
+    padding: 20px;
+  }
+  .button-container {
+    flex-direction: column;
+    width: 95%;
   }
 }
