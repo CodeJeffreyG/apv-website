@@ -1,0 +1,79 @@
+.hero-content {
+  height: calc(100vh-80px);
+  max-height: 100%;
+  padding: 0px 100px;
+}
+
+.hero-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  max-height: 100%;
+  margin-top: -100px;
+  padding: 0 1rem;
+  width: 900px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.hero-items h1 {
+  font-size: 60px;
+  margin-bottom: 1rem;
+  box-shadow: 3px 5px #e9ba23;
+  letter-spacing: 3px;
+  text-align: start;
+  padding-bottom: 20px;
+}
+
+.hero-items p {
+  font-size: 30px;
+  text-align: start;
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+  margin-top: 20px;
+}
+
+.hero-items button {
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+  border: none;
+  background: #e31837;
+  color: #fff;
+  transition: 0.2s ease-out;
+}
+
+.hero-items button:hover {
+  background: #ffc500;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  color: #000;
+}
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+.call-now-btn {
+  background-color: blue !important;
+}
+.call-now-btn:hover {
+  background-color: #ffc500 !important;
+}
+
+@media screen and (max-width: 650px) {
+  .hero-items {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-content {
+    padding: 0px;
+  }
+  .hero-container {
+    background-position: right center; /* Adjusted background position */
+  }
+}

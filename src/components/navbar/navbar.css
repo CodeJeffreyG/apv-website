@@ -1,16 +1,17 @@
 /* Navbar.css */
 .navbar {
   position: fixed;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 75px;
-  width: 100%;
-  padding: 0.5rem 1rem;
+  width: 98%;
+  padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 75px;
+  color: white;
   z-index: 100000;
 }
 
@@ -30,15 +31,20 @@
   padding: 0 1rem; /* Consistent padding with other nav items */
 }
 
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .phone-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #0f1ae2; /* Color to match your nav item theme */
+  color: #fff; /* Color to match your nav item theme */
   font-weight: bold;
   text-decoration: none;
   background-color: transparent; /* Or any color that fits your navbar's theme */
-  border: 2px solid #0f1ae2; /* Optional: adds a border to make it stand out */
+  border: 2px solid #fff; /* Optional: adds a border to make it stand out */
   padding: 0.25rem 0.75rem; /* Adjust padding to match the size of other nav items */
   border-radius: 5px; /* Rounded corners */
   transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
@@ -46,7 +52,7 @@
 }
 
 .phone-link:hover {
-  background-color: #0f1ae2; /* Background color on hover */
+  transform: scale(0.9);
   color: white; /* Text color on hover */
   text-decoration: none; /* Prevents underline on hover */
 }
@@ -77,23 +83,27 @@
 
 .nav-item a {
   text-decoration: none;
-  color: #0f1ae2;
-  font-weight: 500;
+  color: #fff;
+  font-weight: bold;
 }
 
+.nav-item:hover {
+  transition: all 0.3s ease;
+  transform: scale(0.9);
+}
 .nav-item a:hover {
-  text-decoration: underline;
+  color: #565be6;
 }
 
 .emergency a {
   color: white;
-  background-color: #0f1ae2;
+  background-color: #090fbd;
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
 
 .emergency a:hover {
-  background-color: #090fbd;
+  transform: scale(0.9);
 }
 
 /* Hide dropdown menus by default */
@@ -119,7 +129,7 @@
 
 /* Style for dropdown items */
 .dropdown-menu li a {
-  color: #0f1ae2; /* Match the color with your nav item links */
+  color: #fff; /* Match the color with your nav item links */
   padding: 0.5rem 0.5rem; /* Provides padding for each dropdown item */
   display: block; /* Ensures the link covers the full list item area for easier clicking */
   text-align: left;
@@ -130,6 +140,10 @@
 /* Change background color slightly on hover to indicate hover state */
 .dropdown-menu li a:hover {
   background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+.active-link a {
+  color: #565be6;
 }
 
 /* Responsive design for phone sizes */
