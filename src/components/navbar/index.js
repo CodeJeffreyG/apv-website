@@ -34,7 +34,7 @@ function Navbar() {
       {!isMobile && (
         <div className="navvbar-center">
           <div className="navvbar-phone">
-            <a href="tel:+2153473997" className="phone-link">
+            <a href="tel:+4844677520" className="phone-link">
               <CallIcon sx={{ fontSize: 24 }} className="phone-icon" /> (484)
               461-7520
             </a>
