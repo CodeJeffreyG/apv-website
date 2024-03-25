@@ -10,6 +10,9 @@ import randomDog2 from "../../assests/carousel-images/notStaffDogs/doggie2.jpg";
 import randomDog4 from "../../assests/carousel-images/notStaffDogs/doggie4.jpg";
 import randomDog5 from "../../assests/carousel-images/notStaffDogs/doggie5.jpg";
 import randomDog8 from "../../assests/carousel-images/notStaffDogs/doggie8.jpg";
+import randomDog9 from "../../assests/carousel-images/notStaffDogs/doggie9.jpg";
+import randomDog10 from "../../assests/carousel-images/notStaffDogs/doggie10.jpg";
+import randomDog11 from "../../assests/carousel-images/notStaffDogs/doggie11.jpg";
 //not staff Cats
 import randomCat1 from "../../assests/carousel-images/notStaffCats/cats1.jpg";
 import randomCat2 from "../../assests/carousel-images/notStaffCats/cat4.jpg";
@@ -19,6 +22,10 @@ import randomBird1 from "../../assests/carousel-images/notStaffExotic/bird1.jpg"
 import randomReptile1 from "../../assests/carousel-images/notStaffExotic/reptile1.jpg";
 import randomReptile2 from "../../assests/carousel-images/notStaffExotic/reptile2.jpg";
 import randomReptile3 from "../../assests/carousel-images/notStaffExotic/reptile3.jpg";
+
+//not staff rabbits
+import randomRabbit2 from "../../assests/carousel-images/notStaffExotic/bunny2.jpg";
+import randomRabbit3 from "../../assests/carousel-images/notStaffExotic/bunny3.jpg";
 
 const staffAnimals = () => {
   const staffAndAnimalPhotos = {
@@ -33,9 +40,25 @@ const staffAnimals = () => {
 
 const allNotStaffAnimals = () => {
   const allNotStaffAnimals = {
-    dogs: [randomDog1, randomDog2, randomDog4, randomDog5, randomDog8],
+    dogs: [
+      randomDog1,
+      randomDog2,
+      randomDog4,
+      randomDog5,
+      randomDog8,
+      randomDog9,
+      randomDog10,
+      randomDog11,
+    ],
     cats: [randomCat1, randomCat2],
-    exotic: [randomBird1, randomReptile1, randomReptile2, randomReptile3],
+    exotic: [
+      randomBird1,
+      randomReptile1,
+      randomReptile2,
+      randomReptile3,
+      randomRabbit2,
+      randomRabbit3,
+    ],
   };
 
   return allNotStaffAnimals;
@@ -49,7 +72,7 @@ function flattenPhotos(photosByCategory) {
   );
 }
 // chooses random photos, takes in an array of photos as argument
-function getRandomPhotos(photos, count = 3) {
+function getRandomPhotos(photos, count = 12) {
   let selectedPhotos = [];
   let usedIndices = new Set();
 
