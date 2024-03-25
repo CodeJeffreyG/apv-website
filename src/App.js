@@ -17,6 +17,8 @@ import MicroChipping from "./pages/VetServices/MicroChipping";
 import Hospice from "./pages/VetServices/Hospice";
 import Emergency from "./pages/Emergency";
 import Careers from "./pages/Careers";
+import ContactUs from "./pages/ContactUs";
+import Teams from "./pages/About/Teams";
 
 function App() {
   // all data for each component
@@ -75,8 +77,10 @@ function App() {
         {/* services components */}
 
         <Route path="/emergency" element={<Emergency />} />
+        <Route path="/contact" element={<ContactUs />} />
 
         <Route path="/about/careers" element={<Careers />} />
+        <Route path="/about/team" element={<Teams />} />
       </Routes>
     </BrowserRouter>
   );

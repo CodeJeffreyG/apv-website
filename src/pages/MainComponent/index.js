@@ -1,25 +1,39 @@
 import "./maincomponent.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CenteredOverlay from "./centeredOverlay/centeredOverlay";
 import { hoursData } from "../../data/hours";
 import { combinedPhotos } from "./arrayOfPhotos"; // Ensure correct path
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import ContactUs from "../../components/ContactUs/ContactUs";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/autoplay";
 import Products from "../../components/Products/Products";
+import Footer from "../../components/Footer/Footer";
 
 const MainComponent = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  console.log(screenWidth);
+
   return (
     <>
       <div className="mainContainer">
         <div className="contentSide">
           <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
+            spaceBetween={10}
+            slidesPerView={screenWidth > 600 ? 2 : 1}
             loop={true}
             autoplay={{
               delay: 4500,
@@ -41,7 +55,8 @@ const MainComponent = () => {
         <div className="working-hours">
           <Products heading={"Hospital Hours"} data={hoursData} />
         </div>
-        <ContactUs />
+
+        <Footer />
       </div>
     </>
   );

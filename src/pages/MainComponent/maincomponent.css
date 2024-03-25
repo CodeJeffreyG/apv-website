@@ -1,7 +1,7 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
-  padding-top: 91px; /* Adjusted for a navbar if present */
+  padding-top: 80px; /* Adjusted for a navbar if present */
   width: 100%;
 }
 

@@ -8,7 +8,7 @@ const ContactUs = () => {
 
       <main className="contact-main">
         <div className="contact-info">
-          <h1>Find Mealtime</h1>
+          <h1>Find All Pets Veterinary Hospital</h1>
           <p className="address">
             <strong>Address:</strong> 9219 Alberene Dr, Houston, TX 77074
           </p>

@@ -1,21 +1,22 @@
-/* Navbar.css */
-.navbar {
+/* navvbar.css */
+.navvbar {
   position: fixed;
   background-color: rgb(0, 0, 0);
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
-  width: 98%;
-  padding: 1rem 2rem;
+  height: 80px;
+  width: 100%;
+
+  padding: 3rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 75px;
   color: white;
   z-index: 100000;
 }
 
-.navbar-nav {
+.navvbar-navv {
   width: 100%;
   list-style: none;
   display: flex;
@@ -24,14 +25,14 @@
   transition: max-height 0.3s ease; /* Smooth transition for expanding/collapsing menu */
 }
 
-.navbar-phone {
+.navvbar-phone {
   display: flex;
-  align-items: center; /* Ensures vertical alignment with other nav items */
+  align-items: center; /* Ensures vertical alignment with other navv items */
   justify-content: center; /* Center the content if it's the only item in a flex container */
-  padding: 0 1rem; /* Consistent padding with other nav items */
+  padding: 0 1rem; /* Consistent padding with other navv items */
 }
 
-.navbar-center {
+.navvbar-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,12 +41,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fff; /* Color to match your nav item theme */
+  color: #fff; /* Color to match your navv item theme */
   font-weight: bold;
   text-decoration: none;
-  background-color: transparent; /* Or any color that fits your navbar's theme */
+  background-color: transparent; /* Or any color that fits your navvbar's theme */
   border: 2px solid #fff; /* Optional: adds a border to make it stand out */
-  padding: 0.25rem 0.75rem; /* Adjust padding to match the size of other nav items */
+  padding: 0.25rem 0.75rem; /* Adjust padding to match the size of other navv items */
   border-radius: 5px; /* Rounded corners */
   transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
   min-width: 180px;
@@ -57,13 +58,13 @@
   text-decoration: none; /* Prevents underline on hover */
 }
 
-.nav-item,
-.navbar-logo {
+.navv-item,
+.navvbar-logo {
   font-weight: bold;
   padding: 0 1rem;
 }
 
-.navbar-logo {
+.navvbar-logo {
   height: 5rem;
 }
 
@@ -76,23 +77,23 @@
 }
 
 /* The logo and the Facebook icon need specific styles to ensure they don't grow disproportionately */
-.navbar-logo,
+.navvbar-logo,
 .facebook-icon {
   flex: 0 0 auto;
 }
 
-.nav-item a {
+.navv-item a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
 }
 
-.nav-item:hover {
+.navv-item:hover {
   transition: all 0.3s ease;
   transform: scale(0.9);
 }
-.nav-item a:hover {
-  color: #565be6;
+.navv-item a:hover {
+  color: #e91717;
 }
 
 .emergency a {
@@ -104,6 +105,7 @@
 
 .emergency a:hover {
   transform: scale(0.9);
+  color: white !important;
 }
 
 /* Hide dropdown menus by default */
@@ -112,34 +114,38 @@
   position: absolute;
   box-shadow: none; /* Removes any shadow to keep the style simple */
   border: none; /* Removes borders */
+  padding: 10px 40px;
+  top: 20px;
 }
 
 /* Positioning for dropdown menus */
-.nav-item.dropdown {
+.navv-item.dropdown {
   position: relative;
 }
 
 /* Show dropdown menu on hover */
-.nav-item.dropdown:hover .dropdown-menu {
+.navv-item.dropdown:hover .dropdown-menu {
   display: block; /* Show the dropdown */
   padding-left: 0; /* Removes default padding */
-  background: white; /* Matches the navbar background */
+  background: white; /* Matches the navvbar background */
   list-style: none; /* Removes bullet points */
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* Style for dropdown items */
 .dropdown-menu li a {
-  color: #fff; /* Match the color with your nav item links */
   padding: 0.5rem 0.5rem; /* Provides padding for each dropdown item */
   display: block; /* Ensures the link covers the full list item area for easier clicking */
   text-align: left;
   font-size: 1rem;
   text-decoration: none;
+  color: #565be6;
+  width: 100%;
 }
 
 /* Change background color slightly on hover to indicate hover state */
 .dropdown-menu li a:hover {
-  background-color: #f0f0f0; /* Light grey background on hover */
+  background-color: #dfdfdf; /* Light grey background on hover */
 }
 
 .active-link a {
@@ -151,19 +157,66 @@
   .menu-icon {
     margin-right: 25px;
   }
-  .navbar-nav {
+  .navvbar {
+    padding: 20px;
+  }
+  .navvbar-navv {
     flex-direction: column;
     align-items: center;
     max-height: 0;
     overflow: hidden;
+    padding: 20px;
   }
 
-  /* This will make the navbar-nav take up the full height when active (e.g., when a hamburger menu is toggled) */
-  .navbar-nav.active {
+  /* This will make the navvbar-navv take up the full height when active (e.g., when a hamburger menu is toggled) */
+  .navvbar-navv.active {
     max-height: 500px; /* Adjust as needed */
   }
 
   .facebookIcon {
     display: none;
+  }
+  .phone-link {
+    display: none;
+  }
+  .menu-icon .MuiSvgIcon-root {
+    font-size: 30px;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-3-25 6:18:8
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
