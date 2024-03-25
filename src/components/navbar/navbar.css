@@ -1,7 +1,7 @@
 /* navvbar.css */
 .navvbar {
   position: fixed;
-  background-color: rgb(0, 0, 0);
+  background-color: grey;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -41,11 +41,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fff; /* Color to match your navv item theme */
+  color: #090fbd; /* Color to match your navv item theme */
   font-weight: bold;
   text-decoration: none;
   background-color: transparent; /* Or any color that fits your navvbar's theme */
-  border: 2px solid #fff; /* Optional: adds a border to make it stand out */
+  border: 2px solid #090fbd; /* Optional: adds a border to make it stand out */
   padding: 0.25rem 0.75rem; /* Adjust padding to match the size of other navv items */
   border-radius: 5px; /* Rounded corners */
   transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
@@ -53,7 +53,8 @@
 }
 
 .phone-link:hover {
-  transform: scale(0.9);
+  transform: scale(0.95);
+  background-color: #090fbd;
   color: white; /* Text color on hover */
   text-decoration: none; /* Prevents underline on hover */
 }
