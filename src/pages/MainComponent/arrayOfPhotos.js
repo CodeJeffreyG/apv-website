@@ -13,6 +13,7 @@ import randomDog8 from "../../assests/carousel-images/notStaffDogs/doggie8.jpg";
 import randomDog9 from "../../assests/carousel-images/notStaffDogs/doggie9.jpg";
 import randomDog10 from "../../assests/carousel-images/notStaffDogs/doggie10.jpg";
 import randomDog11 from "../../assests/carousel-images/notStaffDogs/doggie11.jpg";
+import randomDog12 from "../../assests/carousel-images/notStaffDogs/doggie12.jpg";
 //not staff Cats
 import randomCat1 from "../../assests/carousel-images/notStaffCats/cats1.jpg";
 import randomCat2 from "../../assests/carousel-images/notStaffCats/cat4.jpg";
@@ -49,6 +50,7 @@ const allNotStaffAnimals = () => {
       randomDog9,
       randomDog10,
       randomDog11,
+      randomDog12,
     ],
     cats: [randomCat1, randomCat2],
     exotic: [
