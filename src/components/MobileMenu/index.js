@@ -9,7 +9,7 @@ const MobileMenu = ({ swapHamburgerState }) => {
   const [serviceToggle, setServiceToggle] = useState(false);
 
   return (
-    <main className="container">
+    <main className="conttainer">
       <div onClick={swapHamburgerState}>
         <span class="toggled-hamburger-icon ">X</span>
       </div>

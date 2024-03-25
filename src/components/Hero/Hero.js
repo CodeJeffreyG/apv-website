@@ -8,7 +8,7 @@ function Hero() {
     <div className="hero-content">
       <div className="hero-items">
         <h1>
-          Our Pet <span style={{ color: "#FDC501" }}> Is Always </span> There
+          Your Pet <span style={{ color: "#74d3f2" }}> Is Always </span> There
           For You
         </h1>
         <p>

@@ -15,7 +15,7 @@ function Products({ heading, data }) {
           return (
             <div className="product-card" key={index}>
               <LocalHospitalIcon
-                sx={{ fontSize: 34, color: "red", verticalAlign: "middle" }}
+                sx={{ fontSize: 34, color: "#bd092d", verticalAlign: "middle" }}
               />
               <Typography variant="h6" component="h1">
                 {item.day}

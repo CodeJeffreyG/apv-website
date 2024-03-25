@@ -33,7 +33,7 @@ const MainComponent = () => {
         <div className="contentSide">
           <Swiper
             spaceBetween={10}
-            slidesPerView={screenWidth > 600 ? 2 : 1}
+            slidesPerView={screenWidth > 769 ? 2 : 1}
             loop={true}
             autoplay={{
               delay: 4500,

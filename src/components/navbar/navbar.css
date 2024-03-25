@@ -155,18 +155,20 @@
 
 /* Responsive design for phone sizes */
 @media (max-width: 768px) {
+  .navvbar {
+    height: 90px;
+  }
   .menu-icon {
     margin-right: 25px;
   }
   .navvbar {
-    padding: 20px;
+    padding: 40px;
   }
   .navvbar-navv {
     flex-direction: column;
     align-items: center;
     max-height: 0;
     overflow: hidden;
-    padding: 20px;
   }
 
   /* This will make the navvbar-navv take up the full height when active (e.g., when a hamburger menu is toggled) */
@@ -181,7 +183,8 @@
     display: none;
   }
   .menu-icon .MuiSvgIcon-root {
-    font-size: 30px;
+    font-size: 60px;
+    color: black;
   }
 }
 

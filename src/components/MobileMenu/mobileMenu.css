@@ -1,5 +1,5 @@
 /* mobilemaburgertoggle.css */
-.container {
+.conttainer {
   background-color: #0056b3;
   position: fixed; /* Fixed position to stay in place during scroll */
   top: 0; /* Align to the top of the viewport */
@@ -44,7 +44,7 @@
   position: absolute;
   top: 20px; /* Adjust based on your design */
   right: 20px; /* Adjust based on your design */
-  color: white; /* Icon color */
+  color: black; /* Icon color */
   font-size: 2em; /* Match the icon size with the nav text */
 }
 .about-us-nav-item {

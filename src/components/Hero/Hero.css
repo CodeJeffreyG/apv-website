@@ -23,7 +23,7 @@
 .hero-items h1 {
   font-size: 60px;
   margin-bottom: 1rem;
-  box-shadow: 3px 5px #e9ba23;
+  box-shadow: 3px 5px #74d3f2;
   letter-spacing: 3px;
   text-align: start;
   padding-bottom: 20px;
@@ -41,13 +41,13 @@
   font-size: 1.4rem;
   padding: 1rem 4rem;
   border: none;
-  background: #e31837;
+  background: #7a7ef1;
   color: #fff;
   transition: 0.2s ease-out;
 }
 
 .hero-items button:hover {
-  background: #ffc500;
+  background: #565be6;
   transition: 0.2s ease-out;
   cursor: pointer;
   color: #000;
@@ -57,10 +57,10 @@
   gap: 20px;
 }
 .call-now-btn {
-  background-color: blue !important;
+  background-color: #7a7ef1 !important;
 }
 .call-now-btn:hover {
-  background-color: #ffc500 !important;
+  background-color: #565be6 !important;
 }
 
 @media screen and (max-width: 650px) {

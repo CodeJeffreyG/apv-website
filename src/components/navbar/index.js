@@ -61,7 +61,7 @@ function Navbar() {
                 pathname.includes("about") ? "active-link" : ""
               }`}
             >
-              <Link to="/about">About</Link>
+              <Link to="#">About</Link>
               <ul className="dropdown-menu">
                 <li>
                   <Link to="/about/team">Team</Link>
@@ -127,7 +127,7 @@ function Navbar() {
         href={!isMobile ? "https://www.facebook.com/dr.bowers/" : undefined}
       >
         {isMobile ? (
-          <MenuSharpIcon />
+          <MenuSharpIcon  />
         ) : (
           <FacebookSharpIcon sx={{ fontSize: 60 }} color="primary" />
         )}
