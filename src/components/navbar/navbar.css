@@ -1,7 +1,7 @@
 /* navvbar.css */
 .navvbar {
   position: fixed;
-  background-color: grey;
+  background-color: white;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -85,7 +85,7 @@
 
 .navv-item a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-weight: bold;
 }
 
@@ -94,7 +94,7 @@
   transform: scale(0.9);
 }
 .navv-item a:hover {
-  color: #e91717;
+  color: #090fbd;
 }
 
 .emergency a {
@@ -105,7 +105,7 @@
 }
 
 .emergency a:hover {
-  transform: scale(0.9);
+  transform: scale(0.95);
   color: white !important;
 }
 
