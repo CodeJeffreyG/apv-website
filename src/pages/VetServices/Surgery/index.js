@@ -3,19 +3,19 @@ import "./surgery.css";
 import ServicesFirstSection from "../../../components/Sections/ServicesFirstSection";
 import ServicesSecondSection from "../../../components/Sections/ServicesSecondSection";
 
-const Exotic = ({ exoticData }) => {
+const Surgery = ({ surgeryData }) => {
   return (
-    <div className="exotic-container">
+    <div className="surgery-container">
       <ServicesFirstSection
-        image={exoticData.images[0]}
-        textInformation={exoticData}
+        image={surgeryData.images[0]}
+        textInformation={surgeryData}
       />
       <ServicesSecondSection
-        image={exoticData.images[1]}
-        textInformation={exoticData}
+        image={surgeryData.images[1]}
+        textInformation={surgeryData}
       />
     </div>
   );
 };
 
-export default Exotic;
+export default Surgery;
