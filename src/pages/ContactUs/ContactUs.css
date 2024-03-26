@@ -1,11 +1,11 @@
 /* ContactPage.css */
 .contact-page {
   color: #fff;
-  background-color: #1a1a1a;
+  background-color: #74d3f2;
 
   font-family: "Arial", sans-serif;
   padding-bottom: 50px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .contact-header {
@@ -30,7 +30,7 @@
 
 .contact-info h1,
 .contact-info h2 {
-  color: #ffa500; /* Orange color for headings */
+  color: white;
 }
 
 .contact-info p {
@@ -43,7 +43,7 @@
 }
 
 .directions-button {
-  background-color: #ffa500; /* Orange color */
+  background-color: #090fbd; /* Orange color */
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -55,7 +55,9 @@
   transition: background-color 0.3s ease-in-out;
 }
 .directions-button:hover {
-  background-color: #e69500; /* Slightly darker orange on hover */
+  transform: scale(0.9);
+  color: white;
+  background-color: #1976d2; /* Slightly darker orange on hover */
 }
 
 .contact-map {

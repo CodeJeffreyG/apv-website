@@ -1,7 +1,7 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
-  padding-top: 80px; /* Adjusted for a navbar if present */
+  padding-top: 75px; /* Adjusted for a navbar if present */
   width: 100%;
 }
 
@@ -13,7 +13,7 @@
 .arrivalInstructions {
   height: 100vh;
   text-align: center;
-  color: #1976d2; /* White text */
+  color: #1976d2;
 }
 
 .swiperContainer {
