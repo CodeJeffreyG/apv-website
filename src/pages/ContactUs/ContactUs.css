@@ -5,7 +5,7 @@
   font-family: "Arial", sans-serif;
   margin-top: 80px;
   padding-bottom: 80px;
-  height: calc(100vh - 80px);
+  height: 100vh;
 }
 
 .contact-header {
@@ -111,5 +111,11 @@
 
   .google-map {
     height: 300px; /* Smaller map on mobile */
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-map {
+    display: none;
   }
 }
