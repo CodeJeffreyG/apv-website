@@ -4,6 +4,7 @@
   background-color: #f4f3ef;
   font-family: "Arial", sans-serif;
   margin-top: 80px;
+  padding-bottom: 80px;
   height: calc(100vh - 80px);
 }
 

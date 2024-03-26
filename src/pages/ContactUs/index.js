@@ -10,21 +10,20 @@ const ContactUs = () => {
         <div className="contact-info">
           <h1>Find All Pets Veterinary Hospital</h1>
           <p className="address">
-            <strong>Address:</strong> 9219 Alberene Dr, Houston, TX 77074
+            <strong>Address:</strong> 4017 Garret Rd Drexel Hill, PA 19026
           </p>
           <p className="phone">
-            <strong>Phone:</strong> (832) - 757 - 7760
+            <strong>Phone:</strong> (484) - 461 - 7520
           </p>
-          <div className="sales-hours">
-            <h2>Sales</h2>
-            <p>Monday-Friday: 9:00AM - 7 :00PM</p>
-            <p>Saturday: 9:00AM - 6:00PM</p>
-            <p>Sunday: Closed</p>
-          </div>
+
           <div className="service-hours">
-            <h2>Service</h2>
-            <p>Monday-Friday: 9:00AM - 6:00PM</p>
-            <p>Saturday: 9:00AM - 1:00PM</p>
+            <h2>Office Hours</h2>
+            <p>Monday: 9:00AM - 4PM</p>
+            <p>Tuesday 9:00AM - 4PM</p>
+            <p>Wednesday: 9:00AM - 6:00PM</p>
+            <p>Thursday: 2:00PM - 8:00PM</p>
+            <p>Friday: 9:00AM - 6:00PM</p>
+            <p>Saturday-Friday: 9:00AM - 3:00PM (Every Other Saturday)</p>
             <p>Sunday: Closed</p>
           </div>
           <a
