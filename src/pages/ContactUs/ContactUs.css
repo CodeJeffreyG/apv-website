@@ -1,11 +1,10 @@
 /* ContactPage.css */
 .contact-page {
   color: #fff;
-  background-color: #74d3f2;
-
+  background-color: #f4f3ef;
   font-family: "Arial", sans-serif;
-  padding-bottom: 50px;
   margin-top: 80px;
+  height: calc(100vh - 80px);
 }
 
 .contact-header {
@@ -14,6 +13,7 @@
   font-size: 40px;
   padding: 40px 0px;
   font-weight: 700;
+  color: #34568b;
 }
 
 .contact-main {
@@ -30,11 +30,13 @@
 
 .contact-info h1,
 .contact-info h2 {
-  color: white;
+  font-weight: 900;
+  color: #34568b;
 }
 
 .contact-info p {
   margin: 5px 0; /* Spacing for paragraphs */
+  color: #333333;
 }
 
 .sales-hours,
@@ -43,7 +45,7 @@
 }
 
 .directions-button {
-  background-color: #090fbd; /* Orange color */
+  background-color: #ff6b6b; /* Orange color */
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -57,7 +59,7 @@
 .directions-button:hover {
   transform: scale(0.9);
   color: white;
-  background-color: #1976d2; /* Slightly darker orange on hover */
+  background-color: #e45757; /* Slightly darker orange on hover */
 }
 
 .contact-map {

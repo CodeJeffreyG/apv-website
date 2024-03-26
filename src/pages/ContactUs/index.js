@@ -1,5 +1,5 @@
 import "./ContactUs.css";
-import googleMap from "../../assests/carousel-images/staff/Kim-With-Dog.jpg";
+import googleMap from "../../assests/googlemaps.png";
 
 const ContactUs = () => {
   return (
@@ -28,7 +28,7 @@ const ContactUs = () => {
             <p>Sunday: Closed</p>
           </div>
           <a
-            href="https://maps.app.goo.gl/eVZwUgQmRnFwWK1r9"
+            href="https://maps.app.goo.gl/RJvXVjS3p3aQkgb79"
             target="_blank"
             className="directions-button"
             style={{ textDecoration: "none" }}
