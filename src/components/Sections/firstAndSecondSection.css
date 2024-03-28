@@ -1,3 +1,111 @@
+body {
+  padding: 0;
+  margin: 0 0 200px 0;
+}
+
+.diagonal-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+/* Since CSS can't generate content dynamically like the SCSS stars function, 
+you would need to manually define some `box-shadow` values for the stars or generate them via JavaScript */
+
+.stars {
+  z-index: -1;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: opacity 1s ease-in-out;
+}
+
+.stars > .small {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  /* Manually defined example for box-shadow, replace with generated content or use JavaScript */
+  box-shadow: 100px 200px #767676, 400px 800px #767676;
+  animation: starsAnimation 50s linear infinite;
+}
+
+.stars > .small:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  /* Repeat the box-shadow values for consistency */
+  box-shadow: 100px 200px #767676, 400px 800px #767676;
+}
+
+.stars > .medium {
+  width: 4px;
+  height: 4px;
+  background: transparent;
+  /* Example box-shadow values for medium stars */
+  box-shadow: 200px 400px #767676, 600px 1200px #767676;
+  animation: starsAnimation 100s linear infinite;
+}
+
+.stars > .medium:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 4px;
+  height: 4px;
+  background: transparent;
+  box-shadow: 200px 400px #767676, 600px 1200px #767676;
+}
+
+.stars > .big {
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 100%;
+  /* Example box-shadow values for big stars */
+  box-shadow: 300px 600px #767676, 800px 1600px #767676;
+  animation: starsAnimation 150s linear infinite;
+}
+
+.stars > .big:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  box-shadow: 300px 600px #fffbfb, 800px 1600px #f6f6f6;
+  border-radius: 100%;
+}
+
+@keyframes starsAnimation {
+  from {
+    transform: translateY(-2000px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .section {
   display: flex;
   align-items: center;
@@ -5,9 +113,12 @@
 
 /* Section One - Text on left, image on right */
 .section-one {
-  height: calc(50vh - 75px);
+  height: calc(55vh - 75px);
   display: flex;
-  background-color: #f0f0f0; /* Grey background */
+
+  width: 100%;
+  height: 600px;
+  position: relative;
 }
 
 .section-one .text-container {
@@ -17,6 +128,12 @@
   justify-content: center;
   flex: 2;
   padding-right: 20px; /* Spacing between text and image */
+  width: 50%;
+}
+.section-one .text-container p {
+  width: 60%;
+  color: #fff;
+  margin-top: 20px;
 }
 
 .section-one .image-container {
@@ -26,12 +143,46 @@
 }
 
 .section-one h1 {
-  color: #333;
-  font-size: 24px; /* Set a specific font size */
-  border-bottom: 3px solid #0073e6; /* Blue underline */
-  display: inline-block;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  text-align: center;
+  margin: auto;
+  color: #ffffff; /* Nice blue color for the header */
+  white-space: nowrap;
+  padding-bottom: 13px;
+}
+.section-one h1:before {
+  background-color: #c50000;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 50%;
+  margin-bottom: 5px;
+}
+.section-one h1:after {
+  background-color: #c50000;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  width: 50%;
+  margin-bottom: 0.25em;
 }
 
 /* Section Two - Image on left, text on right */
@@ -57,100 +208,145 @@
   justify-content: flex-end; /* Aligns the image to the left */
 }
 
+/* Section 2 H2 */
 .section-two h2 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  text-align: center;
+  margin: auto;
   color: #0073e6; /* Nice blue color for the header */
-  font-size: 24px; /* Set the same font size as .section-one h1 */
-  border-bottom: 3px solid #0073e6; /* Blue underline */
-  display: inline-block;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  white-space: nowrap;
+  padding-bottom: 13px;
+}
+.section-two h2:before {
+  background-color: #c50000;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 220px;
+  margin-bottom: 5px;
+}
+.section-two h2:after {
+  background-color: #c50000;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 220px;
+  bottom: 0;
+  height: 3px;
+  width: 560px;
+  margin-bottom: 0.25em;
 }
 
 .pet-image {
-  min-height: (50vh - 85px);
-  max-height: (50vh - 85px); /* Make the image fill the container height */
-  width: 16rem; /* Make the image fill the container width */
+  min-height: (55vh - 85px);
+  max-height: (55vh - 85px); /* Make the image fill the container height */
+  width: 20rem !important; /* Make the image fill the container width */
   object-fit: cover; /* Cover the area, may crop the image */
   border-radius: 20px; /* Rounded corners for the image */
+  box-shadow: -50px -50px 0 -40px #7b7ef1, 50px 50px 0 -40px #7b7ef1;
 }
 
 .text-container p {
   max-width: 50rem; /* Adjust this value as needed */
   margin: 0;
   line-height: 1.6;
+  text-align: center;
 }
 
-@media (min-width: 1025px) and (max-width: 1400px) {
-  .section-one h1,
-  .section-two h2 {
-    font-size: 30px; /* Increase the font size for larger screens */
-    margin-bottom: 12px; /* Optionally adjust the margin */
-    padding-bottom: 10px; /* Optionally adjust the padding */
-  }
-
-  .text-container p {
-    max-width: 40rem;
-    font-size: 16px; /* Increase the paragraph font size for readability */
-  }
-
-  .pet-image {
-    width: 14rem; /* Increase the width of the image */
-    height: auto; /* Adjust height automatically based on the width to maintain aspect ratio */
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .section-one h1,
-  .section-two h2 {
-    font-size: 24px; /* Increase the font size for larger screens */
-    margin-bottom: 12px; /* Optionally adjust the margin */
-    padding-bottom: 10px; /* Optionally adjust the padding */
-  }
-
-  .text-container p {
-    max-width: 30rem;
-    font-size: 14px; /* Increase the paragraph font size for readability */
-  }
-
-  .pet-image {
-    width: 15rem; /* Increase the width of the image */
-    height: auto; /* Adjust height automatically based on the width to maintain aspect ratio */
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .section {
-    flex-direction: row; /* Arrange items in a row instead of a column */
-    height: 50vh; /* Set each section to full viewport height */
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 100px 0px;
+    height: 850px !important;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
   }
-
-  .section .text-container,
-  .section .image-container {
-    flex: 1; /* Allocate equal space to both containers */
-    height: 100%; /* Ensure each container takes the full height of the section */
-    display: flex; /* Enable flex display for alignment */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+  .diagonal-hero-bg {
+    height: fit-content;
   }
-
-  .section .text-container {
-    padding: 0 20px; /* Add some padding for text readability */
-  }
-
-  .section .image-container {
+  .section-one .text-container {
+    width: 100%;
     flex: 0;
-    display: flex; /* Ensure the image container is displayed as flex */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
+  }
+  .section-one h1 {
+    margin: 0;
+  }
+  .section-one .image-container {
+    flex: 0;
+  }
+  .section-two {
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  .section-two .image-container {
+    width: 50%;
+    flex: 0;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .section h1 {
+    font-size: 25px;
+  }
+  .section h1::after {
+    width: 170px;
+  }
+  .section h2 {
+    font-size: 25px;
+    white-space: normal;
+    word-wrap: break-word; /* Helps break long words if necessary */
+    overflow-wrap: break-word; /* An alternative to word-wrap */
+    margin-bottom: 50px;
+  }
+  .section h2::after {
+    width: 170px;
+  }
+  .section-two .text-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 496px) {
+  .section h1,
+  .section-two h2 {
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
   }
 
-  .pet-image {
-    display: none;
-    height: auto; /* Cover the container while preserving the aspect ratio */
+  .section-two .image-container {
+    width: 75%;
   }
-
-  .text-container p {
-    text-align: left; /* Align the text to the left */
-    max-width: none; /* Remove the max-width restriction */
+  .section-two {
+    margin-top: 250px;
+  }
+  .section h1::after,
+  .section h1::before,
+  .section-two h2::after,
+  .section-two h2::before {
+    width: 0;
+  }
+  .section-two .text-container {
+    margin-right: 20px;
   }
 }

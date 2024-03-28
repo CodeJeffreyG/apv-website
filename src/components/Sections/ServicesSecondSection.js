@@ -9,6 +9,7 @@ const ServicesSecondSection = ({ textInformation, image }) => {
       </div>
       <div className="text-container">
         <h2>{textInformation.secondSectionTitle}</h2>
+
         <p>
           {textInformation.secondSectionInformationOne}
           <br />
