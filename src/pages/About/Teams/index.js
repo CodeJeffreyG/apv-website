@@ -21,7 +21,7 @@ const Teams = () => {
             <div className="row">
               <div className="col-md-12">
                 <img
-                  src={member.image.url}
+                  src={member.image.img}
                   alt={member.image.alt}
                   className="img-fluid rounded-circle team-img"
                 />
