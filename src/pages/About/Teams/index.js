@@ -26,12 +26,14 @@ const Teams = () => {
                   className="img-fluid rounded-circle team-img"
                 />
               </div>
-              <div className="col-md-12 text-center">
+              <div className="col-md-12 text-left">
                 <div className="pt-2">
-                  <h4 className="mt-4 font-weight-medium mb-0">
+                  <h4 className="mt-4 font-weight-medium mb-0 text-center">
                     {member.name}
                   </h4>
-                  <h6 className="subtitle mb-3">{member.jobTitle}</h6>
+                  <h6 className="subtitle mb-3 text-center">
+                    {member.jobTitle}
+                  </h6>
                   <p>{member.description}</p>
                 </div>
               </div>
