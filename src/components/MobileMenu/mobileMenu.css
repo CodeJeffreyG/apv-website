@@ -31,9 +31,6 @@
   padding: 20px 0; /* Add some padding to increase tap area */
   text-decoration: none; /* Removes underline from links */
 }
-.toggled-nav-item a:hover {
-  color: red;
-}
 
 .toggled-nav-item .emergency {
   font-weight: bold; /* Make EMERGENCY text bolder */

@@ -166,7 +166,7 @@ you would need to manually define some `box-shadow` values for the stars or gene
   padding-bottom: 13px;
 }
 .section-one h1:before {
-  background-color: #c50000;
+  background-color: #c5e01f;
   content: "";
   display: block;
   height: 3px;
@@ -174,7 +174,7 @@ you would need to manually define some `box-shadow` values for the stars or gene
   margin-bottom: 5px;
 }
 .section-one h1:after {
-  background-color: #c50000;
+  background-color: #c5e01f;
   content: "";
   display: block;
   position: absolute;
@@ -233,7 +233,7 @@ you would need to manually define some `box-shadow` values for the stars or gene
   padding-bottom: 13px;
 }
 .section-two h2:before {
-  background-color: #c50000;
+  background-color: #5e7fa6;
   content: "";
   display: block;
   height: 3px;
@@ -241,7 +241,7 @@ you would need to manually define some `box-shadow` values for the stars or gene
   margin-bottom: 5px;
 }
 .section-two h2:after {
-  background-color: #c50000;
+  background-color: #5e7fa6;
   content: "";
   display: block;
   position: absolute;
