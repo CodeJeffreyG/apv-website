@@ -3,8 +3,11 @@
   color: #fff;
   background-color: #f4f3ef;
   font-family: "Arial", sans-serif;
-  margin-top: 80px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-header {
