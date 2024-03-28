@@ -5,13 +5,14 @@ import MichelleTaylor from "../../src/assests/team-images/MT-CROPPED.webp";
 import SamFink from "../../src/assests/team-images/Sam-F-cropped.webp";
 import DanielleBrown from "../../src/assests/team-images/Danielle.jpg";
 import Treena from "../../src/assests/team-images/Treena.jpg";
+import Lou from "../../src/assests/team-images/LouWCat.jpg";
 const TEAM_MEMBERS = [
   {
     id: 1,
     name: "Kimberly Bowers",
     jobTitle: "VMD",
     description:
-      "Danielle joined the All Pets Vet team in March, 2019. She has been working in the pet care field since 2010. Although Danielle has completed medical assistant coursework, her passion is caring for animals and in assisting the owners who love them.",
+      "Dr. Bowers has a special interest in traditional as well as non-traditional and emergency veterinary medicine, treating cats, dogs, birds, small exotics as well as amphibians and reptiles. She earned her doctorate degree from the University of Pennsylvania School of Veterinary Medicine. Dr. Bowers shares her home with two large dogs (Duncan and Reina), six cats (Bodhi, Jolene, Teddy, Prendie, Mo & Charlie Bob), and two snakes (Ricky and Sissy)Dr. Bowers is committed to your pets health and happiness.",
 
     image: {
       img: KimBowers,
@@ -51,7 +52,8 @@ const TEAM_MEMBERS = [
     id: 7,
     name: "Treena",
     jobTitle: "Veterinary Technician",
-    description: " to be filled ",
+    description:
+      " Treena started Vetmed in 2001 and joined APV in 2021. Has worked with all types of wildlife, exotic and domesticated animals. Lives with two pit bulls; Ned and Rumple, one cat named Shamus, and a beaded dragon named Ragnar. Treena enjoys her children and anything Star Wars-related.  ",
 
     image: {
       img: Treena,
@@ -69,6 +71,18 @@ const TEAM_MEMBERS = [
 
     image: {
       img: LisaWheaton,
+      url: "",
+      alt: "wrapkit",
+    },
+  },
+
+  {
+    id: 8,
+    name: "Lisa",
+    jobTitle: "Veterinary Technician",
+    description: "to be filled",
+    image: {
+      img: Lou,
       url: "",
       alt: "wrapkit",
     },
