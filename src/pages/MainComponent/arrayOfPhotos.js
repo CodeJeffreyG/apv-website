@@ -4,6 +4,7 @@ import LoutWithCat from "../../assests/carousel-images/staff/LouWCat.jpg";
 import EmilysHamsterPhillip from "../../assests/carousel-images/staffExotic/phillipEmilysHamster.jpg";
 import EmilysBunny from "../../assests/carousel-images/staffExotic/bunny-emily.jpg";
 import TreenasRadnor from "../../assests/carousel-images/staffExotic/radnor-treenas-bd.jpg";
+import LousParm from "../../assests/carousel-images/staffExotic/LousParm.jpg";
 //not staff animals
 import randomDog1 from "../../assests/carousel-images/notStaffDogs/doggie.jpg";
 import randomDog2 from "../../assests/carousel-images/notStaffDogs/doggie2.jpg";
@@ -17,9 +18,16 @@ import randomDog12 from "../../assests/carousel-images/notStaffDogs/doggie12.jpg
 //not staff Cats
 import randomCat1 from "../../assests/carousel-images/notStaffCats/cats1.jpg";
 import randomCat2 from "../../assests/carousel-images/notStaffCats/cat4.jpg";
+import randomCat5 from "../../assests/carousel-images/notStaffCats/cat5.jpg";
+import randomCat6 from "../../assests/carousel-images/notStaffCats/cat6.jpg";
+import randomCat7 from "../../assests/carousel-images/notStaffCats/cat7.jpg";
+import randomCat8 from "../../assests/carousel-images/notStaffCats/cat8.jpg";
+import randomCat9 from "../../assests/carousel-images/notStaffCats/cat9.jpg";
 //not staff exotic
 //not staff birds
 import randomBird1 from "../../assests/carousel-images/notStaffExotic/bird1.jpg";
+import randomBird3 from "../../assests/carousel-images/notStaffExotic/bird3.jpeg";
+//not staff reptiles
 import randomReptile1 from "../../assests/carousel-images/notStaffExotic/reptile1.jpg";
 import randomReptile2 from "../../assests/carousel-images/notStaffExotic/reptile2.jpg";
 import randomReptile3 from "../../assests/carousel-images/notStaffExotic/reptile3.jpg";
@@ -32,7 +40,7 @@ const staffAnimals = () => {
   const staffAndAnimalPhotos = {
     dogs: [BellesDozer],
     cats: [],
-    exotic: [EmilysBunny, EmilysHamsterPhillip, TreenasRadnor],
+    exotic: [EmilysBunny, EmilysHamsterPhillip, TreenasRadnor, LousParm],
     employee: [LoutWithCat],
   };
 
@@ -52,9 +60,18 @@ const allNotStaffAnimals = () => {
       randomDog11,
       randomDog12,
     ],
-    cats: [randomCat1, randomCat2],
+    cats: [
+      randomCat1,
+      randomCat2,
+      randomCat5,
+      randomCat6,
+      randomCat7,
+      randomCat8,
+      randomCat9,
+    ],
     exotic: [
       randomBird1,
+      randomBird3,
       randomReptile1,
       randomReptile2,
       randomReptile3,

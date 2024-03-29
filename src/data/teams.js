@@ -38,7 +38,7 @@ const TEAM_MEMBERS = [
     id: 3,
     name: "Belle",
     jobTitle: "Veterinary Technician",
-    description:
+  description:
       "Belle has been with All Pets Vet shortly after its opening. She had worked with Dr. Bowers previously, and has been a veterinary technician for over 15 years.  Her primary interests include anesthesia and dental procedures.  Bele is originally from Baltimore, Maryland and is the mother of four wonderful children. ",
 
     image: {
@@ -78,7 +78,7 @@ const TEAM_MEMBERS = [
 
   {
     id: 8,
-    name: "Lisa",
+    name: "Lisa Lou",
     jobTitle: "Veterinary Technician",
     description: "to be filled",
     image: {
@@ -107,7 +107,7 @@ const TEAM_MEMBERS = [
     name: "Danielle",
     jobTitle: "Receptionist",
     description:
-      "Danielle joined the All Pets Vet team in March, 2019. She has been working in the pet care field since 2010. Although Danielle has completed medical assistant coursework, her passion is caring for animals and in assisting the owners who love them.",
+      "Danielle joined the All Pets Vet team in March of 2019. With over ten years of experience, she found her love of dogs and cats as well as all types of exotic animals. Danielle lives at home with her husband, two cats, and two dogs. She enjoys all things Halloween, going to concerts, and her yearly trip to Salem Massachusetts.",
 
     image: {
       img: DanielleBrown,
