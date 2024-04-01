@@ -1,11 +1,12 @@
 import KimBowers from "../../src/assests/team-images/Kim-With-Dog.jpg";
-import BelleH from "../../src/assests/team-images/Bele-H-cropped.webp";
+import BeleH from "../../src/assests/team-images/Bele-H-cropped.webp";
 import LisaWheaton from "../../src/assests/team-images/Lisa-Bates-2-cropped.webp";
 import MichelleTaylor from "../../src/assests/team-images/MT-CROPPED.webp";
 import SamFink from "../../src/assests/team-images/Sam-F-cropped.webp";
 import DanielleBrown from "../../src/assests/team-images/Danielle.jpg";
 import Treena from "../../src/assests/team-images/Treena.jpg";
 import Lou from "../../src/assests/team-images/LouWCat.jpg";
+import questionMARK from "../assests/team-images/questionMark.jpg";
 const TEAM_MEMBERS = [
   {
     id: 1,
@@ -16,6 +17,18 @@ const TEAM_MEMBERS = [
 
     image: {
       img: KimBowers,
+      url: "",
+      alt: "wrapkit",
+    },
+  },
+  {
+    id: 9,
+    name: "Mark Bowers",
+    jobTitle: "Office Manager",
+    description: "I don't have a computer",
+
+    image: {
+      img: questionMARK,
       url: "",
       alt: "wrapkit",
     },
@@ -36,13 +49,13 @@ const TEAM_MEMBERS = [
 
   {
     id: 3,
-    name: "Belle",
+    name: "Bele",
     jobTitle: "Veterinary Technician",
-  description:
-      "Belle has been with All Pets Vet shortly after its opening. She had worked with Dr. Bowers previously, and has been a veterinary technician for over 15 years.  Her primary interests include anesthesia and dental procedures.  Bele is originally from Baltimore, Maryland and is the mother of four wonderful children. ",
+    description:
+      "Bele has been with All Pets Vet shortly after its opening. She had worked with Dr. Bowers previously, and has been a veterinary technician for 20 years.  Her primary interests include anesthesia and dental procedures.  Bele is originally from Baltimore, Maryland and is the mother of four wonderful children. ",
 
     image: {
-      img: BelleH,
+      img: BeleH,
       url: "",
       alt: "wrapkit",
     },
