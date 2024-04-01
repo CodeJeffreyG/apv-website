@@ -1,16 +1,14 @@
 //staff
 import KimWithChicken from "../../assests/carousel-images/staff/Kim-With-Chicken.jpg";
-import DanielleWithCham from "../../assests/carousel-images/staff/Danielle-With-Chameleon.jpg";
 import DanielleWithSnake from "../../assests/carousel-images/staff/Danielle-With-Snake.jpg";
 //staff animals
-import BellesDozer from "../../assests/carousel-images/staffDogs/dozer-belles.jpg";
+
 import LoutWithCat from "../../assests/carousel-images/staff/LouWCat.jpg";
 import EmilysHamsterPhillip from "../../assests/carousel-images/staffExotic/phillipEmilysHamster.jpg";
 import EmilysBunny from "../../assests/carousel-images/staffExotic/bunny-emily.jpg";
 import TreenasRadnor from "../../assests/carousel-images/staffExotic/radnor-treenas-bd.jpg";
 import LousParm from "../../assests/carousel-images/staffExotic/LousParm.jpg";
 //not staff animals
-import randomDog1 from "../../assests/carousel-images/notStaffDogs/doggie.jpg";
 import randomDog2 from "../../assests/carousel-images/notStaffDogs/doggie2.jpg";
 import randomDog4 from "../../assests/carousel-images/notStaffDogs/doggie4.jpg";
 import randomDog5 from "../../assests/carousel-images/notStaffDogs/doggie5.jpg";
@@ -40,19 +38,13 @@ import randomReptile4 from "../../assests/carousel-images/notStaffExotic/reptile
 
 //not staff rabbits
 import randomRabbit2 from "../../assests/carousel-images/notStaffExotic/bunny2.jpg";
-import randomRabbit3 from "../../assests/carousel-images/notStaffExotic/bunny3.jpg";
 
 const staffAnimals = () => {
   const staffAndAnimalPhotos = {
-    dogs: [BellesDozer],
+    dogs: [],
     cats: [],
     exotic: [EmilysBunny, EmilysHamsterPhillip, TreenasRadnor, LousParm],
-    employee: [
-      LoutWithCat,
-      KimWithChicken,
-      DanielleWithCham,
-      DanielleWithSnake,
-    ],
+    employee: [LoutWithCat, KimWithChicken, DanielleWithSnake],
   };
 
   return staffAndAnimalPhotos;
@@ -61,7 +53,6 @@ const staffAnimals = () => {
 const allNotStaffAnimals = () => {
   const allNotStaffAnimals = {
     dogs: [
-      randomDog1,
       randomDog2,
       randomDog4,
       randomDog5,
@@ -89,7 +80,6 @@ const allNotStaffAnimals = () => {
       randomReptile3,
       randomReptile4,
       randomRabbit2,
-      randomRabbit3,
     ],
   };
 
