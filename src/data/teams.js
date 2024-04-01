@@ -107,10 +107,10 @@ const TEAM_MEMBERS = [
     id: 8,
     name: "Lou",
     jobTitle: "Veterinary Technician",
-    description: "to be filled",
+    description:
+      "Lou started working at All Pets Vet in 2020. They graduated from Harcum College in 2019 and the following year received a license as a veterinary technician. In their free time they enjoy spending time with their two rats and three cats.",
     image: {
       img: Lou,
-      url: "",
       alt: "wrapkit",
     },
   },
