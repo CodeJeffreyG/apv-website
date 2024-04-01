@@ -40,7 +40,7 @@ const TEAM_MEMBERS = [
     name: "Michele",
     jobTitle: "Senior Receptionist",
     description:
-      "Michele has been with All Pets Vet since opening day, and formerly worked with Dr. Bowers at another local animal hospital.  She has worked in the veterinary field for over 15 years.  Outside of work she loves to take her dogs for walks, go to concerts and participate in other types of outdoor events.   She is also our primary FaceBook coordinator.",
+      "Michele has been with All Pets Vet since opening day, and formerly worked with Dr. Bowers at another local animal hospital.  She has worked in the veterinary field for over 20 years.  Outside of work she loves to take her dogs for walks, go to concerts and participate in other types of outdoor events.   She is also our primary FaceBook coordinator.",
 
     image: {
       img: MichelleTaylor,
@@ -108,7 +108,7 @@ const TEAM_MEMBERS = [
     name: "Lou",
     jobTitle: "Veterinary Technician",
     description:
-      "Lou started working at All Pets Vet in 2020. They graduated from Harcum College in 2019 and the following year received a license as a veterinary technician. In their free time they enjoy spending time with their two rats and three cats.",
+      "Lou started working at All Pets Vet in 2020. They graduated from Harcum College in 2019 and the following year received a license as a veterinary technician. Lou has a passion for assisting the doctor in surgical procedures. In their free time they enjoy spending time with their two rats and three cats.",
     image: {
       img: Lou,
       alt: "wrapkit",
