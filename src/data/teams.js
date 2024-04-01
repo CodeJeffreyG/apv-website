@@ -7,6 +7,8 @@ import DanielleBrown from "../../src/assests/team-images/Danielle.jpg";
 import Treena from "../../src/assests/team-images/Treena.jpg";
 import Lou from "../../src/assests/team-images/LouWCat.jpg";
 import questionMARK from "../assests/team-images/questionMark.jpg";
+import Cyndi from "../assests/team-images/cyndi.jpg";
+
 const TEAM_MEMBERS = [
   {
     id: 1,
@@ -24,7 +26,7 @@ const TEAM_MEMBERS = [
   {
     id: 9,
     name: "Mark Bowers",
-    jobTitle: "Office Manager",
+    jobTitle: "Office Manager?",
     description: "I don't have a computer",
 
     image: {
@@ -52,7 +54,7 @@ const TEAM_MEMBERS = [
     name: "Bele",
     jobTitle: "Veterinary Technician",
     description:
-      "Bele has been with All Pets Vet shortly after its opening. She had worked with Dr. Bowers previously, and has been a veterinary technician for 20 years.  Her primary interests include anesthesia and dental procedures.  Bele is originally from Baltimore, Maryland and is the mother of four wonderful children. ",
+      "Bele has been with All Pets Vet shortly after its opening. She had worked with Dr. Bowers previously, and has been a veterinary technician for 20 years.  Her primary interests include anesthesia and dental procedures.  Bele is originally from Baltimore, Maryland. Is the mother of four wonderful children and multiple pets. ",
 
     image: {
       img: BeleH,
@@ -76,6 +78,18 @@ const TEAM_MEMBERS = [
   },
 
   {
+    id: 10,
+    name: "Cyndi",
+    jobTitle: "Veterinary Technician",
+    description: "to be filled",
+    image: {
+      img: Cyndi,
+      url: "",
+      alt: "wrapkit",
+    },
+  },
+
+  {
     id: 4,
     name: "Lisa",
     jobTitle: "Veterinary Technician",
@@ -91,7 +105,7 @@ const TEAM_MEMBERS = [
 
   {
     id: 8,
-    name: "Lisa Lou",
+    name: "Lou",
     jobTitle: "Veterinary Technician",
     description: "to be filled",
     image: {
