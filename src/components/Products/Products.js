@@ -17,7 +17,7 @@ function Products({ heading, data }) {
               <LocalHospitalIcon
                 sx={{ fontSize: 34, color: "#bd092d", verticalAlign: "middle" }}
               />
-              <Typography variant="h6" component="h1">
+              <Typography variant="h6" component="h1" className="product-card-h6" >
                 {item.day}
               </Typography>
               <Typography>{item.hours}</Typography>

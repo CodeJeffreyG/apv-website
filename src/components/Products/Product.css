@@ -28,6 +28,7 @@
   background-color: white;
   border-radius: 20px;
   box-shadow: 8px 5px #090fbd;
+  pointer-events: none;
 }
 .product-heading {
   margin-bottom: 40px;
