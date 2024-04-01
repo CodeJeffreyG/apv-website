@@ -24,7 +24,7 @@ const TEAM_MEMBERS = [
     },
   },
   {
-    id: 9,
+    id: 2,
     name: "Mark Bowers",
     jobTitle: "Office Manager?",
     description: "I don't have a computer",
@@ -36,7 +36,7 @@ const TEAM_MEMBERS = [
     },
   },
   {
-    id: 2,
+    id: 3,
     name: "Michele",
     jobTitle: "Senior Receptionist",
     description:
@@ -50,7 +50,7 @@ const TEAM_MEMBERS = [
   },
 
   {
-    id: 3,
+    id: 4,
     name: "Bele",
     jobTitle: "Veterinary Technician",
     description:
@@ -64,7 +64,7 @@ const TEAM_MEMBERS = [
   },
 
   {
-    id: 7,
+    id: 5,
     name: "Treena",
     jobTitle: "Veterinary Technician",
     description:
@@ -78,7 +78,7 @@ const TEAM_MEMBERS = [
   },
 
   {
-    id: 10,
+    id: 6,
     name: "Cyndi",
     jobTitle: "Veterinary Technician",
     description: "to be filled",
@@ -90,7 +90,7 @@ const TEAM_MEMBERS = [
   },
 
   {
-    id: 4,
+    id: 7,
     name: "Lisa",
     jobTitle: "Veterinary Technician",
     description:
@@ -116,7 +116,7 @@ const TEAM_MEMBERS = [
   },
 
   {
-    id: 5,
+    id: 9,
     name: "Sam",
     jobTitle: "Receptionist",
     description:
@@ -130,7 +130,7 @@ const TEAM_MEMBERS = [
   },
 
   {
-    id: 6,
+    id: 10,
     name: "Danielle",
     jobTitle: "Receptionist",
     description:
