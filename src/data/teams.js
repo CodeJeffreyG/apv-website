@@ -152,7 +152,7 @@ const TEAM_MEMBERS = [
       "Jeff is the most recent to join the APV family. He has interests such as playing guitar, programming, spending time with his family and his two cats",
     image: {
       img: Jeff,
-      url: "",
+      url: "", 
       alt: "wrapkit",
     },
   },

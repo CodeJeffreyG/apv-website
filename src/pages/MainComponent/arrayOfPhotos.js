@@ -1,3 +1,7 @@
+//staff
+import KimWithChicken from "../../assests/carousel-images/staff/Kim-With-Chicken.jpg";
+import DanielleWithCham from "../../assests/carousel-images/staff/Danielle-With-Chameleon.jpg";
+import DanielleWithSnake from "../../assests/carousel-images/staff/Danielle-With-Snake.jpg";
 //staff animals
 import BellesDozer from "../../assests/carousel-images/staffDogs/dozer-belles.jpg";
 import LoutWithCat from "../../assests/carousel-images/staff/LouWCat.jpg";
@@ -27,10 +31,12 @@ import randomCat9 from "../../assests/carousel-images/notStaffCats/cat9.jpg";
 //not staff birds
 import randomBird1 from "../../assests/carousel-images/notStaffExotic/bird1.jpg";
 import randomBird3 from "../../assests/carousel-images/notStaffExotic/bird3.jpeg";
+import randomBird4 from "../../assests/carousel-images/notStaffExotic/bird4.jpg";
 //not staff reptiles
 import randomReptile1 from "../../assests/carousel-images/notStaffExotic/reptile1.jpg";
 import randomReptile2 from "../../assests/carousel-images/notStaffExotic/reptile2.jpg";
 import randomReptile3 from "../../assests/carousel-images/notStaffExotic/reptile3.jpg";
+import randomReptile4 from "../../assests/carousel-images/notStaffExotic/reptile4.jpg";
 
 //not staff rabbits
 import randomRabbit2 from "../../assests/carousel-images/notStaffExotic/bunny2.jpg";
@@ -41,7 +47,12 @@ const staffAnimals = () => {
     dogs: [BellesDozer],
     cats: [],
     exotic: [EmilysBunny, EmilysHamsterPhillip, TreenasRadnor, LousParm],
-    employee: [LoutWithCat],
+    employee: [
+      LoutWithCat,
+      KimWithChicken,
+      DanielleWithCham,
+      DanielleWithSnake,
+    ],
   };
 
   return staffAndAnimalPhotos;
@@ -72,9 +83,11 @@ const allNotStaffAnimals = () => {
     exotic: [
       randomBird1,
       randomBird3,
+      randomBird4,
       randomReptile1,
       randomReptile2,
       randomReptile3,
+      randomReptile4,
       randomRabbit2,
       randomRabbit3,
     ],
