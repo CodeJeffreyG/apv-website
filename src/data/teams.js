@@ -8,6 +8,7 @@ import Treena from "../../src/assests/team-images/Treena.jpg";
 import Lou from "../../src/assests/team-images/LouWCat.jpg";
 import questionMARK from "../assests/team-images/questionMark.jpg";
 import Cyndi from "../assests/team-images/cyndi.jpg";
+import Jeff from "../assests/team-images/Jeff.jpg";
 
 const TEAM_MEMBERS = [
   {
@@ -138,6 +139,19 @@ const TEAM_MEMBERS = [
 
     image: {
       img: DanielleBrown,
+      url: "",
+      alt: "wrapkit",
+    },
+  },
+
+  {
+    id: 11,
+    name: "Jeff",
+    jobTitle: "Receptionist",
+    description:
+      "Jeff is the most recent to join the APV family. He has interests such as playing guitar, programming, spending time with his family and his two cats",
+    image: {
+      img: Jeff,
       url: "",
       alt: "wrapkit",
     },
