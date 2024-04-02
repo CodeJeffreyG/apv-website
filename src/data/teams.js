@@ -2,7 +2,7 @@ import KimBowers from "../../src/assests/team-images/Kim-With-Dog.jpg";
 import BeleH from "../../src/assests/team-images/Bele-H-cropped.webp";
 import LisaWheaton from "../../src/assests/team-images/Lisa-Bates-2-cropped.webp";
 import MichelleTaylor from "../../src/assests/team-images/MT-CROPPED.webp";
-import SamFink from "../../src/assests/team-images/Sam-F-cropped.webp";
+import SamFink from "../../src/assests/team-images/Sam-F-cropped.jpg";
 import DanielleBrown from "../../src/assests/team-images/Danielle.jpg";
 import Treena from "../../src/assests/team-images/Treena.jpg";
 import Lou from "../../src/assests/team-images/LouWCat.jpg";
@@ -152,7 +152,7 @@ const TEAM_MEMBERS = [
       "Jeff is the most recent to join the APV family. He has interests such as playing guitar, programming, spending time with his family and his two cats",
     image: {
       img: Jeff,
-      url: "", 
+      url: "",
       alt: "wrapkit",
     },
   },

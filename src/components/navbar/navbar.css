@@ -53,7 +53,7 @@
 }
 
 .phone-link:hover {
-  transform: scale(0.95);
+  transform: scale(1.03);
   background-color: #090fbd;
   color: white; /* Text color on hover */
   text-decoration: none; /* Prevents underline on hover */

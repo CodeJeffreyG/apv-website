@@ -1,6 +1,7 @@
 //staff
 import KimWithChicken from "../../assests/carousel-images/staff/Kim-With-Chicken.jpg";
 import DanielleWithSnake from "../../assests/carousel-images/staff/Danielle-With-Snake.jpg";
+import DanielleWithCham from "../../assests/carousel-images/staff/Danielle-With-Chameleon.jpg";
 //staff animals
 
 import LoutWithCat from "../../assests/carousel-images/staff/LouWCat.jpg";
@@ -44,7 +45,12 @@ const staffAnimals = () => {
     dogs: [],
     cats: [],
     exotic: [EmilysBunny, EmilysHamsterPhillip, TreenasRadnor, LousParm],
-    employee: [LoutWithCat, KimWithChicken, DanielleWithSnake],
+    employee: [
+      LoutWithCat,
+      KimWithChicken,
+      DanielleWithSnake,
+      DanielleWithCham,
+    ],
   };
 
   return staffAndAnimalPhotos;
