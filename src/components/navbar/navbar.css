@@ -90,8 +90,8 @@
 }
 
 .navv-item:hover {
-  transition: all 0.3s ease;
-  transform: scale(0.9);
+  transition: all 0.1s ease;
+  transform: scale(1.1);
 }
 .navv-item a:hover {
   color: #090fbd;
