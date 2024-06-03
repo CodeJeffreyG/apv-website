@@ -22,11 +22,12 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  width: 100%;
   max-width: 1200px; /* Adjust the max-width as per your layout requirement */
 }
 
 .contact-info {
-  flex: 1;
+  width: 50%;
   margin-right: 20px; /* Spacing between info and map */
 }
 

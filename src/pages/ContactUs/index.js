@@ -1,6 +1,6 @@
 import "./ContactUs.css";
 import googleMap from "../../assests/googlemaps.png";
-
+import GoogleMap from "../../components/GoogleMaps/index";
 const ContactUs = () => {
   return (
     <div className="contact-page">
@@ -37,9 +37,8 @@ const ContactUs = () => {
             GET DIRECTIONS
           </a>
         </div>
-
         <div className="contact-map">
-          <img src={googleMap} className="w-100" alt="" />
+          <GoogleMap />
         </div>
       </main>
     </div>
