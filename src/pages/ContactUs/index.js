@@ -4,16 +4,18 @@ import googleMap from "../../assests/googlemaps.png";
 const ContactUs = () => {
   return (
     <div className="contact-page">
-      <div className="contact-header">Find Us</div>
+      <div className="contact-header">Find All Pets Veterinary Hospital</div>
 
       <main className="contact-main">
         <div className="contact-info">
-          <h1>Find All Pets Veterinary Hospital</h1>
           <p className="address">
             <strong>Address:</strong> 4017 Garret Rd Drexel Hill, PA 19026
           </p>
           <p className="phone">
             <strong>Phone:</strong> (484) - 461 - 7520
+          </p>
+          <p className="phone">
+            <strong>Email:</strong> drbowers@allpetsvet.net
           </p>
 
           <div className="service-hours">

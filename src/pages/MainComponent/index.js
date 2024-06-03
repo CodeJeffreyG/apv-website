@@ -1,6 +1,7 @@
 import "./maincomponent.css";
 import React, { useEffect, useState } from "react";
 import CenteredOverlay from "./centeredOverlay/centeredOverlay";
+import ContactUs from "../ContactUs";
 import { hoursData } from "../../data/hours";
 import { combinedPhotos } from "./arrayOfPhotos"; // Ensure correct path
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -52,9 +53,7 @@ const MainComponent = () => {
           </Swiper>
         </div>
 
-        <div className="working-hours">
-          <Products heading={"Hospital Hours"} data={hoursData} />
-        </div>
+        <ContactUs />
 
         <Footer />
       </div>
