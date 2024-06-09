@@ -215,14 +215,6 @@
   font-size: 20px;
 }
 
-.emergency-link-info {
-  color: black;
-}
-
-.phone-number {
-  font-size: 16px;
-}
-
 .emergency-header-container {
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -236,8 +228,16 @@
   margin-top: 30px;
 }
 
-.hospital-name {
+.emergency-link-info {
   color: black;
+}
+
+.hospital-name {
+  color: #7a7ef1;
+}
+
+.phone-number {
+  font-size: 16px;
 }
 
 @media (min-width: 1600px) {
