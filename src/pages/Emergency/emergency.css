@@ -4,7 +4,6 @@
   width: 100%;
   background-color: #fff; /* Assuming a white background */
 
-
   align-items: center;
   justify-content: space-around;
   font-family: "Arial", sans-serif; /* Use the font that matches your design */
@@ -12,6 +11,7 @@
 
 .emergency-header-container {
   padding-top: 2.5rem;
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -31,14 +31,13 @@
 }
 
 .emergency-lists {
-display: flex;
+  display: flex;
 }
 
 .emergency-column {
   /* display: grid; */
   grid-template-columns: 1fr; /* all content in a single column */
 
-  
   width: 100%;
 }
 
@@ -122,8 +121,7 @@ display: flex;
 }
 
 @media (max-width: 614px) {
-
-.emergency-header-container  {
+  .emergency-header-container {
     border: none !important;
 
     box-shadow: none !important;
@@ -148,7 +146,6 @@ display: flex;
 
   .emergency-header {
     font-size: 24px;
-    background-color: red;
   }
 
   .emergency-instructions {
@@ -175,14 +172,13 @@ display: flex;
   .emergency-link-info {
     font-size: 12px;
   }
-  .emergency-lists{
-/* flex-direction: column; */
-display: block;
+  .emergency-lists {
+    /* flex-direction: column; */
+    display: block;
   }
 }
 
-
-.map-content{
+.map-content {
   background-color: white;
   color: black !important;
   padding-top: 0px;
@@ -193,28 +189,24 @@ display: block;
   align-items: center;
   justify-content: space-between;
 }
-.map-content a{
+.map-content a {
   color: black;
   font-weight: bolder;
-  
-
 }
 
 .map-wrapper {
   margin-top: 20px;
 }
 
-
-.mapIcon{
-
+.mapIcon {
 }
 
-.iframe{
+.iframe {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-.get-direction-btn{
+.get-direction-btn {
   padding: 10px 10px;
   /* background-color: white; */
   color: black !important;
@@ -223,16 +215,15 @@ display: block;
   font-size: 20px;
 }
 
-.emergency-link-info{
-  color:black;
+.emergency-link-info {
+  color: black;
 }
 
-.phone-number{
+.phone-number {
   font-size: 16px;
 }
 
-
-.emergency-header-container{
+.emergency-header-container {
   background-color: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
@@ -243,4 +234,18 @@ display: block;
   box-shadow: 10px 10px #7a7ef1;
   margin-bottom: 20px;
   margin-top: 30px;
+}
+
+.hospital-name {
+  color: black;
+}
+
+@media (min-width: 1600px) {
+  .emergency-column {
+    margin-top: 7.5rem;
+  }
+
+  .emergency-header-container {
+    margin-top: 5rem;
+  }
 }

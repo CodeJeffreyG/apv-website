@@ -2,11 +2,11 @@ import "./emergency.css";
 import React from "react";
 import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 
-// Import data 
+// Import data
 import EMERGENCY_HOSPITALS from "../../data/emergencyHospitals";
 import EXOTIC_PATIENT_HOSPITALS from "../../data/exoticPatientHospitals";
 
-import MapIcon from "../../assests/google-maps-bigger.png"
+import MapIcon from "../../assests/google-maps-bigger.png";
 
 const Emergency = () => {
   return (
@@ -29,32 +29,25 @@ const Emergency = () => {
         </div>
       </div>
 
-      <br /><br />
+      <br />
+      <br />
 
       <div className="emergency-lists">
         <div className="emergency-column col-lg-6 col-md-6 col-12">
           <div className="emergency-type">Emergency Hospitals:</div>
           {EMERGENCY_HOSPITALS.map((item) => (
             <div className="map-wrapper col-md-12 col-lg-12 col-12">
-
               <div className="map-content">
-                <a
-                  href={item.url}
-                  target="_blank"
-                  className="emergency-link"
-                >
-                  {item.name}
-                  <span className="emergency-link-info">
-                    {item.location}
-                  </span>
+                <a href={item.url} target="_blank" className="emergency-link">
+                  <span className="hospital-name">{item.name}</span>
+
+                  <span className="emergency-link-info">{item.location}</span>
                   <span className="phone-number">(555) 555 5555</span>
                 </a>
 
                 <a href={item.directions} className="get-direction-btn">
                   <img src={MapIcon} className="mapIcon" alt="" />
-
                 </a>
-
               </div>
             </div>
           ))}
@@ -63,26 +56,16 @@ const Emergency = () => {
           <div className="emergency-type">For Our Exotic Patients:</div>
           {EXOTIC_PATIENT_HOSPITALS.map((item) => (
             <div className="map-wrapper col-md-12 col-lg-12 col-12">
-
               <div className="map-content">
-                <a
-                  href={item.url}
-                  target="_blank"
-                  className="emergency-link"
-                >
-                  {item.name}
-                  <span className="emergency-link-info">
-                    {item.location}
-                  </span>
+                <a href={item.url} target="_blank" className="emergency-link">
+                  <span className="hospital-name">{item.name}</span>
+                  <span className="emergency-link-info">{item.location}</span>
                   <span className="phone-number">(555) 555 5555</span>
                 </a>
 
                 <a href={item.directions} className="get-direction-btn">
-
                   <img src={MapIcon} className="mapIcon" alt="" />
-
                 </a>
-
               </div>
             </div>
           ))}
