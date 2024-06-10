@@ -46,7 +46,12 @@ const Emergency = () => {
                 </a>
 
                 <a href={item.directions} className="get-direction-btn">
-                  <img src={MapIcon} className="mapIcon" alt="" />
+                  <img
+                    src={MapIcon}
+                    className="mapIcon"
+                    target="_blank"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
@@ -63,7 +68,11 @@ const Emergency = () => {
                   <span className="phone-number">(555) 555 5555</span>
                 </a>
 
-                <a href={item.directions} className="get-direction-btn">
+                <a
+                  href={item.directions}
+                  className="get-direction-btn"
+                  target="_blank"
+                >
                   <img src={MapIcon} className="mapIcon" alt="" />
                 </a>
               </div>

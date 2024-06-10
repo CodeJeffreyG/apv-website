@@ -9,6 +9,12 @@ import surgeryImageOne from "../assests/carousel-images/notStaffDogs/doggie4.jpg
 import surgeryImageTwo from "../assests/carousel-images/notStaffDogs/doggie3.jpg";
 import dentalImageOne from "../assests/carousel-images/notStaffDogs/doggie6.jpg";
 import dentalImageTwo from "../assests/carousel-images/notStaffDogs/doggie5.jpg";
+import laserOne from "../assests/carousel-images/notStaffDogs/doggie14.jpg";
+import laserTwo from "../assests/carousel-images/notStaffDogs/doggie15.jpg";
+import microchipOne from "../assests/carousel-images/notStaffDogs/doggie13.jpg";
+import microchipTwo from "../assests/carousel-images/notStaffCats/cat10.jpg";
+import euthImageOne from "../assests/other-images/dogholdinghands.jpg";
+import euthImageTwo from "../assests/other-images/rainbowBridge.jpg";
 
 const services = {
   wellness: {
@@ -90,7 +96,7 @@ const services = {
       "The benefits of laser therapy are relatively immediate. Laser therapy can help with post-surgical pain and many acute conditions. Chronic conditions can also be treated with laser therapy, especially those involving inflammation.",
     secondSectionInformationTwo:
       "Applications of laser therapy include alleviating chronic pain, arthritis, inflammation, promoting wound healing, and speeding up recovery from surgery or traumatic injuries. Our team will work with you to tailor a specific laser therapy plan for your pet's health needs.",
-    images: ["laserTherapyImageOne", "laserTherapyImageTwo"],
+    images: [laserOne, laserTwo],
   },
 
   microchipping: {
@@ -102,11 +108,11 @@ const services = {
       "Microchipping is a permanent form of pet identification that cannot be lost, altered, or intentionally removed - a safe way to significantly increase the chance of a lost pet's return.",
     secondSectionInformationTwo:
       "Our staff will register the microchip and provide you with all the information you need to keep your pet's identification up to date. Remember, a microchip is only as good as the information linked to it, so keeping your contact details current is crucial.",
-    images: ["microchipImageOne", "microchipImageTwo"],
+    images: [microchipOne, microchipTwo],
   },
 
   hospice: {
-    firstSectionTitle: "Compassionate Euthanasia Services at All Pets Vet",
+    firstSectionTitle: "Compassionate Services at All Pets Vet",
     firstSectionInformation:
       "At All Pets Veterinary Hospital, we offer compassionate euthanasia services, understanding the difficulty of saying goodbye to a beloved pet. Our approach is gentle, respectful, and aimed at providing peace and dignity in your pet's final moments.",
     secondSectionTitle: "Supporting You Through the Process",
@@ -114,7 +120,7 @@ const services = {
       "We provide a serene, private space for you and your family to spend final moments with your pet, ensuring a peaceful and painless transition with the utmost respect and care.",
     secondSectionInformationTwo:
       "Our team is here to support you before, during, and after the procedure, offering guidance on grief support and memorial options to honor your pet's memory.",
-    images: ["euthanasiaImageOne", "euthanasiaImageTwo"],
+    images: [euthImageOne, euthImageTwo],
   },
 };
 
