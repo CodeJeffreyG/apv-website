@@ -65,7 +65,7 @@ const Emergency = () => {
                 <a href={item.url} target="_blank" className="emergency-link">
                   <span className="hospital-name">{item.name}</span>
                   <span className="emergency-link-info">{item.location}</span>
-                  <span className="phone-number">(555) 555 5555</span>
+                  <span className="phone-number">{item.phone}</span>
                 </a>
 
                 <a
