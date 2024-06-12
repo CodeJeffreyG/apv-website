@@ -3,11 +3,12 @@ import googleMap from "../../assests/googlemaps.png";
 import GoogleMap from "../../components/GoogleMaps/index";
 const ContactUs = () => {
   return (
-    <div className="contact-page">
+    <div className="container">
+      <br/><br/><br/><br/><br/>
       <div className="contact-header">All Pets Veterinary Hospital</div>
 
-      <main className="contact-main">
-        <div className="contact-info">
+      <main className="row ">
+        <div className="col-lg-6 col-md-12 col-12 contact-info">
           <p className="address">
             <strong></strong> 4017 Garret Rd Drexel Hill, PA 19026
           </p>
@@ -37,8 +38,17 @@ const ContactUs = () => {
             GET DIRECTIONS
           </a>
         </div>
-        <div className="contact-map">
-          <GoogleMap />
+        <div className="col-lg-6 col-md-12 col-12 contact-map">
+          {/* <GoogleMap /> */}
+          <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.932367201814!2d-75.30273592367988!3d39.94290247151972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c1838b294a3f%3A0xb6d540d35c2a9348!2sAll%20Pets%20Veterinary%20Hospital!5e0!3m2!1sen!2s!4v1718198394321!5m2!1sen!2s"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
         </div>
       </main>
     </div>
