@@ -59,9 +59,31 @@
   gap: 20px;
 }
 .team-card {
-  background-color: #f9f9f9;
+  background-color:none;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
+}
+
+@media (max-width: 614px) {
+.teams-container{
+  padding: 0px 40px;
+}
+.team-text-content{
+  margin-top: 20px;
+}
+}
+
+hr{
+  color: black;
+  background-color: black;
+}
+.team-img{
+  border-radius: 7px;
+}
+
+.dr-name{
+  color: #316ce8;
+  font-weight: bolder;
 }
