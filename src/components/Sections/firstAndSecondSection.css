@@ -33,8 +33,8 @@ you would need to manually define some `box-shadow` values for the stars or gene
 }
 
 .stars > .small {
-  width: 2px;
-  height: 2px;
+  width: 0px;
+  height: 0px;
   background: transparent;
   /* Manually defined example for box-shadow, replace with generated content or use JavaScript */
   box-shadow: 100px 200px #767676, 400px 800px #767676;
@@ -45,16 +45,16 @@ you would need to manually define some `box-shadow` values for the stars or gene
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 2px;
-  height: 2px;
+  width: 0px;
+  height: 0px;
   background: transparent;
   /* Repeat the box-shadow values for consistency */
   box-shadow: 100px 200px #767676, 400px 800px #767676;
 }
 
 .stars > .medium {
-  width: 4px;
-  height: 4px;
+  width: 0px;
+  height: 0px;
   background: transparent;
   /* Example box-shadow values for medium stars */
   box-shadow: 200px 400px #767676, 600px 1200px #767676;
@@ -65,19 +65,17 @@ you would need to manually define some `box-shadow` values for the stars or gene
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 4px;
-  height: 4px;
+  width: 0px;
+  height: 0px;
   background: transparent;
   box-shadow: 200px 400px #767676, 600px 1200px #767676;
 }
 
 .stars > .big {
-  width: 6px;
-  height: 6px;
-  background-color: white;
+  width: 0px;
+  height: 0px;
+  background-color: none;
   border-radius: 100%;
-  /* Example box-shadow values for big stars */
-  box-shadow: 300px 600px #767676, 800px 1600px #767676;
   animation: starsAnimation 150s linear infinite;
 }
 
@@ -85,10 +83,9 @@ you would need to manually define some `box-shadow` values for the stars or gene
   content: " ";
   position: absolute;
   top: 2000px;
-  width: 40px;
-  height: 40px;
+  width: 0px;
+  height: 0px;
   background: transparent;
-  box-shadow: 300px 600px #fffbfb, 800px 1600px #f6f6f6;
   border-radius: 100%;
 }
 

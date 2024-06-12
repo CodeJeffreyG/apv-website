@@ -42,11 +42,16 @@ const Emergency = () => {
                   <span className="hospital-name">{item.name}</span>
 
                   <span className="emergency-link-info">{item.location}</span>
-                  <span className="phone-number">(555) 555 5555</span>
+                  <span className="phone-number">{item.phone}</span>
                 </a>
 
                 <a href={item.directions} className="get-direction-btn">
-                  <img src={MapIcon} className="mapIcon" alt="" />
+                  <img
+                    src={MapIcon}
+                    className="mapIcon"
+                    target="_blank"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
@@ -60,10 +65,14 @@ const Emergency = () => {
                 <a href={item.url} target="_blank" className="emergency-link">
                   <span className="hospital-name">{item.name}</span>
                   <span className="emergency-link-info">{item.location}</span>
-                  <span className="phone-number">(555) 555 5555</span>
+                  <span className="phone-number">{item.phone}</span>
                 </a>
 
-                <a href={item.directions} className="get-direction-btn">
+                <a
+                  href={item.directions}
+                  className="get-direction-btn"
+                  target="_blank"
+                >
                   <img src={MapIcon} className="mapIcon" alt="" />
                 </a>
               </div>

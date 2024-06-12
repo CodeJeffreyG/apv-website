@@ -9,6 +9,7 @@ import EmilysHamsterPhillip from "../../assests/carousel-images/staffExotic/phil
 import EmilysBunny from "../../assests/carousel-images/staffExotic/bunny-emily.jpg";
 import TreenasRadnor from "../../assests/carousel-images/staffExotic/radnor-treenas-bd.jpg";
 import LousParm from "../../assests/carousel-images/staffExotic/LousParm.jpg";
+import JeffsHandome from "../../assests/carousel-images/staffCats/handsome-jeff.jpeg";
 //not staff animals
 import randomDog2 from "../../assests/carousel-images/notStaffDogs/doggie2.jpg";
 import randomDog4 from "../../assests/carousel-images/notStaffDogs/doggie4.jpg";
@@ -18,6 +19,10 @@ import randomDog9 from "../../assests/carousel-images/notStaffDogs/doggie9.jpg";
 import randomDog10 from "../../assests/carousel-images/notStaffDogs/doggie10.jpg";
 import randomDog11 from "../../assests/carousel-images/notStaffDogs/doggie11.jpg";
 import randomDog12 from "../../assests/carousel-images/notStaffDogs/doggie12.jpg";
+import randomDog13 from "../../assests/carousel-images/notStaffDogs/doggie13.jpg";
+import randomDog14 from "../../assests/carousel-images/notStaffDogs/doggie14.jpg";
+import randomDog15 from "../../assests/carousel-images/notStaffDogs/doggie15.jpg";
+
 //not staff Cats
 import randomCat1 from "../../assests/carousel-images/notStaffCats/cats1.jpg";
 import randomCat2 from "../../assests/carousel-images/notStaffCats/cat4.jpg";
@@ -26,6 +31,7 @@ import randomCat6 from "../../assests/carousel-images/notStaffCats/cat6.jpg";
 import randomCat7 from "../../assests/carousel-images/notStaffCats/cat7.jpg";
 import randomCat8 from "../../assests/carousel-images/notStaffCats/cat8.jpg";
 import randomCat9 from "../../assests/carousel-images/notStaffCats/cat9.jpg";
+import randomCat10 from "../../assests/carousel-images/notStaffCats/cat10.jpg"; // not great\
 //not staff exotic
 //not staff birds
 import randomBird1 from "../../assests/carousel-images/notStaffExotic/bird1.jpg";
@@ -43,7 +49,7 @@ import randomRabbit2 from "../../assests/carousel-images/notStaffExotic/bunny2.j
 const staffAnimals = () => {
   const staffAndAnimalPhotos = {
     dogs: [],
-    cats: [],
+    cats: [JeffsHandome],
     exotic: [EmilysBunny, EmilysHamsterPhillip, TreenasRadnor, LousParm],
     employee: [
       LoutWithCat,
@@ -67,6 +73,9 @@ const allNotStaffAnimals = () => {
       randomDog10,
       randomDog11,
       randomDog12,
+      randomDog13,
+      randomDog14,
+      randomDog15,
     ],
     cats: [
       randomCat1,
